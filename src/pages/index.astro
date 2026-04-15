@@ -1,0 +1,225 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Two Feathers Intelligence — AI Systems & Automation">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-navy-900/90 backdrop-blur-sm border-b border-navy-700/50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="/assets/tfi-insignia.png" alt="TFI" class="h-8 w-8" />
+        <span class="text-gold-500 font-semibold tracking-wide text-sm uppercase">TFI</span>
+      </a>
+      <div class="hidden sm:flex items-center gap-8 text-sm text-slate-400">
+        <a href="#mission" class="hover:text-gold-400 transition-colors">Mission</a>
+        <a href="#focus" class="hover:text-gold-400 transition-colors">Focus</a>
+        <a href="#about" class="hover:text-gold-400 transition-colors">About</a>
+        <a href="#contact" class="hover:text-gold-400 transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20">
+    <img src="/assets/tfi-insignia.png" alt="Two Feathers Intelligence Insignia" class="w-36 h-36 md:w-44 md:h-44 mb-8" />
+    <h1 class="text-4xl md:text-5xl font-bold text-slate-200 tracking-tight mb-4">
+      Two Feathers Intelligence
+    </h1>
+    <p class="text-xl md:text-2xl text-gold-500 font-medium mb-6">
+      Building scalable AI systems that compound in value.
+    </p>
+    <p class="max-w-2xl text-slate-400 text-lg leading-relaxed mb-10">
+      We design multi-agent automation infrastructure, intelligent workflows, and AI-powered products for real-world operations.
+    </p>
+    <a
+      href="#contact"
+      class="inline-block bg-gold-500 hover:bg-gold-400 text-navy-900 font-semibold px-8 py-3 rounded-lg transition-colors text-sm uppercase tracking-wider"
+    >
+      Get In Touch
+    </a>
+    <div class="mt-16 w-px h-16 bg-gradient-to-b from-gold-500/40 to-transparent"></div>
+  </section>
+
+  <!-- Mission -->
+  <section id="mission" class="py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-slate-200 mb-6">Our Mission</h2>
+      <p class="text-center text-slate-400 text-lg leading-relaxed max-w-3xl mx-auto mb-16">
+        TFI exists to turn ambitious ideas into structured, automated systems. We build multi-agent AI infrastructure that reduces operational burden, creates compounding leverage, and delivers results that scale — without scaling headcount.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Automation -->
+        <div class="bg-navy-800 border border-navy-700 rounded-xl p-8 text-center">
+          <div class="w-14 h-14 bg-gold-500/10 border border-gold-500/20 rounded-lg flex items-center justify-center mx-auto mb-5">
+            <svg class="w-7 h-7 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-200 mb-3">Automation</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Eliminating repetitive work through intelligent, agent-driven workflows.
+          </p>
+        </div>
+        <!-- Intelligence -->
+        <div class="bg-navy-800 border border-navy-700 rounded-xl p-8 text-center">
+          <div class="w-14 h-14 bg-gold-500/10 border border-gold-500/20 rounded-lg flex items-center justify-center mx-auto mb-5">
+            <svg class="w-7 h-7 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-200 mb-3">Intelligence</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Multi-agent coordination that synthesizes information and surfaces decisions.
+          </p>
+        </div>
+        <!-- Scalability -->
+        <div class="bg-navy-800 border border-navy-700 rounded-xl p-8 text-center">
+          <div class="w-14 h-14 bg-gold-500/10 border border-gold-500/20 rounded-lg flex items-center justify-center mx-auto mb-5">
+            <svg class="w-7 h-7 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-200 mb-3">Scalability</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Systems designed to grow without requiring proportional human effort.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Focus Areas -->
+  <section id="focus" class="py-24 px-6 bg-navy-800/50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-slate-200 mb-16">What We Build</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-navy-900 border border-navy-700 rounded-xl p-8">
+          <div class="w-2 h-2 bg-gold-500 rounded-full mb-5"></div>
+          <h3 class="text-lg font-semibold text-slate-200 mb-3">Multi-Agent AI Systems</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Coordinated agent networks for operations, research, and execution. Built on Claude, OpenAI, and open-source models.
+          </p>
+        </div>
+        <div class="bg-navy-900 border border-navy-700 rounded-xl p-8">
+          <div class="w-2 h-2 bg-gold-500 rounded-full mb-5"></div>
+          <h3 class="text-lg font-semibold text-slate-200 mb-3">Automation Infrastructure</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            End-to-end workflow automation connecting APIs, databases, voice, and messaging — across Discord, Power Platform, Node-RED, and custom tooling.
+          </p>
+        </div>
+        <div class="bg-navy-900 border border-navy-700 rounded-xl p-8">
+          <div class="w-2 h-2 bg-gold-500 rounded-full mb-5"></div>
+          <h3 class="text-lg font-semibold text-slate-200 mb-3">AI-Augmented Products</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Intelligent SaaS tools and applications that embed AI at the core, including escape-room operations platforms and Unity-based interactive experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Founder -->
+  <section id="about" class="py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-slate-200 mb-16">About</h2>
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+        <div class="flex-shrink-0">
+          <img
+            src="/assets/robert-avatar.png"
+            alt="Robert Nelson"
+            class="w-40 h-40 rounded-2xl border-2 border-navy-700 object-cover"
+          />
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-slate-200">Robert Nelson</h3>
+          <p class="text-gold-500 text-sm font-medium mt-1 mb-5">Founder, Two Feathers Intelligence</p>
+          <p class="text-slate-400 leading-relaxed mb-6">
+            Robert is a U.S. Army veteran, technologist, and entrepreneur with a background spanning Power Platform administration, LMS architecture, embedded systems, and game development. He founded TFI to build the AI-powered systems he wished existed — starting with the infrastructure that runs TFI itself.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-navy-700 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-full border border-navy-600">Army Veteran</span>
+            <span class="bg-navy-700 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-full border border-navy-600">PL-200</span>
+            <span class="bg-navy-700 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-full border border-navy-600">PL-100</span>
+            <span class="bg-navy-700 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-full border border-navy-600">PL-900</span>
+            <span class="bg-navy-700 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-full border border-navy-600">Security+</span>
+            <span class="bg-navy-700 text-slate-300 text-xs font-medium px-3 py-1.5 rounded-full border border-navy-600">MS-900</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 px-6 bg-navy-800/50">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-slate-200 mb-6">Work With Us</h2>
+      <p class="text-slate-400 text-lg leading-relaxed mb-10">
+        TFI is actively exploring partnerships, grants, and pilot engagements with AI providers and forward-thinking organizations. Reach out to start a conversation.
+      </p>
+      <a
+        href="mailto:robert@tfistudios.com"
+        class="inline-block text-gold-400 hover:text-gold-300 font-medium text-lg mb-12 transition-colors"
+      >
+        robert@tfistudios.com
+      </a>
+      <form
+        action="mailto:robert@tfistudios.com"
+        method="POST"
+        enctype="text/plain"
+        class="text-left space-y-5"
+      >
+        <div>
+          <label for="name" class="block text-sm text-slate-400 mb-2">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-gold-500/50 transition-colors"
+            placeholder="Your name"
+          />
+        </div>
+        <div>
+          <label for="email" class="block text-sm text-slate-400 mb-2">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-gold-500/50 transition-colors"
+            placeholder="your@email.com"
+          />
+        </div>
+        <div>
+          <label for="message" class="block text-sm text-slate-400 mb-2">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-gold-500/50 transition-colors resize-none"
+            placeholder="Tell us about your project or partnership idea..."
+          ></textarea>
+        </div>
+        <div class="text-center pt-2">
+          <button
+            type="submit"
+            class="bg-gold-500 hover:bg-gold-400 text-navy-900 font-semibold px-8 py-3 rounded-lg transition-colors text-sm uppercase tracking-wider"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 px-6 border-t border-navy-700/50">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <p>&copy; 2026 Two Feathers Intelligence LLC</p>
+      <p>tfistudios.com</p>
+    </div>
+  </footer>
+
+</Layout>
