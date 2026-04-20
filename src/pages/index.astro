@@ -15,6 +15,7 @@ import Layout from '../layouts/Layout.astro';
         <a href="#mission" class="hover:text-gold-400 transition-colors">Mission</a>
         <a href="#focus" class="hover:text-gold-400 transition-colors">Focus</a>
         <a href="#work" class="hover:text-gold-400 transition-colors">Work</a>
+        <a href="#partners" class="hover:text-gold-400 transition-colors">Partners</a>
         <a href="#about" class="hover:text-gold-400 transition-colors">About</a>
         <a href="#contact" class="hover:text-gold-400 transition-colors">Contact</a>
       </div>
@@ -166,6 +167,19 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Current Partners -->
+  <section id="partners" class="py-24 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-slate-200 mb-6">Current Partners</h2>
+      <p class="text-slate-400 text-lg leading-relaxed max-w-3xl mx-auto mb-12">
+        We partner with organizations that share our vision for scalable AI systems. Our current grant partner powers our voice and conversation workflows.
+      </p>
+      <a href="https://elevenlabs.io/startup-grants" target="_blank" rel="noopener noreferrer" class="inline-block hover:opacity-80 transition-opacity">
+        <img src="/assets/elevenlabs-grants.png" alt="ElevenLabs Startup Grant Partner" style="width:250px;" />
+      </a>
+    </div>
+  </section>
+
   <!-- About / Founder -->
   <section id="about" class="py-24 px-6">
     <div class="max-w-4xl mx-auto">
@@ -274,11 +288,6 @@ import Layout from '../layouts/Layout.astro';
         </a>
       </div>
     </div>
-    <p class="mt-4">
-      <a href="https://elevenlabs.io/startup-grants" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-opacity inline-block">
-        <img src="/assets/elevenlabs-grants.png" alt="ElevenLabs Startup Grant" style="width:200px; opacity:0.85;" class="hover:opacity-100" />
-      </a>
-    </p>
   </footer>
 
 </Layout>
