@@ -1,0 +1,494 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="TFI Minesweeper — Two Feathers Intelligence">
+  <main class="min-h-screen bg-[radial-gradient(circle_at_top,#1e293b_0%,#0a0f1a_52%)] text-slate-200">
+    <section class="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-6 px-4 py-6 sm:px-6 lg:px-8">
+      <header class="flex flex-col gap-4 border-b border-gold-500/20 pb-5 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <a href="/" class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-gold-400 hover:text-gold-300">
+            <span aria-hidden="true">←</span> TFI Studios
+          </a>
+          <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-100 sm:text-5xl">Minesweeper</h1>
+          <p class="mt-2 max-w-2xl text-slate-400">Classic logic, modern command deck. Clear the field, flag the mines, and earn your spot on the TFI leaderboard.</p>
+        </div>
+        <div class="rounded-2xl border border-gold-500/25 bg-navy-800/70 px-4 py-3 text-sm text-slate-300 shadow-2xl shadow-black/20">
+          <p class="font-semibold text-gold-400">Controls</p>
+          <p>Desktop: left-click reveal · right-click flag</p>
+          <p>Mobile: tap reveal · long-press flag</p>
+        </div>
+      </header>
+
+      <div class="grid flex-1 gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
+        <section class="rounded-3xl border border-navy-600/80 bg-navy-800/75 p-4 shadow-2xl shadow-black/30 backdrop-blur sm:p-6">
+          <div id="setup-panel" class="grid gap-5">
+            <div class="rounded-2xl border border-gold-500/20 bg-navy-900/70 p-5">
+              <h2 class="text-2xl font-bold text-slate-100">Enter the field</h2>
+              <p class="mt-2 text-sm text-slate-400">Name is required before play. Standard difficulty wins submit to the leaderboard automatically.</p>
+              <label class="mt-4 grid gap-2 text-sm font-semibold text-slate-300">
+                Player name
+                <input id="player-name" maxlength="32" autocomplete="nickname" placeholder="Your name" class="rounded-xl border border-navy-600 bg-navy-900 px-4 py-3 text-slate-100 outline-none ring-gold-500/30 transition focus:border-gold-500 focus:ring-4" />
+              </label>
+            </div>
+
+            <div class="grid gap-3 md:grid-cols-2 xl:grid-cols-4" id="difficulty-buttons" aria-label="Difficulty selector"></div>
+
+            <div id="custom-panel" class="hidden rounded-2xl border border-navy-600 bg-navy-900/70 p-4">
+              <h3 class="font-semibold text-gold-400">Custom field</h3>
+              <div class="mt-3 grid gap-3 sm:grid-cols-3">
+                <label class="grid gap-1 text-sm text-slate-300">Rows <input id="custom-rows" type="number" min="5" max="24" value="12" class="rounded-lg border border-navy-600 bg-navy-800 px-3 py-2" /></label>
+                <label class="grid gap-1 text-sm text-slate-300">Columns <input id="custom-cols" type="number" min="5" max="30" value="12" class="rounded-lg border border-navy-600 bg-navy-800 px-3 py-2" /></label>
+                <label class="grid gap-1 text-sm text-slate-300">Mines <input id="custom-mines" type="number" min="1" max="200" value="20" class="rounded-lg border border-navy-600 bg-navy-800 px-3 py-2" /></label>
+              </div>
+              <p id="custom-error" class="mt-2 hidden text-sm text-red-300"></p>
+            </div>
+
+            <button id="start-game" class="rounded-xl bg-gold-500 px-6 py-3 font-bold uppercase tracking-[0.14em] text-navy-900 transition hover:bg-gold-400 disabled:cursor-not-allowed disabled:opacity-45">Start Game</button>
+          </div>
+
+          <div id="game-panel" class="hidden">
+            <div class="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-gold-500/20 bg-navy-900/80 p-3">
+              <div class="flex flex-wrap items-center gap-3">
+                <div class="rounded-xl border border-navy-600 bg-navy-800 px-4 py-2"><span class="block text-xs uppercase tracking-widest text-slate-400">Mines</span><strong id="mine-counter" class="text-xl text-gold-400">000</strong></div>
+                <div class="rounded-xl border border-navy-600 bg-navy-800 px-4 py-2"><span class="block text-xs uppercase tracking-widest text-slate-400">Time</span><strong id="timer" class="text-xl text-gold-400">000</strong></div>
+                <div class="rounded-xl border border-navy-600 bg-navy-800 px-4 py-2"><span class="block text-xs uppercase tracking-widest text-slate-400">Mode</span><strong id="mode-label" class="text-xl text-gold-400">Beginner</strong></div>
+              </div>
+              <div class="flex gap-2">
+                <button id="new-game" class="rounded-xl border border-gold-500/40 px-4 py-2 font-semibold text-gold-300 transition hover:bg-gold-500/10">New Game</button>
+                <button id="reset-game" class="rounded-xl bg-gold-500 px-4 py-2 font-bold text-navy-900 transition hover:bg-gold-400">Reset</button>
+              </div>
+            </div>
+
+            <div id="status-banner" class="mb-4 rounded-2xl border border-navy-600 bg-navy-900/60 px-4 py-3 text-sm text-slate-300">First click is safe. Good hunting.</div>
+            <div class="overflow-auto rounded-2xl border border-navy-600 bg-[#050914] p-2 shadow-inner shadow-black/60 touch-none">
+              <div id="board" class="mx-auto grid w-max gap-[2px]" aria-label="Minesweeper board"></div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="grid gap-6 content-start">
+          <section class="rounded-3xl border border-navy-600 bg-navy-800/75 p-5 shadow-2xl shadow-black/30">
+            <div class="flex items-center justify-between gap-3">
+              <h2 class="text-2xl font-bold text-slate-100">Leaderboard</h2>
+              <select id="leaderboard-difficulty" class="rounded-xl border border-navy-600 bg-navy-900 px-3 py-2 text-sm text-slate-200">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="expert">Expert</option>
+              </select>
+            </div>
+            <p id="leaderboard-note" class="mt-2 text-sm text-slate-400">Top 10 standard runs. Custom games are for practice.</p>
+            <ol id="leaderboard" class="mt-4 grid gap-2"></ol>
+          </section>
+
+          <section class="rounded-3xl border border-gold-500/20 bg-navy-900/70 p-5 text-sm text-slate-400">
+            <h2 class="text-lg font-bold text-gold-400">Difficulty specs</h2>
+            <ul class="mt-3 grid gap-2">
+              <li><strong class="text-slate-200">Beginner:</strong> 9×9, 10 mines</li>
+              <li><strong class="text-slate-200">Intermediate:</strong> 16×16, 40 mines</li>
+              <li><strong class="text-slate-200">Expert:</strong> 30×16, 99 mines</li>
+              <li><strong class="text-slate-200">Custom:</strong> 5–30 columns, 5–24 rows, safe mine limits</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <style is:global>
+    .mine-cell {
+      width: var(--cell-size);
+      height: var(--cell-size);
+      border-radius: 0.42rem;
+      border: 1px solid rgba(212, 168, 67, 0.16);
+      background: linear-gradient(145deg, #1e293b, #0f172a);
+      color: #e2e8f0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: calc(var(--cell-size) * 0.46);
+      line-height: 1;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      transition: transform 120ms ease, background 160ms ease, border-color 160ms ease, opacity 160ms ease;
+    }
+    .mine-cell:hover { transform: translateY(-1px); border-color: rgba(229, 190, 90, 0.45); }
+    .mine-cell.revealed { background: #d7c9a3; color: #0a0f1a; border-color: rgba(10, 15, 26, 0.25); animation: reveal-pop 150ms ease-out; }
+    .mine-cell.flagged { background: #3a2f19; color: #f0d078; }
+    .mine-cell.mine-hit { background: #7f1d1d; color: #fee2e2; }
+    .mine-cell.mine-show { background: #3f1f2b; color: #fecaca; }
+    .n1 { color: #1d4ed8; } .n2 { color: #15803d; } .n3 { color: #b91c1c; } .n4 { color: #4338ca; }
+    .n5 { color: #9f1239; } .n6 { color: #0f766e; } .n7 { color: #111827; } .n8 { color: #475569; }
+    @keyframes reveal-pop { from { transform: scale(0.88); opacity: 0.45; } to { transform: scale(1); opacity: 1; } }
+  </style>
+
+  <script>
+    type DifficultyKey = 'beginner' | 'intermediate' | 'expert' | 'custom';
+    type GameStatus = 'setup' | 'ready' | 'playing' | 'won' | 'lost';
+    type Cell = { row: number; col: number; mine: boolean; revealed: boolean; flagged: boolean; adjacent: number; exploded: boolean };
+    type Config = { key: DifficultyKey; label: string; rows: number; cols: number; mines: number; leaderboard: boolean };
+
+    const DIFFICULTIES: Record<DifficultyKey, Config> = {
+      beginner: { key: 'beginner', label: 'Beginner', rows: 9, cols: 9, mines: 10, leaderboard: true },
+      intermediate: { key: 'intermediate', label: 'Intermediate', rows: 16, cols: 16, mines: 40, leaderboard: true },
+      expert: { key: 'expert', label: 'Expert', rows: 16, cols: 30, mines: 99, leaderboard: true },
+      custom: { key: 'custom', label: 'Custom', rows: 12, cols: 12, mines: 20, leaderboard: false },
+    };
+
+    const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+    const setupPanel = $('setup-panel');
+    const gamePanel = $('game-panel');
+    const difficultyButtons = $('difficulty-buttons');
+    const customPanel = $('custom-panel');
+    const customError = $('custom-error');
+    const nameInput = $('player-name') as HTMLInputElement;
+    const startButton = $('start-game') as HTMLButtonElement;
+    const boardEl = $('board');
+    const mineCounter = $('mine-counter');
+    const timerEl = $('timer');
+    const modeLabel = $('mode-label');
+    const statusBanner = $('status-banner');
+    const leaderboardEl = $('leaderboard');
+    const leaderboardSelect = $('leaderboard-difficulty') as HTMLSelectElement;
+
+    let selectedDifficulty: DifficultyKey = 'beginner';
+    let config: Config = { ...DIFFICULTIES.beginner };
+    let playerName = '';
+    let board: Cell[][] = [];
+    let status: GameStatus = 'setup';
+    let flags = 0;
+    let revealedCount = 0;
+    let startTime = 0;
+    let elapsed = 0;
+    let timerHandle: number | undefined;
+    let scoreSubmitted = false;
+    let longPressHandle: number | undefined;
+    let longPressFired = false;
+
+    renderDifficultyButtons();
+    loadLeaderboard('beginner');
+
+    startButton.addEventListener('click', startGameFromSetup);
+    $('new-game').addEventListener('click', () => {
+      stopTimer();
+      setupPanel.classList.remove('hidden');
+      gamePanel.classList.add('hidden');
+      status = 'setup';
+      statusBanner.textContent = 'First click is safe. Good hunting.';
+    });
+    $('reset-game').addEventListener('click', () => newGame(config));
+    leaderboardSelect.addEventListener('change', () => loadLeaderboard(leaderboardSelect.value));
+
+    function renderDifficultyButtons() {
+      difficultyButtons.innerHTML = '';
+      (Object.values(DIFFICULTIES) as Config[]).forEach((difficulty) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = difficultyButtonClass(difficulty.key === selectedDifficulty);
+        button.innerHTML = `<strong>${difficulty.label}</strong><span>${difficulty.cols}×${difficulty.rows} · ${difficulty.mines} mines</span>${difficulty.leaderboard ? '<em>Leaderboard eligible</em>' : '<em>Practice only</em>'}`;
+        button.addEventListener('click', () => {
+          selectedDifficulty = difficulty.key;
+          customPanel.classList.toggle('hidden', selectedDifficulty !== 'custom');
+          renderDifficultyButtons();
+        });
+        difficultyButtons.appendChild(button);
+      });
+    }
+
+    function difficultyButtonClass(active: boolean) {
+      return `rounded-2xl border p-4 text-left transition ${active ? 'border-gold-500 bg-gold-500/15 shadow-lg shadow-gold-500/10' : 'border-navy-600 bg-navy-900/70 hover:border-gold-500/50'} [&_strong]:block [&_strong]:text-lg [&_strong]:text-slate-100 [&_span]:mt-1 [&_span]:block [&_span]:text-sm [&_span]:text-slate-400 [&_em]:mt-3 [&_em]:block [&_em]:text-xs [&_em]:not-italic [&_em]:text-gold-400`;
+    }
+
+    function startGameFromSetup() {
+      playerName = nameInput.value.trim().replace(/\s+/g, ' ');
+      if (!playerName) {
+        nameInput.focus();
+        nameInput.classList.add('border-red-400');
+        return;
+      }
+      nameInput.classList.remove('border-red-400');
+      const nextConfig = getSelectedConfig();
+      if (!nextConfig) return;
+      setupPanel.classList.add('hidden');
+      gamePanel.classList.remove('hidden');
+      newGame(nextConfig);
+    }
+
+    function getSelectedConfig(): Config | null {
+      if (selectedDifficulty !== 'custom') return { ...DIFFICULTIES[selectedDifficulty] };
+      const rows = clamp(Number(($('custom-rows') as HTMLInputElement).value), 5, 24);
+      const cols = clamp(Number(($('custom-cols') as HTMLInputElement).value), 5, 30);
+      const maxMines = Math.max(1, Math.min(200, rows * cols - 9));
+      const mines = Number(($('custom-mines') as HTMLInputElement).value);
+      if (!Number.isInteger(mines) || mines < 1 || mines > maxMines) {
+        customError.textContent = `Mines must be between 1 and ${maxMines} for a ${cols}×${rows} field.`;
+        customError.classList.remove('hidden');
+        return null;
+      }
+      customError.classList.add('hidden');
+      return { key: 'custom', label: 'Custom', rows, cols, mines, leaderboard: false };
+    }
+
+    function newGame(nextConfig: Config) {
+      config = { ...nextConfig };
+      board = createEmptyBoard(config.rows, config.cols);
+      flags = 0;
+      revealedCount = 0;
+      elapsed = 0;
+      status = 'ready';
+      scoreSubmitted = false;
+      stopTimer();
+      updateHud();
+      statusBanner.textContent = 'First click is safe. Good hunting.';
+      renderBoard();
+    }
+
+    function createEmptyBoard(rows: number, cols: number): Cell[][] {
+      return Array.from({ length: rows }, (_, row) => Array.from({ length: cols }, (_, col) => ({ row, col, mine: false, revealed: false, flagged: false, adjacent: 0, exploded: false })));
+    }
+
+    function placeMines(safeRow: number, safeCol: number) {
+      const blocked = new Set(neighbors(safeRow, safeCol, true).map(([r, c]) => `${r},${c}`));
+      let placed = 0;
+      while (placed < config.mines) {
+        const row = Math.floor(Math.random() * config.rows);
+        const col = Math.floor(Math.random() * config.cols);
+        const cell = board[row][col];
+        if (cell.mine || blocked.has(`${row},${col}`)) continue;
+        cell.mine = true;
+        placed += 1;
+      }
+      for (const row of board) {
+        for (const cell of row) {
+          cell.adjacent = cell.mine ? 0 : neighbors(cell.row, cell.col).filter(([r, c]) => board[r][c].mine).length;
+        }
+      }
+    }
+
+    function neighbors(row: number, col: number, includeSelf = false) {
+      const result: [number, number][] = [];
+      for (let dr = -1; dr <= 1; dr++) {
+        for (let dc = -1; dc <= 1; dc++) {
+          if (!includeSelf && dr === 0 && dc === 0) continue;
+          const nr = row + dr;
+          const nc = col + dc;
+          if (nr >= 0 && nr < config.rows && nc >= 0 && nc < config.cols) result.push([nr, nc]);
+        }
+      }
+      return result;
+    }
+
+    function renderBoard() {
+      const availableWidth = Math.min(window.innerWidth - 48, boardEl.parentElement?.clientWidth ? boardEl.parentElement.clientWidth - 20 : 900);
+      const cellSize = Math.max(22, Math.min(38, Math.floor(availableWidth / config.cols) - 2));
+      boardEl.style.setProperty('--cell-size', `${cellSize}px`);
+      boardEl.style.gridTemplateColumns = `repeat(${config.cols}, var(--cell-size))`;
+      boardEl.innerHTML = '';
+      for (const row of board) {
+        for (const cell of row) {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = cellClass(cell);
+          button.setAttribute('aria-label', cell.revealed ? cellLabel(cell) : `Hidden cell row ${cell.row + 1}, column ${cell.col + 1}`);
+          button.dataset.row = String(cell.row);
+          button.dataset.col = String(cell.col);
+          button.textContent = cellText(cell);
+          button.addEventListener('click', () => {
+            if (longPressFired) { longPressFired = false; return; }
+            revealCell(cell.row, cell.col);
+          });
+          button.addEventListener('contextmenu', (event) => { event.preventDefault(); toggleFlag(cell.row, cell.col); });
+          button.addEventListener('pointerdown', (event) => {
+            if (event.pointerType === 'mouse') return;
+            longPressFired = false;
+            longPressHandle = window.setTimeout(() => { longPressFired = true; toggleFlag(cell.row, cell.col); }, 520);
+          });
+          button.addEventListener('pointerup', clearLongPress);
+          button.addEventListener('pointercancel', clearLongPress);
+          button.addEventListener('pointerleave', clearLongPress);
+          boardEl.appendChild(button);
+        }
+      }
+    }
+
+    window.addEventListener('resize', () => { if (board.length) renderBoard(); });
+
+    function clearLongPress() {
+      if (longPressHandle) window.clearTimeout(longPressHandle);
+      longPressHandle = undefined;
+    }
+
+    function cellClass(cell: Cell) {
+      const classes = ['mine-cell'];
+      if (cell.revealed) classes.push('revealed');
+      if (cell.flagged) classes.push('flagged');
+      if (cell.exploded) classes.push('mine-hit');
+      if ((status === 'lost' || status === 'won') && cell.mine && !cell.exploded) classes.push('mine-show');
+      if (cell.revealed && cell.adjacent > 0) classes.push(`n${cell.adjacent}`);
+      return classes.join(' ');
+    }
+
+    function cellText(cell: Cell) {
+      if (cell.flagged && !cell.revealed) return '⚑';
+      if (!cell.revealed && status !== 'lost') return '';
+      if (cell.mine && (cell.revealed || status === 'lost' || status === 'won')) return '✹';
+      return cell.adjacent > 0 ? String(cell.adjacent) : '';
+    }
+
+    function cellLabel(cell: Cell) {
+      if (cell.mine) return 'Mine';
+      if (cell.adjacent === 0) return 'Empty cell';
+      return `${cell.adjacent} adjacent mines`;
+    }
+
+    function revealCell(row: number, col: number) {
+      if (status === 'won' || status === 'lost') return;
+      const cell = board[row][col];
+      if (cell.flagged || cell.revealed) return;
+      if (status === 'ready') {
+        placeMines(row, col);
+        startTimer();
+        status = 'playing';
+        statusBanner.textContent = 'Timer running. Clear every safe cell.';
+      }
+      if (cell.mine) {
+        cell.revealed = true;
+        cell.exploded = true;
+        loseGame();
+        return;
+      }
+      floodReveal(row, col);
+      checkWin();
+      renderBoard();
+      updateHud();
+    }
+
+    function floodReveal(row: number, col: number) {
+      const stack: [number, number][] = [[row, col]];
+      while (stack.length) {
+        const [r, c] = stack.pop()!;
+        const cell = board[r][c];
+        if (cell.revealed || cell.flagged || cell.mine) continue;
+        cell.revealed = true;
+        revealedCount += 1;
+        if (cell.adjacent === 0) {
+          for (const [nr, nc] of neighbors(r, c)) {
+            const next = board[nr][nc];
+            if (!next.revealed && !next.flagged && !next.mine) stack.push([nr, nc]);
+          }
+        }
+      }
+    }
+
+    function toggleFlag(row: number, col: number) {
+      if (status === 'won' || status === 'lost') return;
+      const cell = board[row][col];
+      if (cell.revealed) return;
+      cell.flagged = !cell.flagged;
+      flags += cell.flagged ? 1 : -1;
+      updateHud();
+      renderBoard();
+    }
+
+    function checkWin() {
+      if (revealedCount === config.rows * config.cols - config.mines) winGame();
+    }
+
+    async function winGame() {
+      status = 'won';
+      stopTimer();
+      for (const row of board) for (const cell of row) if (cell.mine) cell.flagged = true;
+      flags = config.mines;
+      statusBanner.innerHTML = `Victory for <strong>${escapeHtml(playerName)}</strong> in <strong>${elapsed}s</strong>${config.leaderboard ? '. Submitting score…' : '. Custom games are not submitted.'}`;
+      updateHud();
+      renderBoard();
+      if (config.leaderboard && !scoreSubmitted) await submitScore();
+    }
+
+    function loseGame() {
+      status = 'lost';
+      stopTimer();
+      statusBanner.textContent = 'Mine triggered. No score submitted — reset and try again.';
+      renderBoard();
+      updateHud();
+    }
+
+    function startTimer() {
+      startTime = Date.now() - elapsed * 1000;
+      timerHandle = window.setInterval(() => {
+        elapsed = Math.floor((Date.now() - startTime) / 1000);
+        updateHud();
+      }, 250);
+    }
+
+    function stopTimer() {
+      if (timerHandle) window.clearInterval(timerHandle);
+      timerHandle = undefined;
+    }
+
+    function updateHud() {
+      mineCounter.textContent = String(Math.max(0, config.mines - flags)).padStart(3, '0');
+      timerEl.textContent = String(elapsed).padStart(3, '0');
+      modeLabel.textContent = config.label;
+    }
+
+    async function submitScore() {
+      scoreSubmitted = true;
+      try {
+        const response = await fetch('/api/games/minesweeper/scores', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name: playerName, difficulty: config.key, time_seconds: elapsed }),
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'Score submission failed');
+        statusBanner.innerHTML = `Victory for <strong>${escapeHtml(playerName)}</strong> in <strong>${elapsed}s</strong>. Score submitted.`;
+        leaderboardSelect.value = config.key;
+        await loadLeaderboard(config.key);
+      } catch (error) {
+        statusBanner.innerHTML = `Victory for <strong>${escapeHtml(playerName)}</strong> in <strong>${elapsed}s</strong>. Leaderboard unavailable: ${escapeHtml(error instanceof Error ? error.message : String(error))}`;
+      }
+    }
+
+    async function loadLeaderboard(difficulty: string) {
+      leaderboardEl.innerHTML = '<li class="rounded-xl border border-navy-600 bg-navy-900/70 p-3 text-sm text-slate-400">Loading…</li>';
+      try {
+        const response = await fetch(`/api/games/minesweeper/scores?difficulty=${encodeURIComponent(difficulty)}`);
+        const data = await response.json();
+        const scores = Array.isArray(data.scores) ? data.scores : [];
+        if (scores.length === 0) {
+          leaderboardEl.innerHTML = `<li class="rounded-xl border border-navy-600 bg-navy-900/70 p-3 text-sm text-slate-400">${data.warning ? escapeHtml(data.warning) : 'No scores yet. Be the first.'}</li>`;
+          return;
+        }
+        leaderboardEl.innerHTML = scores.map((score: any) => `
+          <li class="grid grid-cols-[2.5rem_1fr_auto] items-center gap-3 rounded-xl border border-navy-600 bg-navy-900/70 p-3">
+            <strong class="text-lg text-gold-400">#${score.rank}</strong>
+            <span><strong class="block text-slate-100">${escapeHtml(score.name)}</strong><small class="text-slate-500">${new Date(score.date).toLocaleDateString()}</small></span>
+            <strong class="text-slate-100">${score.time_seconds}s</strong>
+          </li>`).join('');
+      } catch {
+        leaderboardEl.innerHTML = '<li class="rounded-xl border border-navy-600 bg-navy-900/70 p-3 text-sm text-slate-400">Leaderboard is temporarily unavailable.</li>';
+      }
+    }
+
+    function clamp(value: number, min: number, max: number) {
+      if (!Number.isFinite(value)) return min;
+      return Math.min(max, Math.max(min, Math.trunc(value)));
+    }
+
+    function escapeHtml(value: string) {
+      return value.replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]!));
+    }
+
+    if (['localhost', '127.0.0.1'].includes(window.location.hostname)) {
+      (window as any).__minesweeperDebug = {
+        board: () => board.map((row) => row.map((cell) => ({ row: cell.row, col: cell.col, mine: cell.mine, revealed: cell.revealed, flagged: cell.flagged, adjacent: cell.adjacent }))),
+        reveal: (row: number, col: number) => revealCell(row, col),
+        flag: (row: number, col: number) => toggleFlag(row, col),
+        status: () => status,
+      };
+    }
+  </script>
+</Layout>
