@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  subtitle?: string;
+}
+
+const { title, subtitle = 'Private TFI operations dashboard' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content={subtitle} />
+    <link rel="icon" type="image/png" href="/assets/communicator-pin.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen bg-navy-900 text-slate-200">
+    <div class="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(212,168,67,0.12),transparent_32rem),linear-gradient(180deg,rgba(17,24,39,0.85),rgba(10,15,26,1))]">
+      <header class="border-b border-navy-700/70 bg-navy-900/80 backdrop-blur">
+        <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-5 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+          <a href="/" class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.28em] text-gold-400">
+            <img src="/assets/tfi-insignia.png" alt="TFI" class="h-9 w-9" />
+            TFI Ops
+          </a>
+          <nav class="flex flex-wrap items-center gap-4 text-sm text-slate-400">
+            <a href="/ops/forecast" class="text-gold-300 hover:text-gold-400">Staff Forecast</a>
+            <span class="rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-200">Private pilot</span>
+          </nav>
+        </div>
+      </header>
+      <main class="mx-auto max-w-7xl px-5 py-8 lg:px-8 lg:py-10">
+        <slot />
+      </main>
+    </div>
+  </body>
+</html>
