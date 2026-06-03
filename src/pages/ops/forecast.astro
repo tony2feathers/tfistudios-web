@@ -74,7 +74,7 @@ const chronologicalWindow = [...rows].sort((a, b) => a.days_until - b.days_until
 const riskLevel = (row: ForecastRow) => {
   const hasCoverageGap = row.concurrent_staff_needed > row.staff_availability && row.blocking_risk > 0;
   if (hasCoverageGap || row.blocking_risk >= 0.25) return 'high';
-  if (row.concurrent_staff_needed === row.staff_availability || row.samples === 0 || row.external_events) return 'watch';
+  if (row.samples === 0 || row.external_events) return 'watch';
   return 'covered';
 };
 
