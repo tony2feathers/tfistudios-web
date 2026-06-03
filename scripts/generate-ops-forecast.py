@@ -247,29 +247,46 @@ def day_window_metrics(bookings: list[Booking]) -> dict[tuple[date, str], dict[s
     return metrics
 
 
+def historical_day_range(bookings: list[Booking], as_of: date) -> list[date]:
+    """Return every historical calendar date in the analyzed data range.
+
+    The forecast needs explicit zero-booking comparable days. Building history only
+    from days that have bookings creates survivorship bias and overstates baseline
+    demand, especially on appointment-only weekdays.
+    """
+    earliest = min((b.event_date for b in bookings if b.event_date.year >= 2023), default=date(2023, 1, 1))
+    start = date(earliest.year, 1, 1)
+    end = as_of - timedelta(days=1)
+    days: list[date] = []
+    current = start
+    while current <= end:
+        days.append(current)
+        current += timedelta(days=1)
+    return days
+
+
 def build_forecast(bookings: list[Booking], audit: dict[str, Any], horizon_days: int, as_of: date, sheet_id: str, events: list[dict[str, Any]]) -> dict[str, Any]:
     metrics = day_window_metrics(bookings)
-    completed_days = sorted({b.event_date for b in bookings if b.event_date < as_of})
     current_or_future = {k: v for k, v in metrics.items() if k[0] >= as_of}
 
-    # Historical same month+weekday+window, normalized to current 3-game capacity.
+    # Historical same month+weekday+window. Include comparable days with zero
+    # bookings, and do not inflate raw room starts from the 2-room era. Capacity
+    # context is still recorded in metadata, but staffing pressure should reflect
+    # actual observed room-start counts, not hypothetical capacity-scaled counts.
     hist_by_window: dict[tuple[int, int, str], list[dict[str, float]]] = defaultdict(list)
     hist_by_dow_window: dict[tuple[int, str], list[dict[str, float]]] = defaultdict(list)
-    for (day, win_key), bucket in metrics.items():
-        if day >= as_of:
-            continue
-        if day.year < 2023:
-            continue
-        capacity = game_capacity_for(day)
-        normalized_factor = 3 / capacity
-        normalized = {
-            "bookings": float(bucket["bookings"]) * normalized_factor,
-            "guests": float(bucket["guests"]) * normalized_factor,
-            "gross": float(bucket["gross"]) * normalized_factor,
-            "raw_bookings": float(bucket["bookings"]),
-        }
-        hist_by_window[(day.month, day.weekday(), win_key)].append(normalized)
-        hist_by_dow_window[(day.weekday(), win_key)].append(normalized)
+    for day in historical_day_range(bookings, as_of):
+        for win in operating_windows_for(day):
+            win_key = str(win["key"])
+            bucket = metrics.get((day, win_key), {"bookings": 0.0, "guests": 0.0, "gross": 0.0})
+            observed = {
+                "bookings": float(bucket["bookings"]),
+                "guests": float(bucket["guests"]),
+                "gross": float(bucket["gross"]),
+                "raw_bookings": float(bucket["bookings"]),
+            }
+            hist_by_window[(day.month, day.weekday(), win_key)].append(observed)
+            hist_by_dow_window[(day.weekday(), win_key)].append(observed)
 
     forecast_rows: list[dict[str, Any]] = []
     for offset in range(horizon_days):
@@ -371,18 +388,19 @@ def build_forecast(bookings: list[Booking], audit: dict[str, Any], horizon_days:
         "source_workbook_id": sheet_id,
         "source_tabs": DEFAULT_TABS,
         "loaded_rows": audit["loaded_room_bookings"],
-        "model_version": "1.1-real-aggregate-window-baseline",
+        "model_version": "1.2-observed-calendar-baseline",
         "privacy_note": "All data is PII-free and aggregate. No customer identifiers are included.",
         "external_events": len(events),
         "capacity_model": {
             "current_game_capacity": 3,
             "pre_clockwork_capacity": 2,
             "clockwork_open_date_inferred": CLOCKWORK_OPEN_DATE.isoformat(),
-            "normalization": "Pre-Clockwork historical room-start demand is scaled as demand vs capacity 2, then normalized to current capacity 3 for baseline comparison.",
+            "normalization": "Staffing pressure uses observed historical room starts, including zero-booking comparable days. Pre-Clockwork capacity is documented for context but no longer inflates room-start baselines.",
         },
         "model_limits": [
             "Staff coverage values are planning assumptions until a live staffing-plan feed exists.",
             "Window-level room pressure is based on aggregate room starts by daypart, not exact minute-by-minute game concurrency yet.",
+            "Same-day rows should treat historical baseline as context; actual on-books pressure is the reliable overlap signal.",
             "Birthday/team-building rows are mapped to their associated room when the Adventure label contains a known room name.",
         ],
         "audit": audit,
