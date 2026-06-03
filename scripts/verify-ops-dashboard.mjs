@@ -24,6 +24,11 @@ assert.ok(forecast.metadata, 'forecast should include metadata');
 assert.ok(Array.isArray(forecast.forecast), 'forecast should include forecast rows');
 assert.ok(forecast.forecast.length >= 7, 'forecast should include at least 7 days');
 assert.match(forecast.metadata.privacy_note, /PII-free|No customer/i);
+assert.ok(forecast.metadata.loaded_rows > 0, 'forecast should be generated from real aggregate booking rows, not scaffold data');
+assert.ok(forecast.metadata.capacity_model, 'forecast should document the game-capacity normalization model');
+assert.equal(forecast.metadata.capacity_model.pre_clockwork_capacity, 2, 'pre-Clockwork capacity should be modeled as 2 games');
+assert.equal(forecast.metadata.capacity_model.current_game_capacity, 3, 'current capacity should be modeled as 3 games');
+assert.ok(forecast.forecast.some((row) => Array.isArray(row.windows) && row.windows.length > 1), 'forecast should include weekday/daypart window detail');
 
 const events = readJson('src/data/event-intel-latest.json');
 assert.ok(Array.isArray(events), 'event-intel latest should be an array');
@@ -72,4 +77,4 @@ const homePage = read('src/pages/index.astro');
 assert.ok(!homePage.includes('OPS_DASHBOARD_PASSWORD'), 'homepage should not include ops auth env vars');
 assert.ok(!homePage.includes('Staff Coverage Forecast'), 'homepage should remain public marketing page');
 
-console.log('ops dashboard scaffold verification passed');
+console.log('ops dashboard verification passed');

@@ -9,6 +9,8 @@ Help Robert/operators answer one question quickly:
 
 > "Do we have enough game-master coverage for the rooms people are likely to book, and where are we at risk of blocking revenue?"
 
+Operator-language correction from Robert: the dashboard should say `staff coverage`, not `game-master coverage`, because the real staffing plan may not map one-to-one to a formal GM label in every shift/window.
+
 ### Primary operator actions
 1. Check the next 7-14 days for staffing coverage risk.
 2. Identify specific time windows where expected room concurrency exceeds planned staff coverage.
@@ -48,7 +50,7 @@ Purpose: orient the operator and establish privacy/recency.
 Recommended content:
 
 - Title: `Staff Coverage Forecast`
-- Subtitle: `Room demand, game-master coverage, and blocked-revenue risk for The Escape Adventures.`
+- Subtitle: `Room demand, staff coverage, and blocked-revenue risk for The Escape Adventures.`
 - Metadata row:
   - `Generated: [date/time]`
   - `Source: Sales - Pabbly Staging`
@@ -99,7 +101,7 @@ Recommended columns:
 | Date/day | `Day` | Include day-of-week first: `Sat Jun 6`. |
 | Current bookings | `On books` | Count only; no customer details. |
 | Expected rooms/time pressure | `Likely room demand` | Summarize expected rooms by daypart, e.g. `2-3 rooms around 1-4 PM`. |
-| Staff plan | `Planned GM coverage` | Show known coverage if available, e.g. `1 until 5 PM, 2-3 after`. |
+| Staff plan | `Planned staff coverage` | Show known coverage if available, e.g. `1 until 5 PM, 2-3 after`. |
 | Risk | `Staffing risk` | Red/amber/green badge plus short reason. |
 | Blocked-revenue risk | `Blocked-revenue risk` | Estimated dollars or likely blocked start count. |
 | Event flags | `Event flags` | Small badges: `Sports`, `Festival`, `School break`, `Weather`. |
@@ -153,6 +155,18 @@ Recommended pilot visualization:
 Tooltip or expandable text:
 
 - `A game master can cover one active room start/experience at a time. If staffing is below likely room concurrency, the booking engine may block otherwise sellable room starts.`
+
+### Operating windows and staffing windows
+
+Daypart windows are not universal across the week. Use venue operating hours and staffing patterns before calculating coverage risk:
+
+- Tuesday/Wednesday: appointment-only, 5 PM-11 PM, last booking 10 PM, bookings require at least 2 hours advance notice.
+- Thursday: open 5 PM-11 PM, last booking 10 PM.
+- Friday: open 12 PM-11 PM, last booking 10 PM; current staffing has one staff member onsite 12 PM-5 PM, so split into at least `12-5` and `5-close` windows.
+- Saturday: open 12 PM-11 PM, last booking 10 PM; split into at least `12-5` and `5-close` windows.
+- Sunday: open 12 PM-10 PM, last booking 9 PM; likely benefits from `12-5` and `5-close` windows if demand warrants.
+
+Historical caveat: Clockwork Odyssey opened in 2025. Pre-Clockwork demand is still useful, but normalize it as `demand vs game capacity of 2` rather than comparing raw demand directly to the post-Clockwork `demand vs game capacity of 3` era.
 
 ### Event flags on main page
 Purpose: show why demand might arrive late or exceed on-books demand.
