@@ -72,7 +72,8 @@ const metadata = forecastSnapshot.metadata ?? {};
 const chronologicalWindow = [...rows].sort((a, b) => a.days_until - b.days_until).slice(0, 7);
 
 const riskLevel = (row: ForecastRow) => {
-  if (row.concurrent_staff_needed > row.staff_availability || row.blocking_risk >= 0.25) return 'high';
+  const hasCoverageGap = row.concurrent_staff_needed > row.staff_availability && row.blocking_risk > 0;
+  if (hasCoverageGap || row.blocking_risk >= 0.25) return 'high';
   if (row.concurrent_staff_needed === row.staff_availability || row.samples === 0 || row.external_events) return 'watch';
   return 'covered';
 };
@@ -107,8 +108,11 @@ const shortRiskLabel = (row: ForecastRow) => {
 };
 
 const riskReason = (row: ForecastRow) => {
-  if (row.concurrent_staff_needed > row.staff_availability) {
+  if (row.concurrent_staff_needed > row.staff_availability && row.blocking_risk > 0) {
     return `Likely ${row.concurrent_staff_needed} room overlap, ${row.staff_availability} staff coverage planned.`;
+  }
+  if (row.weekday === 'Monday' && row.staff_availability === 0 && row.concurrent_staff_needed === 0) {
+    return 'Closed/manual day: historical bookings are treated as pre-planned coverage, not a staffing gap.';
   }
   if (row.samples === 0) {
     return 'Generated from scaffold data; live historical samples are not loaded yet.';

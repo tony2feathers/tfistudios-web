@@ -110,6 +110,11 @@ def infer_room(adventure: str) -> str | None:
     return None
 
 
+def is_test_booking_id(booking_id: str) -> bool:
+    text = booking_id.strip().upper()
+    return text.startswith(("TEST", "VALIDATION", "PABBLY-TEST", "PABBLY_TEST")) or "TEST" in text
+
+
 def game_capacity_for(day: date) -> int:
     return 3 if day >= CLOCKWORK_OPEN_DATE else 2
 
@@ -184,6 +189,9 @@ def load_bookings(sheet_id: str, tabs: list[str]) -> tuple[list[Booking], dict[s
             booking_id = str(get(row, "Booking ID") or "").strip()
             if booking_id in ("", "0"):
                 skipped[f"{tab}:blank_booking_id"] += 1
+                continue
+            if is_test_booking_id(booking_id):
+                skipped[f"{tab}:test_booking_id"] += 1
                 continue
             transaction_dt = parse_dt(get(row, "Transaction Date"))
             event_dt = parse_dt(get(row, "Booking Date"))
@@ -317,8 +325,18 @@ def build_forecast(bookings: list[Booking], audit: dict[str, Any], horizon_days:
 
             # Crude room-pressure proxy until real start-time concurrency is modeled:
             # 0-2 starts in a daypart -> 1 staff, 3-4 -> 2 staff, 5+ -> 3 staff.
-            staff_needed = min(3, max(0, math.ceil(forecast_bookings / 2)))
-            planned_staff = int(win["planned_staff"])
+            # Closed/manual days are special: if nothing is on books, historical
+            # manual/team-building activity is context, not a staffing gap. If an
+            # off-hours booking is on books, assume coverage was manually arranged.
+            on_bookings = float(on["bookings"])
+            if win_key == "closed_or_manual" and on_bookings == 0:
+                staff_needed = 0
+            else:
+                staff_needed = min(3, max(0, math.ceil(forecast_bookings / 2)))
+            if win_key == "closed_or_manual" and on_bookings > 0:
+                planned_staff = staff_needed
+            else:
+                planned_staff = int(win["planned_staff"])
             blocking_risk = 0.0
             if planned_staff > 0 and staff_needed > planned_staff:
                 blocking_risk = (staff_needed - planned_staff) / staff_needed
@@ -388,7 +406,7 @@ def build_forecast(bookings: list[Booking], audit: dict[str, Any], horizon_days:
         "source_workbook_id": sheet_id,
         "source_tabs": DEFAULT_TABS,
         "loaded_rows": audit["loaded_room_bookings"],
-        "model_version": "1.2-observed-calendar-baseline",
+        "model_version": "1.3-manual-day-and-test-filter",
         "privacy_note": "All data is PII-free and aggregate. No customer identifiers are included.",
         "external_events": len(events),
         "capacity_model": {
@@ -399,6 +417,8 @@ def build_forecast(bookings: list[Booking], audit: dict[str, Any], horizon_days:
         },
         "model_limits": [
             "Staff coverage values are planning assumptions until a live staffing-plan feed exists.",
+            "Closed/manual-day historical bookings are treated as manually covered context, not automatic coverage gaps when nothing is on books.",
+            "Booking IDs that look like validation/test/Pabbly test rows are excluded from aggregate forecasts.",
             "Window-level room pressure is based on aggregate room starts by daypart, not exact minute-by-minute game concurrency yet.",
             "Same-day rows should treat historical baseline as context; actual on-books pressure is the reliable overlap signal.",
             "Birthday/team-building rows are mapped to their associated room when the Adventure label contains a known room name.",
