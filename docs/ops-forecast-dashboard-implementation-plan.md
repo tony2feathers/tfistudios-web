@@ -17,7 +17,7 @@ Robert provided these pilot decisions on 2026-06-02:
 1. Subdomain: `ops.tfistudios.com`.
 2. Pilot auth: simple password gate is acceptable; Clerk can be used later if needed.
 3. Temporary dashboard password: CASEE generated one for initial setup. Do not commit it, store it in docs, or print it in worker logs. Robert will change it after first login.
-4. Source workbook: use copied/staging workbook `Sales - Pabbly Staging`.
+4. Source workbook: use the live production workbook `Sales` for dashboard forecasting. The staging workbook `Sales - Pabbly Staging` is only for Pabbly/parser validation, not live ops forecasting.
 5. Event research radius: 30 miles from The Escape Adventures for now.
 6. CASEE operating boundary: CASEE orchestrates and assigns this work; specialist profiles implement/research/review.
 
@@ -153,7 +153,7 @@ Then browser-check `/ops/forecast` locally.
 
 ### Task 6: Schedule nightly forecast generation
 
-**Objective:** Run forecast every night.
+**Objective:** Run forecast every night from the live `Sales` workbook so the dashboard reflects current booking data.
 
 **Preferred:** Hermes cronjob or system cron on the TFI machine.
 

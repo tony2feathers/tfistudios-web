@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate PII-free ops forecast JSON from TEA Sales Google Sheets.
 
-Read-only: fetches aggregate booking rows from the staging/copy Sales workbook and
+Read-only: fetches aggregate booking rows from the live Sales workbook and
 writes local JSON artifacts for the private /ops/forecast dashboard. It never
 writes to Google Sheets and intentionally excludes customer fields.
 """
@@ -23,7 +23,7 @@ from typing import Any
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 
-DEFAULT_SHEET_ID = "1v3Oz5rqKeU6O4BDfkw8y_JSdi62-Q_Rma0ZQGN1lOlo"
+DEFAULT_SHEET_ID = "1gRYDguwAucC8-FI2EsXiz_g9zvSsg4yPlnmmDcLuA1o"
 DEFAULT_TABS = ["Sales 2023", "Sales 2024", "Sales 2025", "Sales 2026"]
 CLOCKWORK_OPEN_DATE = date(2025, 4, 7)  # inferred from first Clockwork Odyssey booking in Sales data
 ROOM_NAMES = ["Blackbeard's Revenge", "Lab Rats", "Clockwork Odyssey"]

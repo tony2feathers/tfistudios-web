@@ -25,7 +25,12 @@ assert.ok(Array.isArray(forecast.forecast), 'forecast should include forecast ro
 assert.ok(forecast.forecast.length >= 7, 'forecast should include at least 7 days');
 assert.match(forecast.metadata.privacy_note, /PII-free|No customer/i);
 assert.ok(forecast.metadata.loaded_rows > 0, 'forecast should be generated from real aggregate booking rows, not scaffold data');
-assert.ok(forecast.metadata.audit.skipped_counts['Sales 2026:test_booking_id'] > 0, 'forecast should exclude Pabbly validation/test booking rows');
+assert.equal(forecast.metadata.source_workbook_id, '1gRYDguwAucC8-FI2EsXiz_g9zvSsg4yPlnmmDcLuA1o', 'forecast should use the live Sales workbook, not the Pabbly staging copy');
+assert.notEqual(forecast.metadata.source_workbook_id, '1v3Oz5rqKeU6O4BDfkw8y_JSdi62-Q_Rma0ZQGN1lOlo', 'forecast must not use Sales - Pabbly Staging');
+assert.ok(
+  Number.isInteger(forecast.metadata.audit.skipped_counts['Sales 2026:test_booking_id'] ?? 0),
+  'forecast should track excluded Pabbly validation/test booking rows when present'
+);
 assert.ok(forecast.metadata.capacity_model, 'forecast should document the game-capacity normalization model');
 assert.equal(forecast.metadata.capacity_model.pre_clockwork_capacity, 2, 'pre-Clockwork capacity should be modeled as 2 games');
 assert.equal(forecast.metadata.capacity_model.current_game_capacity, 3, 'current capacity should be modeled as 3 games');
