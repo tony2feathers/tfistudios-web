@@ -1,50 +1,17 @@
 [
   {
-    "event_name": "Richmond SailFest",
-    "start_date": "2026-06-12",
-    "end_date": "2026-06-14",
-    "location": "3101 Wharf Street, Richmond, VA",
+    "event_name": "Chesterfield County Public Schools summer break window",
+    "start_date": "2026-06-04",
+    "end_date": "2026-07-30",
+    "location": "Chesterfield County Public Schools, Chesterfield County, VA",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
+    "expected_demand_effect": "high",
     "confidence": "medium",
-    "source_url": "https://www.visitrichmondva.com/event/richmond-sailfest/49746/",
-    "notes": "Featured on Richmond Region Tourism events. Waterfront/family-style festival likely to draw Richmond-area visitors and weekend groups; exact attendance not verified in this pass."
+    "source_url": "https://www.oneccps.org/page/calendars",
+    "notes": "CCPS calendar page showed the traditional calendar ending June 4 and summer school beginning later in June. Summer break is already underway during the lookahead window and is a strong family/daytime-booking driver."
   },
   {
-    "event_name": "Summer Kickoff 90s Party",
-    "start_date": "2026-06-13",
-    "end_date": "2026-06-13",
-    "location": "Fort Gregg-Adams / Fort Lee MWR area, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://gregg-adams.armymwr.com/calendar",
-    "notes": "Listed on the Fort Gregg-Adams/Fort Lee MWR public calendar for June 13. Demand effect likely small and may depend on patron eligibility/public access."
-  },
-  {
-    "event_name": "Virginia Mass Care Symposium - 2026",
-    "start_date": "2026-06-15",
-    "end_date": "2026-06-15",
-    "location": "Capital One West Creek Campus, Richmond/Goochland area, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://www.eventbrite.com/d/va--chesterfield/events/",
-    "notes": "Eventbrite listing visible for June 15. Professional conference may affect corporate/group outing interest modestly; included as a test of aggregator coverage, not a top family-demand signal."
-  },
-  {
-    "event_name": "Juneteenth - County Offices and Courts Closed",
-    "start_date": "2026-06-19",
-    "end_date": "2026-06-19",
-    "location": "Chesterfield County, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/Calendar.aspx?EID=5869&month=6&year=2026&day=8&calType=0",
-    "notes": "Local government closure on a Friday. Holiday/long-weekend pattern could lift family and group booking opportunities."
-  },
-  {
-    "event_name": "Premier Girls Fastpitch",
+    "event_name": "Premier Girls Fastpitch tournament",
     "start_date": "2026-06-19",
     "end_date": "2026-06-21",
     "location": "The Diamonds at Iron Bridge, Chesterfield, VA",
@@ -52,18 +19,18 @@
     "expected_demand_effect": "high",
     "confidence": "high",
     "source_url": "https://playchesterfield.com/highlights/play-chesterfield-2026-sports-events/",
-    "notes": "Play Chesterfield identifies this as an elite girls fastpitch tournament at a nearby Chesterfield facility. Strong family/team travel signal for the June 19-21 weekend."
+    "notes": "Play Chesterfield lists Premier Girls Fastpitch at the Diamonds at Iron Bridge. Youth/club sports tournaments bring athletes, parents, siblings, and downtime group demand close to TEA."
   },
   {
     "event_name": "Juneteenth Celebration 2026",
     "start_date": "2026-06-20",
     "end_date": "2026-06-20",
-    "location": "Dorey Park, 2999 Darbytown Road, Henrico, VA",
+    "location": "Dorey Park, Henrico, VA",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
+    "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://henrico.gov/calendar/juneteenth-celebration-2026/",
-    "notes": "Free-admission community celebration with vendor fair, kids zone, live entertainment, and fireworks finale. Large family/community draw in eastern Henrico, within the Richmond-region primary market."
+    "notes": "Henrico calendar lists Juneteenth Celebration at Dorey Park from 4:00 PM to 10:00 PM. Family/community festival in Varina/Henrico with evening traffic and possible pre-event activity demand."
   },
   {
     "event_name": "Play All Day - City Activities",
@@ -73,11 +40,11 @@
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "medium",
-    "source_url": "https://www.colonialheightsva.gov/Calendar.aspx?EID=4665&month=6&year=2026&day=8&calType=0",
-    "notes": "Colonial Heights calendar lists Play All Day city activities on June 21. Local family/community signal, but scope/attendance not verified."
+    "source_url": "https://www.colonialheightsva.gov/calendar.aspx",
+    "notes": "Colonial Heights CivicEngage calendar lists Play All Day - City Activities on June 21 from 7:00 AM to 7:00 PM. Local family/community activity; likely small-to-moderate effect only."
   },
   {
-    "event_name": "AJGA Play Chesterfield Junior Championship",
+    "event_name": "American Junior Golf Association / Play Chesterfield Junior Championship",
     "start_date": "2026-06-22",
     "end_date": "2026-06-25",
     "location": "The Golf Club at The Highlands, Chesterfield, VA",
@@ -85,51 +52,62 @@
     "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://playchesterfield.com/highlights/play-chesterfield-2026-sports-events/",
-    "notes": "Nationally recognized junior golf tournament listed by Play Chesterfield. Likely brings athletes/families into Chesterfield during a Monday-Thursday window."
+    "notes": "Play Chesterfield lists AJGA June 22-25. Youth golf tournament should bring traveling families but less dense group downtime than field-sport weekends."
   },
   {
-    "event_name": "2up 2Down Festival",
-    "start_date": "2026-06-24",
-    "end_date": "2026-06-24",
-    "location": "Hill City Church, Richmond, VA",
+    "event_name": "Fireworks on the Appomattox",
+    "start_date": "2026-06-27",
+    "end_date": "2026-06-27",
+    "location": "Hopewell, VA / Appomattox River area",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://www.eventbrite.com/e/2up-2down-festival-tickets-1984819348100?aff=ebdssbcitybrowse",
-    "notes": "Eventbrite listing visible for June 24 and marked nearly full. Included because it is a named festival in the Richmond market; likely a modest, localized demand signal."
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.hopewellva.gov/calendar.aspx",
+    "notes": "Hopewell city calendar lists Fireworks on the Appomattox at 9:30 PM. Nearby family evening event may lift earlier-day demand and affect local traffic."
   },
   {
     "event_name": "Multicultural Festival: Imagine 2026",
     "start_date": "2026-06-27",
     "end_date": "2026-06-27",
-    "location": "Henrico County, VA",
+    "location": "Henrico, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://henrico.gov/calendar/multicultural-festival-imagine-2026/",
-    "notes": "Henrico calendar lists a multicultural festival on June 27. Family/community festival signal; details should be rechecked on the event page before operational decisions."
+    "notes": "Henrico calendar lists the festival from 1:00 PM to 8:00 PM. Family/community festival with regional draw; likely modest positive demand and traffic impact."
   },
   {
-    "event_name": "RVA All-White Summer Kickoff Music Fest",
+    "event_name": "SPLASH! Water Parade presented by The Original Bomb Pop",
     "start_date": "2026-06-27",
-    "end_date": "2026-06-27",
-    "location": "Kanawha Plaza, Richmond, VA",
-    "distance_context": "primary_draw",
+    "end_date": "2026-07-30",
+    "location": "Kings Dominion, Doswell, VA",
+    "distance_context": "secondary_50mi",
     "expected_demand_effect": "medium",
-    "confidence": "medium",
-    "source_url": "https://www.eventbrite.com/e/rva-all-white-summer-kickoff-music-fest-wdcvybe-black-alley-legacy-band-hd-tickets-1980439106680?aff=ebdssbcitybrowse",
-    "notes": "Eventbrite listing visible for June 27 at noon and marked nearly full. Adult/music draw in Richmond; could affect date-night demand more than family demand."
+    "confidence": "high",
+    "source_url": "https://www.sixflags.com/kingsdominion/events/splash-water-parade",
+    "notes": "Kings Dominion lists this family event June 27-August 9, Tuesday-Sunday; end date clipped to the 45-day window. Secondary-radius major family attraction; more likely broad family leisure signal than direct Chester traffic."
   },
   {
     "event_name": "A Henrico Fourth: Dorey Park",
     "start_date": "2026-07-03",
     "end_date": "2026-07-03",
-    "location": "Dorey Park, 2999 Darbytown Road, Henrico, VA",
+    "location": "Dorey Park, Henrico, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "high",
     "confidence": "high",
     "source_url": "https://henrico.gov/calendar/a-henrico-fourth-dorey-park/",
-    "notes": "Large Independence Day 250th-anniversary event with free admission/parking, fireworks, laser light show, live music, and traffic advisories. Strong family/community draw."
+    "notes": "Henrico calendar lists July 3, 6:00 PM-10:00 PM. Large Independence Day family/fireworks event in Varina/Henrico; likely traffic and local outing demand."
+  },
+  {
+    "event_name": "Star-Spangled Nights",
+    "start_date": "2026-07-03",
+    "end_date": "2026-07-05",
+    "location": "Kings Dominion, Doswell, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "high",
+    "confidence": "high",
+    "source_url": "https://www.sixflags.com/kingsdominion/events/star-spangled-nights",
+    "notes": "Kings Dominion lists July 3-5 fireworks/holiday event. Major family attraction within secondary radius; may compete for family entertainment spend but also signals elevated leisure demand over holiday weekend."
   },
   {
     "event_name": "A Henrico Fourth: Crump Park",
@@ -137,10 +115,21 @@
     "end_date": "2026-07-04",
     "location": "Crump Park, Henrico, VA",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
+    "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://henrico.gov/calendar/a-henrico-fourth-crump-park/",
-    "notes": "Second day of Henrico's Independence Day 250th-anniversary celebration, listed alongside the Dorey Park event. Strong holiday/family draw; verify Crump-specific details before staffing changes."
+    "notes": "Henrico calendar lists July 4, 5:00 PM-10:00 PM. Family Independence Day event; less Chester-adjacent than Dorey Park but still within primary draw."
+  },
+  {
+    "event_name": "NEW! Drone & Fireworks Spectacular: Ignite the Night",
+    "start_date": "2026-07-10",
+    "end_date": "2026-07-30",
+    "location": "Kings Dominion, Doswell, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.sixflags.com/kingsdominion/events/new-drone-and-fireworks-spectacular-ignite-the-night",
+    "notes": "Kings Dominion lists this Friday-Sunday event July 10-August 9; end date clipped to the 45-day window. Large family attraction, mainly a secondary-radius leisure demand signal."
   },
   {
     "event_name": "Community Appreciation Day",
@@ -151,6 +140,17 @@
     "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://www.hopewellva.gov/calendar.aspx",
-    "notes": "Hopewell calendar featured event for July 18. Nearby Tri-Cities community event that could create family/group traffic in the southside draw area."
+    "notes": "Hopewell calendar featured Community Appreciation Day on July 18 at 3500 River Road. Nearby family/community event; likely moderate daytime demand and local traffic."
+  },
+  {
+    "event_name": "Virginia Commonwealth Games main weekend",
+    "start_date": "2026-07-24",
+    "end_date": "2026-07-26",
+    "location": "Chesterfield County / Richmond region venues",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "high",
+    "confidence": "high",
+    "source_url": "https://playchesterfield.com/highlights/play-chesterfield-2026-sports-events/",
+    "notes": "Play Chesterfield lists Virginia Commonwealth Games main games weekend July 24-26. Multi-sport event bringing athletes/families from across Virginia; strong group/family booking signal."
   }
 ]
