@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_date": "2026-06-25",
+    "generated_date": "2026-06-26",
     "source_workbook_id": "1gRYDguwAucC8-FI2EsXiz_g9zvSsg4yPlnmmDcLuA1o",
     "source_tabs": [
       "Sales 2023",
@@ -8,7 +8,7 @@
       "Sales 2025",
       "Sales 2026"
     ],
-    "loaded_rows": 2571,
+    "loaded_rows": 2573,
     "model_version": "1.3-manual-day-and-test-filter",
     "privacy_note": "All data is PII-free and aggregate. No customer identifiers are included.",
     "external_events": 13,
@@ -37,9 +37,9 @@
         "Sales 2023": 787,
         "Sales 2024": 644,
         "Sales 2025": 831,
-        "Sales 2026": 489
+        "Sales 2026": 491
       },
-      "loaded_room_bookings": 2571,
+      "loaded_room_bookings": 2573,
       "skipped_counts": {
         "Sales 2023:blank_booking_id": 33,
         "Sales 2024:blank_booking_id": 38,
@@ -47,7 +47,7 @@
         "Sales 2026:blank_booking_id": 64
       },
       "room_counts": {
-        "Blackbeard's Revenge": 1350,
+        "Blackbeard's Revenge": 1352,
         "Lab Rats": 792,
         "Clockwork Odyssey": 429
       },
@@ -55,62 +55,15 @@
         "2023": 736,
         "2024": 621,
         "2025": 760,
-        "2026": 454
+        "2026": 456
       }
     }
   },
   "forecast": [
     {
-      "date": "2026-06-25",
-      "weekday": "Thursday",
-      "days_until": 0,
-      "samples": 16,
-      "on_books_bookings": 1.0,
-      "on_books_guests": 5.0,
-      "baseline_bookings": 0.9,
-      "baseline_guests": 5.0,
-      "forecast_bookings_low": 0.0,
-      "forecast_bookings_base": 1.0,
-      "forecast_bookings_high": 1.0,
-      "forecast_guests_low": 5.0,
-      "forecast_guests_base": 5.0,
-      "forecast_guests_high": 5.0,
-      "forecast_gross_base": 139.0,
-      "staffing": "5-11 PM: 1 staff planned",
-      "external_events": "American Junior Golf Association Play Chesterfield Junior Championship, Bands in Residence at Kings Dominion",
-      "expected_rooms": 1.0,
-      "concurrent_staff_needed": 1,
-      "staff_availability": 1,
-      "blocking_risk": 0.0,
-      "blocked_gross_potential": 0.0,
-      "windows": [
-        {
-          "key": "thu_5_close",
-          "label": "5-11 PM",
-          "planned_staff": 1,
-          "staffing_note": "Last booking 10 PM.",
-          "samples": 16,
-          "on_books_room_starts": 1.0,
-          "on_books_guests": 5.0,
-          "on_books_rooms": {
-            "Blackbeard's Revenge": 1
-          },
-          "baseline_room_starts": 0.9,
-          "forecast_room_starts_low": 0.0,
-          "forecast_room_starts_base": 1.0,
-          "forecast_room_starts_high": 1.0,
-          "forecast_guests_base": 5.0,
-          "staff_needed_estimate": 1,
-          "coverage_gap": 0,
-          "blocking_risk": 0.0,
-          "blocked_gross_potential": 0.0
-        }
-      ]
-    },
-    {
       "date": "2026-06-26",
       "weekday": "Friday",
-      "days_until": 1,
+      "days_until": 0,
       "samples": 32,
       "on_books_bookings": 1.0,
       "on_books_guests": 5.0,
@@ -176,7 +129,7 @@
     {
       "date": "2026-06-27",
       "weekday": "Saturday",
-      "days_until": 2,
+      "days_until": 1,
       "samples": 32,
       "on_books_bookings": 1.0,
       "on_books_guests": 6.0,
@@ -242,7 +195,7 @@
     {
       "date": "2026-06-28",
       "weekday": "Sunday",
-      "days_until": 3,
+      "days_until": 2,
       "samples": 34,
       "on_books_bookings": 1.0,
       "on_books_guests": 3.0,
@@ -308,7 +261,7 @@
     {
       "date": "2026-06-29",
       "weekday": "Monday",
-      "days_until": 4,
+      "days_until": 3,
       "samples": 17,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -353,7 +306,7 @@
     {
       "date": "2026-06-30",
       "weekday": "Tuesday",
-      "days_until": 5,
+      "days_until": 4,
       "samples": 16,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -398,7 +351,7 @@
     {
       "date": "2026-07-01",
       "weekday": "Wednesday",
-      "days_until": 6,
+      "days_until": 5,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -443,7 +396,7 @@
     {
       "date": "2026-07-02",
       "weekday": "Thursday",
-      "days_until": 7,
+      "days_until": 6,
       "samples": 13,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -488,7 +441,7 @@
     {
       "date": "2026-07-03",
       "weekday": "Friday",
-      "days_until": 8,
+      "days_until": 7,
       "samples": 24,
       "on_books_bookings": 1.0,
       "on_books_guests": 8.0,
@@ -554,7 +507,7 @@
     {
       "date": "2026-07-04",
       "weekday": "Saturday",
-      "days_until": 9,
+      "days_until": 8,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -618,7 +571,7 @@
     {
       "date": "2026-07-05",
       "weekday": "Sunday",
-      "days_until": 10,
+      "days_until": 9,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -682,7 +635,7 @@
     {
       "date": "2026-07-06",
       "weekday": "Monday",
-      "days_until": 11,
+      "days_until": 10,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -727,7 +680,7 @@
     {
       "date": "2026-07-07",
       "weekday": "Tuesday",
-      "days_until": 12,
+      "days_until": 11,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -772,7 +725,7 @@
     {
       "date": "2026-07-08",
       "weekday": "Wednesday",
-      "days_until": 13,
+      "days_until": 12,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -817,7 +770,7 @@
     {
       "date": "2026-07-09",
       "weekday": "Thursday",
-      "days_until": 14,
+      "days_until": 13,
       "samples": 13,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -862,7 +815,7 @@
     {
       "date": "2026-07-10",
       "weekday": "Friday",
-      "days_until": 15,
+      "days_until": 14,
       "samples": 24,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -926,7 +879,7 @@
     {
       "date": "2026-07-11",
       "weekday": "Saturday",
-      "days_until": 16,
+      "days_until": 15,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -990,7 +943,7 @@
     {
       "date": "2026-07-12",
       "weekday": "Sunday",
-      "days_until": 17,
+      "days_until": 16,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1054,7 +1007,7 @@
     {
       "date": "2026-07-13",
       "weekday": "Monday",
-      "days_until": 18,
+      "days_until": 17,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1099,7 +1052,7 @@
     {
       "date": "2026-07-14",
       "weekday": "Tuesday",
-      "days_until": 19,
+      "days_until": 18,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1144,7 +1097,7 @@
     {
       "date": "2026-07-15",
       "weekday": "Wednesday",
-      "days_until": 20,
+      "days_until": 19,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1179,6 +1132,51 @@
           "forecast_room_starts_base": 0.8,
           "forecast_room_starts_high": 1.8,
           "forecast_guests_base": 4.3,
+          "staff_needed_estimate": 1,
+          "coverage_gap": 0,
+          "blocking_risk": 0.0,
+          "blocked_gross_potential": 0.0
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "weekday": "Thursday",
+      "days_until": 20,
+      "samples": 13,
+      "on_books_bookings": 0.0,
+      "on_books_guests": 0.0,
+      "baseline_bookings": 1.2,
+      "baseline_guests": 7.0,
+      "forecast_bookings_low": 1.0,
+      "forecast_bookings_base": 1.2,
+      "forecast_bookings_high": 2.0,
+      "forecast_guests_low": 7.0,
+      "forecast_guests_base": 7.0,
+      "forecast_guests_high": 7.0,
+      "forecast_gross_base": 205.54,
+      "staffing": "5-11 PM: 1 staff planned",
+      "external_events": "SPLASH! Water Parade at Kings Dominion, Drone & Fireworks Spectacular: Ignite the Night at Kings Dominion, Bands in Residence at Kings Dominion",
+      "expected_rooms": 1.2,
+      "concurrent_staff_needed": 1,
+      "staff_availability": 1,
+      "blocking_risk": 0.0,
+      "blocked_gross_potential": 0.0,
+      "windows": [
+        {
+          "key": "thu_5_close",
+          "label": "5-11 PM",
+          "planned_staff": 1,
+          "staffing_note": "Last booking 10 PM.",
+          "samples": 13,
+          "on_books_room_starts": 0.0,
+          "on_books_guests": 0.0,
+          "on_books_rooms": {},
+          "baseline_room_starts": 1.2,
+          "forecast_room_starts_low": 1.0,
+          "forecast_room_starts_base": 1.2,
+          "forecast_room_starts_high": 2.0,
+          "forecast_guests_base": 7.0,
           "staff_needed_estimate": 1,
           "coverage_gap": 0,
           "blocking_risk": 0.0,
