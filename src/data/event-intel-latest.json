@@ -1,189 +1,134 @@
 [
   {
-    "event_name": "Freedom 250 Fireworks at Fort Lee",
-    "start_date": "2026-07-02",
-    "end_date": "2026-07-02",
-    "location": "Fort Gregg-Adams / Fort Lee, VA",
+    "event_name": "Fort Gregg-Adams MWR Dive-In Movie",
+    "start_date": "2026-07-11",
+    "end_date": "2026-07-11",
+    "location": "Fort Gregg-Adams / Fort Lee MWR, VA",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
-    "confidence": "high",
-    "source_url": "https://lee.armymwr.com/calendar/event/freedom-250-fireworks-fort-lee/7308536/110850",
-    "notes": "Public MWR calendar lists 5-10 p.m. fireworks event celebrating 250 years of independence. Strong family/group draw close to Chester; likely traffic and same-night demand effects."
-  },
-  {
-    "event_name": "Chesterfield County Fourth of July Celebration",
-    "start_date": "2026-07-04",
-    "end_date": "2026-07-04",
-    "location": "Chesterfield County Fairgrounds, Chesterfield, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
-    "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/calendar.aspx?month=7&year=2026",
-    "notes": "County calendar lists Fourth of July Celebration, 5-10 p.m. at Chesterfield County Fairgrounds. Very relevant family/community draw in TEA's primary area."
-  },
-  {
-    "event_name": "A Henrico Fourth: Dorey Park",
-    "start_date": "2026-07-03",
-    "end_date": "2026-07-03",
-    "location": "Dorey Park, Henrico County, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/a-henrico-fourth-dorey-park/",
-    "notes": "Henrico calendar lists 6-10 p.m. Independence Day event. Relevant family draw in Varina/east Henrico, but farther from Chester than Chesterfield/Fort Gregg-Adams events."
-  },
-  {
-    "event_name": "A Henrico Fourth: Crump Park",
-    "start_date": "2026-07-04",
-    "end_date": "2026-07-04",
-    "location": "Crump Park, Henrico County, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/a-henrico-fourth-crump-park/",
-    "notes": "Henrico calendar lists 5-10 p.m. Independence Day event. Family/community draw that may compete with or support holiday-weekend outing demand."
-  },
-  {
-    "event_name": "Colonial Heights 4th of July Fire Works Show",
-    "start_date": "2026-07-04",
-    "end_date": "2026-07-04",
-    "location": "Colonial Heights, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
+    "expected_demand_effect": "low",
     "confidence": "medium",
-    "source_url": "https://www.colonialheightsva.gov/calendar.aspx?month=7&year=2026",
-    "notes": "City calendar lists 4th of July Fire Works Show, 9:15-10 p.m. Location details were not exposed in the extracted calendar row, but the event is within the immediate southside draw area."
+    "source_url": "https://lee.armymwr.com/calendar?date_start=2026-07-06&date_end=2026-08-20",
+    "notes": "MWR calendar lists a July 11 Dive-In Movie at 7 p.m.; relevant mainly for military-family leisure patterns near Fort Gregg-Adams."
   },
   {
-    "event_name": "Liberty or Death Reenactment: The Fourth of July 2026",
-    "start_date": "2026-07-04",
-    "end_date": "2026-07-04",
-    "location": "St. John's Church Foundation, Richmond, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
+    "event_name": "Kings Dominion Drone & Fireworks Spectacular: Ignite the Night",
+    "start_date": "2026-07-10",
+    "end_date": "2026-08-09",
+    "location": "Kings Dominion, Doswell, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/liberty-or-death-reenactment%3a-the-fourth-of-july-2026/49561/",
-    "notes": "Richmond Region Tourism featured event for July 4. History/holiday-oriented draw; more Richmond-core than Chester, so likely a low direct bookings effect."
+    "source_url": "https://www.sixflags.com/kingsdominion/events/new-drone-and-fireworks-spectacular-ignite-the-night",
+    "notes": "Large regional family attraction running Friday-Sunday nights July 10-Aug. 9; could compete for family/date-night spend and affect weekend travel patterns along I-95."
   },
   {
-    "event_name": "Community Appreciation Day",
+    "event_name": "Kings Dominion SPLASH! Water Parade",
+    "start_date": "2026-07-06",
+    "end_date": "2026-08-09",
+    "location": "Kings Dominion, Doswell, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.sixflags.com/kingsdominion/events/splash-water-parade",
+    "notes": "Ongoing family-focused summer park event listed as June 27-Aug. 9, Tuesday-Sunday; included from run date forward."
+  },
+  {
+    "event_name": "Hopewell Community Appreciation Day",
     "start_date": "2026-07-18",
     "end_date": "2026-07-18",
-    "location": "Mathis Park Baseball & Softball Complex, Hopewell, VA",
+    "location": "3500 River Road, Hopewell, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.hopewellva.gov/calendar.aspx?month=7&year=2026",
-    "notes": "Hopewell calendar lists Community Appreciation Day, 6-10 p.m. at Mathis Park. Local family/community event near Chester/Hopewell corridor."
+    "source_url": "https://www.hopewellva.gov/calendar.aspx",
+    "notes": "Featured Hopewell city/community event on July 18; likely family/community draw in a primary TEA market."
   },
   {
-    "event_name": "Splash Smart Henrico! July Water Safety Event",
+    "event_name": "Henrico Splash Smart Water Safety Event",
     "start_date": "2026-07-18",
     "end_date": "2026-07-18",
-    "location": "Henrico County, VA",
+    "location": "Eastern Henrico Recreation Center, Henrico, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/splash-smart-henrico-july-water-safety-event/",
-    "notes": "Henrico calendar lists 10 a.m.-1 p.m. water safety event. Family-oriented but short daytime program; low direct demand effect."
+    "source_url": "https://henrico.gov/calendar/",
+    "notes": "Free county water-safety event, 10 a.m.-1 p.m.; family/community relevance but likely modest effect on Chester bookings."
+  },
+  {
+    "event_name": "Richmond Flying Squirrels Home Stand: Erie and Hartford",
+    "start_date": "2026-07-17",
+    "end_date": "2026-07-26",
+    "location": "CarMax Park / Richmond Flying Squirrels ballpark, Richmond, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.milb.com/richmond/schedule/2026-07",
+    "notes": "Ten home dates listed July 17-26 with family/theme nights including Christmas in July, Military Appreciation Day, and Summer Music Series; can pull family/date-night demand toward Richmond."
   },
   {
     "event_name": "Virginia Commonwealth Games Main Games Weekend",
     "start_date": "2026-07-24",
     "end_date": "2026-07-26",
-    "location": "Chesterfield County / Richmond region venues, VA",
+    "location": "Chesterfield County venues including River City Sportsplex, Chesterfield, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "high",
-    "confidence": "medium",
+    "confidence": "high",
     "source_url": "https://playchesterfield.com/highlights/play-chesterfield-2026-sports-events/",
-    "notes": "Play Chesterfield's 2026 sports event calendar lists Virginia Commonwealth Games main games weekend July 24-26 as a premier multi-sport event bringing athletes of all ages from across Virginia. Exact venue split not fully extracted; strong youth/family/group travel signal."
+    "notes": "Play Chesterfield describes the July 24-26 Main Games Weekend as a premier multi-sport event bringing athletes of all ages and abilities from across Virginia; strong potential for visiting teams/families and group bookings."
   },
   {
-    "event_name": "Non-Profit Collaborative Resource Fair",
-    "start_date": "2026-07-24",
-    "end_date": "2026-07-24",
-    "location": "Beulah Recreation Center, Chesterfield, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/calendar.aspx?month=7&year=2026",
-    "notes": "Chesterfield County calendar lists 10 a.m.-2 p.m. resource fair. Community draw near TEA, but daytime/low entertainment fit; included for local traffic awareness."
-  },
-  {
-    "event_name": "Henrico Community Band Summer Concerts",
-    "start_date": "2026-07-30",
-    "end_date": "2026-07-30",
-    "location": "Henrico County, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/henrico-community-band-summer-concerts-2026/2026-07-30/",
-    "notes": "Henrico calendar lists 7-8:30 p.m. summer concert. Local evening entertainment that may modestly affect date-night/family outing patterns in Henrico."
-  },
-  {
-    "event_name": "Churn it Up",
-    "start_date": "2026-08-02",
-    "end_date": "2026-08-02",
-    "location": "Henrico County, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://henrico.gov/calendar/churn-it-up/",
-    "notes": "Henrico calendar lists 2-3:30 p.m. event. Likely family/history/parks programming; small direct effect but within draw area."
-  },
-  {
-    "event_name": "National Night Out 2026",
+    "event_name": "Henrico National Night Out: EHRC 2026",
     "start_date": "2026-08-04",
     "end_date": "2026-08-04",
-    "location": "Chesterfield County and Henrico County, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/calendar.aspx?month=8&year=2026",
-    "notes": "Chesterfield calendar lists National Night Out all day; Henrico calendar also lists National Night Out: EHRC 2026 from 6-8 p.m. Community/neighborhood events can pull families on a Tuesday evening and affect staffing expectations."
-  },
-  {
-    "event_name": "Colonial Heights multi-field athletic rentals / possible tournament block",
-    "start_date": "2026-08-06",
-    "end_date": "2026-08-10",
-    "location": "Shepherd Stadium Complex, Colonial Heights High School, Lakeview Elementary fields, Colonial Heights, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "low",
-    "source_url": "https://www.colonialheightsva.gov/calendar.aspx?month=8&year=2026",
-    "notes": "Colonial Heights calendar shows repeated 8 a.m.-10 p.m. rentals across multiple baseball/softball fields Aug. 6-10. This pattern looks tournament-like, but the public calendar exposes rentals rather than a named event; included as low-confidence sports demand signal."
-  },
-  {
-    "event_name": "EFMP Back to School Bash & Movie Night",
-    "start_date": "2026-08-06",
-    "end_date": "2026-08-06",
-    "location": "Fort Gregg-Adams / Fort Lee, VA",
+    "location": "Eastern Henrico Recreation Center, Henrico, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://lee.armymwr.com/calendar?date=08%2F01%2F2026&mode=agenda",
-    "notes": "Fort Gregg-Adams MWR August agenda lists 5 p.m. back-to-school bash and movie night, limited to registered EFMP family members. Family-oriented but restricted audience, so low general bookings effect."
+    "source_url": "https://henrico.gov/calendar/",
+    "notes": "Annual Henrico event with inflatables, train rides, sports, line dancing, vendors and free food while supplies last; localized family/community draw."
+  },
+  {
+    "event_name": "Richmond Flying Squirrels Home Stand: Reading",
+    "start_date": "2026-08-04",
+    "end_date": "2026-08-09",
+    "location": "CarMax Park / Richmond Flying Squirrels ballpark, Richmond, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.milb.com/richmond/schedule/2026-08",
+    "notes": "Six-game home stand Aug. 4-9 with promotions/theme nights including 804 Day, Virginia Tech Night, Saturday Night, and Virginia Tribal Heritage Night."
+  },
+  {
+    "event_name": "Richmond Jazz and Music Festival",
+    "start_date": "2026-08-08",
+    "end_date": "2026-08-09",
+    "location": "Maymont, Richmond, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "high",
+    "confidence": "high",
+    "source_url": "https://www.richmondjazzandmusicfestival.com/schedule",
+    "notes": "Two-day major regional music festival Aug. 8-9; high likely impact on Richmond hotel/traffic/leisure demand and date-night alternatives."
   },
   {
     "event_name": "Henrico Back to School Bash",
     "start_date": "2026-08-09",
     "end_date": "2026-08-09",
-    "location": "Henrico County, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/back-to-school-bash/",
-    "notes": "Henrico calendar lists Back to School Bash, 4-6 p.m. on Aug. 9. Family-oriented seasonal event inside the lookahead window; may mark transition toward school-year booking patterns."
-  },
-  {
-    "event_name": "On the Air Radio Players – Summer 2026",
-    "start_date": "2026-08-12",
-    "end_date": "2026-08-13",
-    "location": "Henrico County, VA",
+    "location": "Belmont Recreation Center, Henrico, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/on-the-air-radio-players-summer/2026-08-12/",
-    "notes": "Henrico calendar lists evening performances Aug. 12 and Aug. 13, 7-8:30 p.m. Arts/event-night signal; likely low direct effect for Chester but relevant to regional evening entertainment."
+    "source_url": "https://henrico.gov/calendar/",
+    "notes": "Henrico event listed as a back-to-school party with games and activities; family relevance but limited geographic pull."
+  },
+  {
+    "event_name": "NASCAR Cup Series Cook Out 400 Weekend",
+    "start_date": "2026-08-14",
+    "end_date": "2026-08-15",
+    "location": "Richmond Raceway, 600 East Laburnum Avenue, Richmond, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "high",
+    "confidence": "high",
+    "source_url": "https://www.visitrichmondva.com/event/nascar-cup-series-cook-out-400/47900/",
+    "notes": "Visit Richmond lists the Cup race on Aug. 15 and notes an Aug. 14 NASCAR Craftsman Truck Series finale, Fan Zone festival, music, driver appearances, RV camping and tailgating; major traffic/hotel/leisure signal."
   }
 ]
