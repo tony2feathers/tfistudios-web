@@ -1,134 +1,145 @@
 [
   {
-    "event_name": "Fort Gregg-Adams MWR Dive-In Movie",
-    "start_date": "2026-07-11",
-    "end_date": "2026-07-11",
-    "location": "Fort Gregg-Adams / Fort Lee MWR, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://lee.armymwr.com/calendar?date_start=2026-07-06&date_end=2026-08-20",
-    "notes": "MWR calendar lists a July 11 Dive-In Movie at 7 p.m.; relevant mainly for military-family leisure patterns near Fort Gregg-Adams."
-  },
-  {
-    "event_name": "Kings Dominion Drone & Fireworks Spectacular: Ignite the Night",
-    "start_date": "2026-07-10",
-    "end_date": "2026-08-09",
-    "location": "Kings Dominion, Doswell, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.sixflags.com/kingsdominion/events/new-drone-and-fireworks-spectacular-ignite-the-night",
-    "notes": "Large regional family attraction running Friday-Sunday nights July 10-Aug. 9; could compete for family/date-night spend and affect weekend travel patterns along I-95."
-  },
-  {
-    "event_name": "Kings Dominion SPLASH! Water Parade",
-    "start_date": "2026-07-06",
-    "end_date": "2026-08-09",
-    "location": "Kings Dominion, Doswell, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.sixflags.com/kingsdominion/events/splash-water-parade",
-    "notes": "Ongoing family-focused summer park event listed as June 27-Aug. 9, Tuesday-Sunday; included from run date forward."
-  },
-  {
     "event_name": "Hopewell Community Appreciation Day",
     "start_date": "2026-07-18",
     "end_date": "2026-07-18",
-    "location": "3500 River Road, Hopewell, VA",
+    "location": "Mathis Park Baseball & Softball Complex, 3500 River Road, Hopewell, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://www.hopewellva.gov/calendar.aspx",
-    "notes": "Featured Hopewell city/community event on July 18; likely family/community draw in a primary TEA market."
+    "notes": "Free city recreation/community event, 6-10 pm, with inflatables, games, giveaways, and food while supplies last. Family-oriented and close enough to Chester to plausibly affect same-day local family demand."
   },
   {
-    "event_name": "Henrico Splash Smart Water Safety Event",
+    "event_name": "Splash Smart Henrico! July Water Safety Event",
     "start_date": "2026-07-18",
     "end_date": "2026-07-18",
-    "location": "Eastern Henrico Recreation Center, Henrico, VA",
+    "location": "Eastern Henrico Recreation Center, 1440 N. Laburnum Avenue, Henrico, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
     "source_url": "https://henrico.gov/calendar/",
-    "notes": "Free county water-safety event, 10 a.m.-1 p.m.; family/community relevance but likely modest effect on Chester bookings."
+    "notes": "Free family water-safety/community event, 10 am-1 pm. Modest demand signal for family outings in the Richmond/Henrico draw area."
   },
   {
-    "event_name": "Richmond Flying Squirrels Home Stand: Erie and Hartford",
-    "start_date": "2026-07-17",
-    "end_date": "2026-07-26",
-    "location": "CarMax Park / Richmond Flying Squirrels ballpark, Richmond, VA",
+    "event_name": "Triple Play Tournament",
+    "start_date": "2026-07-18",
+    "end_date": "2026-07-18",
+    "location": "Fort Gregg-Adams / Fort Lee MWR, VA",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.milb.com/richmond/schedule/2026-07",
-    "notes": "Ten home dates listed July 17-26 with family/theme nights including Christmas in July, Military Appreciation Day, and Summer Music Series; can pull family/date-night demand toward Richmond."
+    "expected_demand_effect": "low",
+    "confidence": "medium",
+    "source_url": "https://lee.armymwr.com/calendar",
+    "notes": "MWR sports/recreation tournament listed for July 18 at 9 am. Likely small/local, but relevant because Fort Gregg-Adams families and groups are in the primary draw area."
   },
   {
-    "event_name": "Virginia Commonwealth Games Main Games Weekend",
+    "event_name": "Virginia Commonwealth Games - Main Games Weekend",
     "start_date": "2026-07-24",
     "end_date": "2026-07-26",
-    "location": "Chesterfield County venues including River City Sportsplex, Chesterfield, VA",
+    "location": "Chesterfield County / Richmond region venues, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "high",
     "confidence": "high",
     "source_url": "https://playchesterfield.com/highlights/play-chesterfield-2026-sports-events/",
-    "notes": "Play Chesterfield describes the July 24-26 Main Games Weekend as a premier multi-sport event bringing athletes of all ages and abilities from across Virginia; strong potential for visiting teams/families and group bookings."
+    "notes": "Play Chesterfield describes the Main Games Weekend as a premier multi-sport event bringing athletes of all ages and abilities from across Virginia. Strongest youth/family sports tourism signal in this window."
   },
   {
-    "event_name": "Henrico National Night Out: EHRC 2026",
-    "start_date": "2026-08-04",
-    "end_date": "2026-08-04",
-    "location": "Eastern Henrico Recreation Center, Henrico, VA",
+    "event_name": "Henrico Community Band Summer Concert",
+    "start_date": "2026-07-30",
+    "end_date": "2026-07-30",
+    "location": "Walkerton Tavern, 2892 Mountain Road, Glen Allen, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
     "source_url": "https://henrico.gov/calendar/",
-    "notes": "Annual Henrico event with inflatables, train rides, sports, line dancing, vendors and free food while supplies last; localized family/community draw."
+    "notes": "Outdoor evening community concert, 7-8:30 pm. Low direct impact but contributes to local evening leisure traffic."
   },
   {
-    "event_name": "Richmond Flying Squirrels Home Stand: Reading",
+    "event_name": "National Night Out: EHRC 2026",
     "start_date": "2026-08-04",
-    "end_date": "2026-08-09",
-    "location": "CarMax Park / Richmond Flying Squirrels ballpark, Richmond, VA",
+    "end_date": "2026-08-04",
+    "location": "Eastern Henrico Recreation Center, 1440 N. Laburnum Avenue, Henrico, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.milb.com/richmond/schedule/2026-08",
-    "notes": "Six-game home stand Aug. 4-9 with promotions/theme nights including 804 Day, Virginia Tech Night, Saturday Night, and Virginia Tribal Heritage Night."
+    "source_url": "https://henrico.gov/calendar/",
+    "notes": "Annual family/community event with inflatables, train rides, gym sports, line dancing, vendors, and free food while supplies last. Good family-demand signal, though not in Chester proper."
   },
   {
-    "event_name": "Richmond Jazz and Music Festival",
+    "event_name": "Richmond Jazz and Music Festival 2026",
     "start_date": "2026-08-08",
     "end_date": "2026-08-09",
-    "location": "Maymont, Richmond, VA",
+    "location": "Richmond, VA / Maymont area",
     "distance_context": "primary_draw",
     "expected_demand_effect": "high",
     "confidence": "high",
-    "source_url": "https://www.richmondjazzandmusicfestival.com/schedule",
-    "notes": "Two-day major regional music festival Aug. 8-9; high likely impact on Richmond hotel/traffic/leisure demand and date-night alternatives."
+    "source_url": "https://www.richmondjazzandmusicfestival.com/",
+    "notes": "Large regional music festival returning August 8-9. Major weekend leisure/travel draw for Richmond; potential hotel/traffic spillover and date-night/group effects."
+  },
+  {
+    "event_name": "Carytown Watermelon Festival",
+    "start_date": "2026-08-09",
+    "end_date": "2026-08-09",
+    "location": "Carytown, Richmond, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "high",
+    "confidence": "high",
+    "source_url": "https://www.carytownwatermelonfestival.com/",
+    "notes": "Large one-day Richmond festival, 10 am-6 pm, advertised with 80 musicians, 100+ exhibitors, a large kids area, food, shopping, and watermelon. Strong family/leisure demand and traffic signal."
   },
   {
     "event_name": "Henrico Back to School Bash",
     "start_date": "2026-08-09",
     "end_date": "2026-08-09",
-    "location": "Belmont Recreation Center, Henrico, VA",
+    "location": "Belmont Recreation Center, 1600 Hilliard Road, Henrico, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
     "source_url": "https://henrico.gov/calendar/",
-    "notes": "Henrico event listed as a back-to-school party with games and activities; family relevance but limited geographic pull."
+    "notes": "Family back-to-school event, 4-6 pm, with games and activities. Small but relevant as a late-summer family schedule signal."
   },
   {
-    "event_name": "NASCAR Cup Series Cook Out 400 Weekend",
+    "event_name": "Neon Night Dance Party",
     "start_date": "2026-08-14",
-    "end_date": "2026-08-15",
-    "location": "Richmond Raceway, 600 East Laburnum Avenue, Richmond, VA",
+    "end_date": "2026-08-14",
+    "location": "Eastern Henrico Recreation Center, 1440 N. Laburnum Avenue, Henrico, VA",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
+    "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/nascar-cup-series-cook-out-400/47900/",
-    "notes": "Visit Richmond lists the Cup race on Aug. 15 and notes an Aug. 14 NASCAR Craftsman Truck Series finale, Fan Zone festival, music, driver appearances, RV camping and tailgating; major traffic/hotel/leisure signal."
+    "source_url": "https://henrico.gov/calendar/",
+    "notes": "Evening recreation event, 6-8 pm. Minor family/youth leisure signal in the Richmond/Henrico draw area."
+  },
+  {
+    "event_name": "Paws & Protectors 2026",
+    "start_date": "2026-08-20",
+    "end_date": "2026-08-20",
+    "location": "Deep Run Park, 9900 Ridgefield Pkwy, Henrico, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://henrico.gov/calendar/",
+    "notes": "Family-oriented public-safety/rescue-pups themed event, 10 am-noon. Potential modest family demand bump; weekday timing limits impact."
+  },
+  {
+    "event_name": "Survival of the Slowest touring exhibit",
+    "start_date": "2026-05-28",
+    "end_date": "2026-09-07",
+    "location": "Science Museum of Virginia, Richmond, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "high",
+    "source_url": "https://www.visitrichmondva.com/event/survival-of-the-slowest/50626/",
+    "notes": "Ongoing family-friendly live-animal/science exhibit active throughout the forecast window. Not a spike event, but supports summer family outing baseline demand."
+  },
+  {
+    "event_name": "Chesterfield County Fair",
+    "start_date": "2026-08-28",
+    "end_date": "2026-09-05",
+    "location": "Chesterfield County Fairgrounds, 10300 Courthouse Road, Chesterfield, VA",
+    "distance_context": "excluded_but_noted",
+    "expected_demand_effect": "high",
+    "confidence": "medium",
+    "source_url": "https://chesterfieldcountyfair.org/",
+    "notes": "Highly relevant Chesterfield family event, but starts just outside the 45-day lookahead ending 2026-08-27. Noted for handoff to the next forecast cycle; date inferred from published 2026 fair hours including Friday Sept. 4 plus 2026 fair/horse-show materials."
   }
 ]
