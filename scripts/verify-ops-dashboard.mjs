@@ -36,7 +36,12 @@ assert.equal(forecast.metadata.capacity_model.pre_clockwork_capacity, 2, 'pre-Cl
 assert.equal(forecast.metadata.capacity_model.current_game_capacity, 3, 'current capacity should be modeled as 3 games');
 assert.ok(forecast.forecast.some((row) => Array.isArray(row.windows) && row.windows.length > 1), 'forecast should include weekday/daypart window detail');
 const mondayRows = forecast.forecast.filter((row) => row.weekday === 'Monday');
-assert.ok(mondayRows.every((row) => row.concurrent_staff_needed === 0 && row.blocking_risk === 0), 'closed/manual Monday baseline should not create automatic staffing gaps');
+const baselineOnlyMondayRows = mondayRows.filter((row) => Number(row.on_books_bookings || 0) === 0);
+assert.ok(baselineOnlyMondayRows.length > 0, 'forecast should include a baseline-only closed/manual Monday row');
+assert.ok(
+  baselineOnlyMondayRows.every((row) => row.concurrent_staff_needed === 0 && row.blocking_risk === 0),
+  'closed/manual Monday baseline should not create automatic staffing gaps when no booking is on the books'
+);
 
 const events = readJson('src/data/event-intel-latest.json');
 assert.ok(Array.isArray(events), 'event-intel latest should be an array');
