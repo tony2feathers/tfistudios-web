@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_date": "2026-07-26",
+    "generated_date": "2026-07-27",
     "source_workbook_id": "1gRYDguwAucC8-FI2EsXiz_g9zvSsg4yPlnmmDcLuA1o",
     "source_tabs": [
       "Sales 2023",
@@ -61,75 +61,9 @@
   },
   "forecast": [
     {
-      "date": "2026-07-26",
-      "weekday": "Sunday",
-      "days_until": 0,
-      "samples": 32,
-      "on_books_bookings": 1.0,
-      "on_books_guests": 4.0,
-      "baseline_bookings": 3.9,
-      "baseline_guests": 17.2,
-      "forecast_bookings_low": 1.0,
-      "forecast_bookings_base": 3.8,
-      "forecast_bookings_high": 6.0,
-      "forecast_guests_low": 17.2,
-      "forecast_guests_base": 17.2,
-      "forecast_guests_high": 17.2,
-      "forecast_gross_base": 491.85,
-      "staffing": "12-5 PM: 2 staff planned; 5-10 PM: 2 staff planned",
-      "external_events": "Virginia Commonwealth Games - Main Games Weekend, Forever Summer Fest 2026, Chester Village Farmers Market",
-      "expected_rooms": 2.8,
-      "concurrent_staff_needed": 2,
-      "staff_availability": 2,
-      "blocking_risk": 0.0,
-      "blocked_gross_potential": 0.0,
-      "windows": [
-        {
-          "key": "sun_12_5",
-          "label": "12-5 PM",
-          "planned_staff": 2,
-          "staffing_note": "Coverage assumption pending staffing-plan feed.",
-          "samples": 16,
-          "on_books_room_starts": 1.0,
-          "on_books_guests": 4.0,
-          "on_books_rooms": {
-            "Blackbeard's Revenge": 1
-          },
-          "baseline_room_starts": 2.8,
-          "forecast_room_starts_low": 1.0,
-          "forecast_room_starts_base": 2.8,
-          "forecast_room_starts_high": 4.0,
-          "forecast_guests_base": 12.8,
-          "staff_needed_estimate": 2,
-          "coverage_gap": 0,
-          "blocking_risk": 0.0,
-          "blocked_gross_potential": 0.0
-        },
-        {
-          "key": "sun_5_close",
-          "label": "5-10 PM",
-          "planned_staff": 2,
-          "staffing_note": "Last booking 9 PM; coverage assumption pending staffing-plan feed.",
-          "samples": 16,
-          "on_books_room_starts": 0.0,
-          "on_books_guests": 0.0,
-          "on_books_rooms": {},
-          "baseline_room_starts": 1.1,
-          "forecast_room_starts_low": 0.0,
-          "forecast_room_starts_base": 1.1,
-          "forecast_room_starts_high": 2.0,
-          "forecast_guests_base": 4.4,
-          "staff_needed_estimate": 1,
-          "coverage_gap": 0,
-          "blocking_risk": 0.0,
-          "blocked_gross_potential": 0.0
-        }
-      ]
-    },
-    {
       "date": "2026-07-27",
       "weekday": "Monday",
-      "days_until": 1,
+      "days_until": 0,
       "samples": 17,
       "on_books_bookings": 1.0,
       "on_books_guests": 14.0,
@@ -176,7 +110,7 @@
     {
       "date": "2026-07-28",
       "weekday": "Tuesday",
-      "days_until": 2,
+      "days_until": 1,
       "samples": 17,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -221,7 +155,7 @@
     {
       "date": "2026-07-29",
       "weekday": "Wednesday",
-      "days_until": 3,
+      "days_until": 2,
       "samples": 18,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -266,7 +200,7 @@
     {
       "date": "2026-07-30",
       "weekday": "Thursday",
-      "days_until": 4,
+      "days_until": 3,
       "samples": 17,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -311,7 +245,7 @@
     {
       "date": "2026-07-31",
       "weekday": "Friday",
-      "days_until": 5,
+      "days_until": 4,
       "samples": 32,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -375,7 +309,7 @@
     {
       "date": "2026-08-01",
       "weekday": "Saturday",
-      "days_until": 6,
+      "days_until": 5,
       "samples": 28,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -439,7 +373,7 @@
     {
       "date": "2026-08-02",
       "weekday": "Sunday",
-      "days_until": 7,
+      "days_until": 6,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -503,7 +437,7 @@
     {
       "date": "2026-08-03",
       "weekday": "Monday",
-      "days_until": 8,
+      "days_until": 7,
       "samples": 12,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -548,7 +482,7 @@
     {
       "date": "2026-08-04",
       "weekday": "Tuesday",
-      "days_until": 9,
+      "days_until": 8,
       "samples": 13,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -593,7 +527,7 @@
     {
       "date": "2026-08-05",
       "weekday": "Wednesday",
-      "days_until": 10,
+      "days_until": 9,
       "samples": 13,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -638,7 +572,7 @@
     {
       "date": "2026-08-06",
       "weekday": "Thursday",
-      "days_until": 11,
+      "days_until": 10,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -683,7 +617,7 @@
     {
       "date": "2026-08-07",
       "weekday": "Friday",
-      "days_until": 12,
+      "days_until": 11,
       "samples": 28,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -747,7 +681,7 @@
     {
       "date": "2026-08-08",
       "weekday": "Saturday",
-      "days_until": 13,
+      "days_until": 12,
       "samples": 28,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -811,7 +745,7 @@
     {
       "date": "2026-08-09",
       "weekday": "Sunday",
-      "days_until": 14,
+      "days_until": 13,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -875,7 +809,7 @@
     {
       "date": "2026-08-10",
       "weekday": "Monday",
-      "days_until": 15,
+      "days_until": 14,
       "samples": 12,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -920,7 +854,7 @@
     {
       "date": "2026-08-11",
       "weekday": "Tuesday",
-      "days_until": 16,
+      "days_until": 15,
       "samples": 13,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -965,7 +899,7 @@
     {
       "date": "2026-08-12",
       "weekday": "Wednesday",
-      "days_until": 17,
+      "days_until": 16,
       "samples": 13,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1010,7 +944,7 @@
     {
       "date": "2026-08-13",
       "weekday": "Thursday",
-      "days_until": 18,
+      "days_until": 17,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1055,7 +989,7 @@
     {
       "date": "2026-08-14",
       "weekday": "Friday",
-      "days_until": 19,
+      "days_until": 18,
       "samples": 28,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1119,7 +1053,7 @@
     {
       "date": "2026-08-15",
       "weekday": "Saturday",
-      "days_until": 20,
+      "days_until": 19,
       "samples": 28,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1174,6 +1108,70 @@
           "forecast_room_starts_high": 3.0,
           "forecast_guests_base": 10.9,
           "staff_needed_estimate": 2,
+          "coverage_gap": 0,
+          "blocking_risk": 0.0,
+          "blocked_gross_potential": 0.0
+        }
+      ]
+    },
+    {
+      "date": "2026-08-16",
+      "weekday": "Sunday",
+      "days_until": 20,
+      "samples": 26,
+      "on_books_bookings": 0.0,
+      "on_books_guests": 0.0,
+      "baseline_bookings": 2.9,
+      "baseline_guests": 10.7,
+      "forecast_bookings_low": 1.0,
+      "forecast_bookings_base": 2.8,
+      "forecast_bookings_high": 4.1,
+      "forecast_guests_low": 10.7,
+      "forecast_guests_base": 10.8,
+      "forecast_guests_high": 10.7,
+      "forecast_gross_base": 328.77,
+      "staffing": "12-5 PM: 2 staff planned; 5-10 PM: 2 staff planned",
+      "external_events": "NASCAR Cup Series Cook Out 400, Richmond International Dance Festival",
+      "expected_rooms": 1.8,
+      "concurrent_staff_needed": 1,
+      "staff_availability": 2,
+      "blocking_risk": 0.0,
+      "blocked_gross_potential": 0.0,
+      "windows": [
+        {
+          "key": "sun_12_5",
+          "label": "12-5 PM",
+          "planned_staff": 2,
+          "staffing_note": "Coverage assumption pending staffing-plan feed.",
+          "samples": 13,
+          "on_books_room_starts": 0.0,
+          "on_books_guests": 0.0,
+          "on_books_rooms": {},
+          "baseline_room_starts": 1.8,
+          "forecast_room_starts_low": 0.0,
+          "forecast_room_starts_base": 1.8,
+          "forecast_room_starts_high": 3.0,
+          "forecast_guests_base": 7.5,
+          "staff_needed_estimate": 1,
+          "coverage_gap": 0,
+          "blocking_risk": 0.0,
+          "blocked_gross_potential": 0.0
+        },
+        {
+          "key": "sun_5_close",
+          "label": "5-10 PM",
+          "planned_staff": 2,
+          "staffing_note": "Last booking 9 PM; coverage assumption pending staffing-plan feed.",
+          "samples": 13,
+          "on_books_room_starts": 0.0,
+          "on_books_guests": 0.0,
+          "on_books_rooms": {},
+          "baseline_room_starts": 1.1,
+          "forecast_room_starts_low": 1.0,
+          "forecast_room_starts_base": 1.1,
+          "forecast_room_starts_high": 1.1,
+          "forecast_guests_base": 3.2,
+          "staff_needed_estimate": 1,
           "coverage_gap": 0,
           "blocking_risk": 0.0,
           "blocked_gross_potential": 0.0
