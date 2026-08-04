@@ -1,189 +1,112 @@
 [
   {
-    "event_name": "Survival of the Slowest",
-    "start_date": "2026-07-27",
-    "end_date": "2026-09-07",
-    "location": "Science Museum of Virginia, Richmond, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/survival-of-the-slowest/50626/",
-    "notes": "Family-oriented museum exhibition recurring daily through Sept. 7; likely supports family/day-trip demand rather than traffic near Chester. PII-free."
-  },
-  {
-    "event_name": "Live Thoroughbred Racing",
-    "start_date": "2026-07-30",
-    "end_date": "2026-09-06",
-    "location": "Colonial Downs Racetrack, New Kent, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/live-thoroughbred-racing/50843/",
-    "notes": "Recurring weekly on Thu/Fri/Sat/Sun until Sept. 6 per Richmond Region Tourism. Regional date-night/group draw; outside primary Chester corridor but inside secondary radius."
-  },
-  {
-    "event_name": "Splash & Slide",
-    "start_date": "2026-08-01",
-    "end_date": "2026-08-01",
-    "location": "River City Sportsplex, 13030 Genito Road, Midlothian, VA 23112",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/Calendar.aspx?CID=0&month=8&year=2026",
-    "notes": "Chesterfield Parks & Recreation family water event, 11 a.m.-3 p.m.; primary draw area and family-heavy."
-  },
-  {
-    "event_name": "15th Annual Richmond International Dragon Boat Festival",
-    "start_date": "2026-08-01",
-    "end_date": "2026-08-01",
-    "location": "Robious Landing Park, Midlothian, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
-    "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/15th-annual-richmond-international-dragon-boat-festival/50675/",
-    "notes": "Large outdoor/family/community festival with teams and spectators; strong group/family relevance inside Chesterfield-area draw."
-  },
-  {
-    "event_name": "Fit-X Experience Tour: Richmond Raceway Fitness Party",
-    "start_date": "2026-08-01",
-    "end_date": "2026-08-01",
-    "location": "Richmond Raceway, Richmond, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "medium",
-    "confidence": "medium",
-    "source_url": "https://www.visitrichmondva.com/event/fit-x-experience-tour%3a-richmond-raceway-fitness-party/51283/",
-    "notes": "Large-venue fitness/event listing at Richmond Raceway; relevant mostly for groups/date-adjacent activity and northside traffic, not direct Chester demand."
-  },
-  {
-    "event_name": "The IPL James River Classic",
-    "start_date": "2026-08-01",
-    "end_date": "2026-08-01",
-    "location": "Greater Richmond Convention Center, Richmond, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/the-ipl-james-river-classic/50898/",
-    "notes": "Convention-center sports/competition event; plausible group and visitor-room-night impact in Richmond region."
-  },
-  {
-    "event_name": "Chester Village Farmers Market",
-    "start_date": "2026-08-01",
-    "end_date": "2026-09-05",
-    "location": "11700 Chester Village Drive, Chester, VA 23831",
+    "event_name": "Chesterfield / Colonial Heights / Henrico National Night Out community events",
+    "start_date": "2026-08-04",
+    "end_date": "2026-08-04",
+    "location": "Multiple sites in Chesterfield County, Colonial Heights and Henrico County, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/chester-village-farmers-market/50418/",
-    "notes": "Recurring weekly Saturday market in Chester; small local foot-traffic signal and possible family outing adjacency. End date clipped to lookahead window even though listing recurs through December."
+    "source_url": "https://www.chesterfield.gov/calendar.aspx",
+    "notes": "Multiple public-safety/community events occur on Aug. 4, including Chesterfield County National Night Out listings at Stonebridge, Bensley, Beulah and Ettrick; Colonial Heights lists National Night Out 5-8 p.m.; Henrico lists National Night Out: EHRC 6-8 p.m. Neighborhood-oriented; modest positive awareness/traffic effect, not a destination booking driver."
   },
   {
-    "event_name": "National Night Out - Chesterfield County sites",
-    "start_date": "2026-08-04",
-    "end_date": "2026-08-04",
-    "location": "Stonebridge, Bensley, Beulah, Ettrick and other Chesterfield County recreation/community sites",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/Calendar.aspx?CID=0&month=8&year=2026",
-    "notes": "Multiple Chesterfield Parks & Recreation National Night Out events on the same day, including Bensley/Beulah/Ettrick. Community/family evening activity could soften same-evening bookings but increases local family movement."
-  },
-  {
-    "event_name": "National Night Out 2026 - Colonial Heights",
-    "start_date": "2026-08-04",
-    "end_date": "2026-08-04",
-    "location": "Multiple host locations, Colonial Heights, VA 23834",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.colonialheightsva.gov/Calendar.aspx?month=8&year=2026",
-    "notes": "Citywide community event, 5-8 p.m.; close to Chester and family/community oriented."
-  },
-  {
-    "event_name": "National Night Out: EHRC 2026",
-    "start_date": "2026-08-04",
-    "end_date": "2026-08-04",
-    "location": "Henrico County, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/national-night-out-ehrc-2026/",
-    "notes": "Henrico community event, 6-8 p.m.; relevant as regional family/community activity, lower direct Chester effect."
-  },
-  {
-    "event_name": "Screen on the Green",
+    "event_name": "Henrico Screen on the Green",
     "start_date": "2026-08-07",
     "end_date": "2026-08-07",
     "location": "Henrico County, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/screen-on-the-green/",
-    "notes": "Henrico outdoor movie/community event, 5-8 p.m.; family-oriented but modest direct effect on Chester bookings."
-  },
-  {
-    "event_name": "Community Connections Day",
-    "start_date": "2026-08-08",
-    "end_date": "2026-08-08",
-    "location": "Henrico County, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/community-connections-day-9/",
-    "notes": "Henrico community event, noon-3 p.m.; family/community relevance, limited direct Chester effect."
-  },
-  {
-    "event_name": "Back to School Bash",
-    "start_date": "2026-08-09",
-    "end_date": "2026-08-09",
-    "location": "Henrico County, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/back-to-school-bash/",
-    "notes": "Family/back-to-school event, 4-6 p.m.; signal for school-season transition and family scheduling pressure."
-  },
-  {
-    "event_name": "Clear the Shelter Pet Adoption Event",
-    "start_date": "2026-08-15",
-    "end_date": "2026-08-15",
-    "location": "Henrico County, VA",
-    "distance_context": "secondary_50mi",
+    "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
     "source_url": "https://henrico.gov/calendar/",
-    "notes": "Henrico calendar lists a 10 a.m.-4:30 p.m. pet adoption event; community/family-adjacent, low direct effect. Detail URL was not separately extracted, so confidence remains high for existence but moderate for ops impact."
+    "notes": "Henrico County calendar lists Screen on the Green from 5-8 p.m. on Aug. 7. Family-oriented evening event; likely only small localized competition for family entertainment that night."
+  },
+  {
+    "event_name": "Richmond Jazz and Music Festival 2026",
+    "start_date": "2026-08-08",
+    "end_date": "2026-08-09",
+    "location": "Maymont / Richmond, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.richmondjazzandmusicfestival.com/",
+    "notes": "Official festival site states RJMF '26 returns Aug. 8-9 and describes one weekend, two stages and thousands of fans. Strong date-night/group outing signal in Richmond; may compete with or increase regional leisure traffic."
+  },
+  {
+    "event_name": "Fort Gregg-Adams MWR Dive-In Movie",
+    "start_date": "2026-08-08",
+    "end_date": "2026-08-08",
+    "location": "Fort Gregg-Adams / Fort Lee, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "medium",
+    "source_url": "https://lee.armymwr.com/calendar",
+    "notes": "MWR August agenda lists a Dive-In Movie on Aug. 8, alongside other recreation events. On/base-access details may limit draw, but it is family-oriented and relevant to the Fort Gregg-Adams audience."
+  },
+  {
+    "event_name": "Carytown Watermelon Festival",
+    "start_date": "2026-08-09",
+    "end_date": "2026-08-09",
+    "location": "Carytown, Richmond, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "high",
+    "confidence": "high",
+    "source_url": "https://www.carytownwatermelonfestival.com/",
+    "notes": "Official site lists Sunday, Aug. 9, 10 a.m.-6 p.m., from the entrance of Carytown to the Byrd Theatre, with 80 musicians, 100+ exhibitors and one of the largest kids' areas of any East Coast festival. Large family festival; strong regional leisure/traffic signal."
+  },
+  {
+    "event_name": "Colonial Downs Live Thoroughbred Racing season / themed race days",
+    "start_date": "2026-08-03",
+    "end_date": "2026-09-07",
+    "location": "Colonial Downs Racetrack, 10515 Colonial Downs Parkway, New Kent, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "low",
+    "confidence": "high",
+    "source_url": "https://www.visitrichmondva.com/event/live-thoroughbred-racing/50843/",
+    "notes": "Richmond Region Tourism lists live racing June 25-Sept. 6, recurring weekly Thu-Sun, with special days in the lookahead window including Aug. 15 Wiener Dog Race Day, Aug. 16 Princess/Tractor Day, Aug. 22 Claiming Crown Preview Day, Aug. 30 First Responder Day and Sept. 7 Labor Day/College Day Old Dominion Derby. Secondary-radius leisure draw; more likely to affect weekend travel than Chester-local bookings."
   },
   {
     "event_name": "AMERICANAFEST 2026",
     "start_date": "2026-08-22",
     "end_date": "2026-08-22",
-    "location": "Shepherd Stadium, 901 Meridian Avenue, Colonial Heights, VA 23834",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
-    "confidence": "high",
-    "source_url": "https://www.colonialheightsva.gov/Calendar.aspx?month=8&year=2026",
-    "notes": "All-day Colonial Heights community event, 8 a.m.-9 p.m.; close enough to Chester to affect traffic and family/group demand."
-  },
-  {
-    "event_name": "Chesterfield County Fair",
-    "start_date": "2026-08-28",
-    "end_date": "2026-09-04",
-    "location": "Chesterfield County Fairgrounds, 10300 Courthouse Road, Chesterfield, VA 23832",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
-    "confidence": "medium",
-    "source_url": "https://chesterfieldcountyfair.org/events/",
-    "notes": "Major local fair with opening-night entertainment Aug. 28, opening day Aug. 29, daily entertainment into early September, and posted fair hours including Friday Sept. 4. Exact final fair date was not clearly exposed in the scraped page; use as a high-impact local demand/traffic signal."
-  },
-  {
-    "event_name": "Labor Day",
-    "start_date": "2026-09-07",
-    "end_date": "2026-09-07",
-    "location": "Federal/state/local holiday; Chesterfield County offices and courts closed",
+    "location": "Shepherd Stadium, Colonial Heights, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/Calendar.aspx?CID=0&month=9&year=2026",
-    "notes": "Holiday closure likely affects family availability, staffing assumptions, and long-weekend booking patterns."
+    "source_url": "https://www.colonialheightsva.gov/calendar.aspx",
+    "notes": "Colonial Heights calendar lists AMERICANAFEST 2026 on Aug. 22, 8 a.m.-9 p.m. at Shepherd Stadium. Community/festival-style event close to TEA; likely local traffic and family/group entertainment impact."
+  },
+  {
+    "event_name": "Chesterfield County Public Schools first days of school",
+    "start_date": "2026-08-24",
+    "end_date": "2026-08-25",
+    "location": "Chesterfield County Public Schools, Chesterfield County, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.oneccps.org/page/calendars",
+    "notes": "CCPS calendar data lists first day of school for grades 1-5, 6 and 9 on Aug. 24, and grades 7-8 and 10-12 on Aug. 25. Expect weekday daytime family availability to drop and after-school/evening patterns to normalize."
+  },
+  {
+    "event_name": "Chesterfield County Fair 2026",
+    "start_date": "2026-08-28",
+    "end_date": "2026-09-05",
+    "location": "Chesterfield County Fairgrounds, 10300 Courthouse Road, Chesterfield, VA 23832",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "high",
+    "confidence": "high",
+    "source_url": "https://chesterfieldcountyfair.org/",
+    "notes": "Official fair site/poster shows Aug. 28-Sept. 5 at the Chesterfield County Fairgrounds, with rides, food, games, competitions and concerts. Major family/community event very near TEA; likely affects leisure choices, local traffic and staffing needs across Labor Day weekend."
+  },
+  {
+    "event_name": "Labor Day holiday / local school-office closures",
+    "start_date": "2026-09-07",
+    "end_date": "2026-09-07",
+    "location": "Chesterfield/Richmond region",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "high",
+    "confidence": "high",
+    "source_url": "https://www.oneccps.org/page/calendars",
+    "notes": "CCPS calendar lists Sept. 7 as a holiday with schools and offices closed; Labor Day also coincides with the end of the county fair period and Colonial Downs Labor Day/College Day listing. Strong holiday-family/group booking signal, especially for afternoon/evening staffing."
   }
 ]
