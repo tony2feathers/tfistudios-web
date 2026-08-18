@@ -1,80 +1,25 @@
 [
   {
-    "event_name": "NASCAR Craftsman Truck Series - 250",
-    "start_date": "2026-08-14",
-    "end_date": "2026-08-14",
-    "location": "Richmond Raceway, 600 East Laburnum Avenue, Richmond, VA 23222",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/nascar-craftsman-truck-series-250/47902/",
-    "notes": "Friday night NASCAR truck race at Richmond Raceway, 7-11 p.m.; likely traffic and restaurant/entertainment spillover around Richmond, with some group/date-night demand impact."
-  },
-  {
-    "event_name": "NASCAR Cup Series Cook Out 400",
-    "start_date": "2026-08-15",
-    "end_date": "2026-08-15",
-    "location": "Richmond Raceway, 600 East Laburnum Avenue, Richmond, VA 23222",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
-    "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/nascar-cup-series-cook-out-400/47900/",
-    "notes": "Saturday night NASCAR Cup race at Richmond Raceway, 7-11 p.m.; one of the larger regional sports draws inside the lookahead window. Expect travel/traffic and possible pre-race group activity demand."
-  },
-  {
-    "event_name": "35th Down Home Family Reunion, A Celebration of African American Folklife",
-    "start_date": "2026-08-15",
-    "end_date": "2026-08-15",
-    "location": "Abner Clay Park, 200 W Clay St, Richmond, VA 23220",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/35th-down-home-family-reunion-a-celebration-of-african-american-folklife/51530/",
-    "notes": "Free family festival in Jackson Ward, 4-11 p.m.; cultural/family orientation may lift Richmond day-trip activity but is farther from Chester than southside events."
-  },
-  {
-    "event_name": "Richmond International Dance Festival",
-    "start_date": "2026-08-15",
-    "end_date": "2026-08-15",
-    "location": "Cultural Arts Center at Glen Allen, 2880 Mountain Road, Glen Allen, VA 23060",
+    "event_name": "CultureFest with Cultural Encounters – Chesterfield",
+    "start_date": "2026-08-21",
+    "end_date": "2026-08-21",
+    "location": "Children's Museum of Richmond - Chesterfield, Chesterfield, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/richmond-international-dance-festival/51214/",
-    "notes": "Free, family-friendly cultural festival with performances, workshops, food, vendors, kids activities, and Parade of Cultures; likely modest booking effect due to Henrico/Glen Allen distance."
+    "source_url": "https://www.visitrichmondva.com/event/culturefest-with-cultural-encounters-%26%238211%3b-chesterfield/51141/",
+    "notes": "Family-oriented cultural event in Chesterfield; likely localized lift for nearby family outings, but single-day/smaller venue limits demand effect."
   },
   {
-    "event_name": "Threads & Bridges Festival",
-    "start_date": "2026-08-15",
-    "end_date": "2026-08-15",
-    "location": "Virginia Museum of History & Culture, 428 North Arthur Ashe Boulevard, Richmond, VA 23220",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://www.visitrichmondva.com/event/threads-%26-bridges-festival/51547/",
-    "notes": "Community/culture festival tied to VMHC exhibition; page describes a two-day immersive experience but Visit Richmond date field shows Aug. 15. Kept as one-day with medium confidence."
-  },
-  {
-    "event_name": "AMERICANAFEST 2026",
-    "start_date": "2026-08-22",
-    "end_date": "2026-08-22",
-    "location": "Shepherd Stadium, 901 Meridian Avenue, Colonial Heights, VA 23834",
+    "event_name": "CCPS first days of school",
+    "start_date": "2026-08-24",
+    "end_date": "2026-08-25",
+    "location": "Chesterfield County Public Schools, Chesterfield County, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.colonialheightsva.gov/calendar.aspx",
-    "notes": "Colonial Heights community event at Shepherd Stadium, 8 a.m.-9 p.m.; Petersburg Area Tourism also lists multiple Americana Fest performances 3-7 p.m. on the same date. Close enough to Chester to plausibly affect family/group bookings and local traffic."
-  },
-  {
-    "event_name": "World War II Living History Weekend at Pamplin Historical Park",
-    "start_date": "2026-08-22",
-    "end_date": "2026-08-23",
-    "location": "Pamplin Historical Park, Dinwiddie County, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://bestpartva.org/events/world-war-ii-living-history-weekend-at-pamplin-historical-park/",
-    "notes": "Regional family/history weekend, 9 a.m.-5 p.m.; included because it is within the broader southside/Petersburg area and may pull family day trips, but expected TEA effect is limited."
+    "source_url": "https://www.oneccps.org/page/calendars",
+    "notes": "Grades 1-5, 6, and 9 start Aug. 24; grades 7-8 and 10-12 start Aug. 25. Expect weekday family availability to fall after summer break."
   },
   {
     "event_name": "Chesterfield County Fair",
@@ -85,72 +30,127 @@
     "expected_demand_effect": "high",
     "confidence": "high",
     "source_url": "https://chesterfieldcountyfair.org/",
-    "notes": "Major local fair very near TEA. Official poster lists Aug. 28-Sept. 5; site highlights rides, games, food, competitions, entertainment, clear-bag policy, and family-friendly fair programming. Strongest direct local event in this forecast window."
+    "notes": "Major local family fair with rides, food, games, competitions, concerts, and weekend hours; likely competes for family/date-night spend while increasing local traffic."
+  },
+  {
+    "event_name": "The Richmond Night Market",
+    "start_date": "2026-09-01",
+    "end_date": "2026-09-01",
+    "location": "17th Street Farmers Market, Richmond, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "medium",
+    "source_url": "https://www.visitrichmondva.com/event/the-richmond-night-market/51504/",
+    "notes": "Recurring monthly market visible in Visit Richmond listings for the Sept. 1-Oct. 1 window; modest downtown Richmond draw, more relevant for evening social traffic than Chester bookings."
+  },
+  {
+    "event_name": "CCPS / Labor Day long weekend school closure",
+    "start_date": "2026-09-04",
+    "end_date": "2026-09-07",
+    "location": "Chesterfield County Public Schools and regional holiday travel",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.oneccps.org/page/calendars",
+    "notes": "CCPS calendar lists schools/offices closed Sept. 4 and Sept. 7; Labor Day weekend can lift family/group availability, while fair overlap may redirect demand."
   },
   {
     "event_name": "Live Thoroughbred Racing",
-    "start_date": "2026-08-13",
+    "start_date": "2026-06-25",
     "end_date": "2026-09-06",
-    "location": "Colonial Downs Racetrack, 10515 Colonial Downs Parkway, New Kent, VA 23124",
+    "location": "Colonial Downs Racetrack, New Kent, VA",
     "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
+    "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://www.visitrichmondva.com/event/live-thoroughbred-racing/50843/",
-    "notes": "Recurring Thursday-Sunday racing through Sept. 6, generally 11:30 a.m.-5 p.m.; regional draw but northeast of Richmond, so likely minor effect on Chester bookings unless paired with group outings."
+    "notes": "Ongoing live racing season continues through Sept. 6; regional sports/entertainment draw east of Richmond that may affect weekend leisure demand."
   },
   {
-    "event_name": "Labor Day holiday / county offices closed",
+    "event_name": "Labor Day",
     "start_date": "2026-09-07",
     "end_date": "2026-09-07",
-    "location": "Richmond/Chesterfield/Henrico region",
+    "location": "Regional / federal holiday",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/",
-    "notes": "Observed public holiday in the draw area; likely affects family availability, staffing assumptions, and extended-weekend demand."
+    "source_url": "https://www.chesterfield.gov/calendar.aspx",
+    "notes": "County offices and courts closed; holiday itself may shift bookings toward weekend/holiday family groups and away from normal weekday patterns."
   },
   {
-    "event_name": "Jazz in the Park 2026",
-    "start_date": "2026-09-06",
-    "end_date": "2026-09-06",
-    "location": "Deep Run Park, 9900 Ridgefield Pkwy, Henrico, VA",
+    "event_name": "HenBIKEo 2026",
+    "start_date": "2026-09-12",
+    "end_date": "2026-09-12",
+    "location": "Meadow Farm Museum at Crump Park, Glen Allen, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://henrico.gov/calendar/henbikeo/",
+    "notes": "Free bike-focused community event with cyclocross races, demo bikes, trails, vendors, and family activities; north/west draw but group-oriented."
+  },
+  {
+    "event_name": "Glen Allen Day 2026",
+    "start_date": "2026-09-19",
+    "end_date": "2026-09-19",
+    "location": "Meadow Farm Museum at Crump Park, Glen Allen, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://henrico.gov/calendar/glen-allen-day-2026/",
+    "notes": "30th annual community day with 100+ vendors and park festivities; meaningful Henrico family/community draw, though not in immediate Chester corridor."
+  },
+  {
+    "event_name": "CCPS holiday / schools and offices closed",
+    "start_date": "2026-09-21",
+    "end_date": "2026-09-21",
+    "location": "Chesterfield County Public Schools, Chesterfield County, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.oneccps.org/page/calendars",
+    "notes": "Single weekday school closure can create elevated family availability for daytime/evening bookings compared with normal school Mondays."
+  },
+  {
+    "event_name": "State Fair Games 2026",
+    "start_date": "2026-09-21",
+    "end_date": "2026-09-21",
+    "location": "Eastern Henrico Recreation Center, Henrico, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/",
-    "notes": "Free Henrico parks concert, 4-6 p.m.; modest family/community draw during Labor Day weekend but farther from Chester."
+    "source_url": "https://henrico.gov/calendar/state-fair-games-2026/",
+    "notes": "Henrico family event for ages 4+ with carnival games, inflatables, and cotton candy; likely localized and daytime, so low direct booking effect."
   },
   {
-    "event_name": "Halloween Haunt presented by SNICKERS at Kings Dominion",
-    "start_date": "2026-09-18",
-    "end_date": "2026-11-01",
-    "location": "Kings Dominion, Doswell, VA",
+    "event_name": "State Fair of Virginia",
+    "start_date": "2026-09-25",
+    "end_date": "2026-10-04",
+    "location": "The Meadow Event Park, 13191 Dawn Blvd, Doswell, VA 23047",
     "distance_context": "secondary_50mi",
-    "expected_demand_effect": "medium",
+    "expected_demand_effect": "high",
     "confidence": "high",
-    "source_url": "https://www.sixflags.com/kingsdominion/events/haunt",
-    "notes": "Large seasonal theme-park event starts Sept. 18 on select dates. Secondary-radius event but relevant for date-night/teen/group entertainment demand and regional leisure traffic."
+    "source_url": "https://www.statefairva.org/",
+    "notes": "Large statewide fair/family attraction within roughly the 50-mile secondary radius; starts inside the look-ahead window and continues beyond Oct. 1."
   },
   {
-    "event_name": "Tricks and Treats at Kings Dominion",
-    "start_date": "2026-09-19",
-    "end_date": "2026-11-01",
-    "location": "Kings Dominion, Doswell, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.sixflags.com/kingsdominion/events/tricks-and-treats",
-    "notes": "Family-oriented seasonal theme-park event starts Sept. 19 on select dates. Included due to scale and family/group orientation despite secondary draw distance."
-  },
-  {
-    "event_name": "St. Benedict Oktoberfest",
-    "start_date": "2026-09-18",
-    "end_date": "2026-09-20",
-    "location": "St. Benedict Catholic Church, 300 N. Sheppard St., Richmond, VA 23221",
+    "event_name": "Mountainfilm on Tour 2026",
+    "start_date": "2026-09-26",
+    "end_date": "2026-09-26",
+    "location": "Dorey Park, Henrico, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.stbenedictoktoberfest.com/",
-    "notes": "Free-admission Richmond Museum District Oktoberfest with music, dancing, Christkindlmarkt, German food/drink, and children's activities; likely regional weekend leisure draw."
+    "source_url": "https://henrico.gov/calendar/mountainfilm-2026/",
+    "notes": "Outdoor film/culture event at Dorey Park from 4-9 p.m.; near Varina/east Henrico and group/date-night oriented."
+  },
+  {
+    "event_name": "Health & Fitness Expo 2026",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-01",
+    "location": "Eastern Henrico Recreation Center, Henrico, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "high",
+    "source_url": "https://henrico.gov/calendar/health-fitness-expo-2026/",
+    "notes": "Community wellness expo with vendors and fitness demos; included because it falls on the look-ahead boundary, but direct TEA booking effect should be small."
   }
 ]
