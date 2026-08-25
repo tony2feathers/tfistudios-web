@@ -1,17 +1,17 @@
 [
   {
-    "event_name": "CultureFest with Cultural Encounters – Chesterfield",
-    "start_date": "2026-08-21",
-    "end_date": "2026-08-21",
-    "location": "Children's Museum of Richmond - Chesterfield, Chesterfield, VA",
+    "event_name": "Chesterfield County Fair",
+    "start_date": "2026-08-28",
+    "end_date": "2026-09-05",
+    "location": "Chesterfield County Fairgrounds, Chesterfield, VA",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/culturefest-with-cultural-encounters-%26%238211%3b-chesterfield/51141/",
-    "notes": "Family-oriented cultural event in Chesterfield; likely localized lift for nearby family outings, but single-day/smaller venue limits demand effect."
+    "expected_demand_effect": "high",
+    "confidence": "medium",
+    "source_url": "https://chesterfieldcountyfair.org/calendar/",
+    "notes": "Major county fair in the primary draw area. Official fair calendar lists opening-night and daily fairground events starting Aug. 28; ticket page shows fair operations through at least Sept. 4, with Sept. 5 inferred from the normal fair run/calendar context. Likely family/group demand and local traffic impact."
   },
   {
-    "event_name": "CCPS first days of school",
+    "event_name": "Chesterfield County Public Schools first week of school",
     "start_date": "2026-08-24",
     "end_date": "2026-08-25",
     "location": "Chesterfield County Public Schools, Chesterfield County, VA",
@@ -19,87 +19,21 @@
     "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://www.oneccps.org/page/calendars",
-    "notes": "Grades 1-5, 6, and 9 start Aug. 24; grades 7-8 and 10-12 start Aug. 25. Expect weekday family availability to fall after summer break."
+    "notes": "CCPS calendar feed lists first day for grades 1-5, 6 and 9 on Aug. 24 and grades 7-8 and 10-12 on Aug. 25. Expect family schedule disruption and after-school/weeknight pattern shift rather than a festival-style spike."
   },
   {
-    "event_name": "Chesterfield County Fair",
-    "start_date": "2026-08-28",
-    "end_date": "2026-09-05",
-    "location": "Chesterfield County Fairgrounds, 10300 Courthouse Road, Chesterfield, VA 23832",
+    "event_name": "Labor Day / CCPS long-weekend school closure",
+    "start_date": "2026-09-04",
+    "end_date": "2026-09-07",
+    "location": "Chesterfield County and Richmond region",
     "distance_context": "primary_draw",
     "expected_demand_effect": "high",
     "confidence": "high",
-    "source_url": "https://chesterfieldcountyfair.org/",
-    "notes": "Major local family fair with rides, food, games, competitions, concerts, and weekend hours; likely competes for family/date-night spend while increasing local traffic."
-  },
-  {
-    "event_name": "The Richmond Night Market",
-    "start_date": "2026-09-01",
-    "end_date": "2026-09-01",
-    "location": "17th Street Farmers Market, Richmond, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://www.visitrichmondva.com/event/the-richmond-night-market/51504/",
-    "notes": "Recurring monthly market visible in Visit Richmond listings for the Sept. 1-Oct. 1 window; modest downtown Richmond draw, more relevant for evening social traffic than Chester bookings."
-  },
-  {
-    "event_name": "CCPS / Labor Day long weekend school closure",
-    "start_date": "2026-09-04",
-    "end_date": "2026-09-07",
-    "location": "Chesterfield County Public Schools and regional holiday travel",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
     "source_url": "https://www.oneccps.org/page/calendars",
-    "notes": "CCPS calendar lists schools/offices closed Sept. 4 and Sept. 7; Labor Day weekend can lift family/group availability, while fair overlap may redirect demand."
+    "notes": "CCPS calendar feed lists schools/offices closed Sept. 4 and Sept. 7, creating a four-day Labor Day weekend for many local families. Strong candidate for increased family/group bookings."
   },
   {
-    "event_name": "Live Thoroughbred Racing",
-    "start_date": "2026-06-25",
-    "end_date": "2026-09-06",
-    "location": "Colonial Downs Racetrack, New Kent, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.visitrichmondva.com/event/live-thoroughbred-racing/50843/",
-    "notes": "Ongoing live racing season continues through Sept. 6; regional sports/entertainment draw east of Richmond that may affect weekend leisure demand."
-  },
-  {
-    "event_name": "Labor Day",
-    "start_date": "2026-09-07",
-    "end_date": "2026-09-07",
-    "location": "Regional / federal holiday",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/calendar.aspx",
-    "notes": "County offices and courts closed; holiday itself may shift bookings toward weekend/holiday family groups and away from normal weekday patterns."
-  },
-  {
-    "event_name": "HenBIKEo 2026",
-    "start_date": "2026-09-12",
-    "end_date": "2026-09-12",
-    "location": "Meadow Farm Museum at Crump Park, Glen Allen, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/henbikeo/",
-    "notes": "Free bike-focused community event with cyclocross races, demo bikes, trails, vendors, and family activities; north/west draw but group-oriented."
-  },
-  {
-    "event_name": "Glen Allen Day 2026",
-    "start_date": "2026-09-19",
-    "end_date": "2026-09-19",
-    "location": "Meadow Farm Museum at Crump Park, Glen Allen, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/glen-allen-day-2026/",
-    "notes": "30th annual community day with 100+ vendors and park festivities; meaningful Henrico family/community draw, though not in immediate Chester corridor."
-  },
-  {
-    "event_name": "CCPS holiday / schools and offices closed",
+    "event_name": "CCPS schools/offices closed holiday",
     "start_date": "2026-09-21",
     "end_date": "2026-09-21",
     "location": "Chesterfield County Public Schools, Chesterfield County, VA",
@@ -107,50 +41,61 @@
     "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://www.oneccps.org/page/calendars",
-    "notes": "Single weekday school closure can create elevated family availability for daytime/evening bookings compared with normal school Mondays."
+    "notes": "CCPS calendar feed lists schools and offices closed on Sept. 21. Single-day school closure can lift family/daytime demand if parents seek activities."
   },
   {
-    "event_name": "State Fair Games 2026",
-    "start_date": "2026-09-21",
-    "end_date": "2026-09-21",
-    "location": "Eastern Henrico Recreation Center, Henrico, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/state-fair-games-2026/",
-    "notes": "Henrico family event for ages 4+ with carnival games, inflatables, and cotton candy; likely localized and daytime, so low direct booking effect."
-  },
-  {
-    "event_name": "State Fair of Virginia",
-    "start_date": "2026-09-25",
-    "end_date": "2026-10-04",
-    "location": "The Meadow Event Park, 13191 Dawn Blvd, Doswell, VA 23047",
+    "event_name": "Field Day of the Past",
+    "start_date": "2026-09-18",
+    "end_date": "2026-09-20",
+    "location": "Mount Airy Farm, Church Road, VA",
     "distance_context": "secondary_50mi",
-    "expected_demand_effect": "high",
+    "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.statefairva.org/",
-    "notes": "Large statewide fair/family attraction within roughly the 50-mile secondary radius; starts inside the look-ahead window and continues beyond Oct. 1."
+    "source_url": "https://fielddayofthepast.net/",
+    "notes": "Large family-oriented heritage/agriculture festival southwest of the Richmond metro and within the usable secondary radius. Could draw families/groups and compete for weekend leisure time."
   },
   {
-    "event_name": "Mountainfilm on Tour 2026",
+    "event_name": "Kings Dominion Halloween Haunt",
+    "start_date": "2026-09-18",
+    "end_date": "2026-10-08",
+    "location": "Kings Dominion, Doswell, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.sixflags.com/kingsdominion/events",
+    "notes": "Official events page lists Halloween Haunt on select nights Sept. 18-Nov. 1; clipped to this 45-day forecast window. Relevant to teens, adults, date-night groups and weekend entertainment demand, but farther from Chester than primary draw events."
+  },
+  {
+    "event_name": "Kings Dominion Tricks and Treats",
+    "start_date": "2026-09-19",
+    "end_date": "2026-10-08",
+    "location": "Kings Dominion, Doswell, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.sixflags.com/kingsdominion/events",
+    "notes": "Official events page lists family Halloween daytime event Sept. 19-Nov. 1 on select dates; clipped to the 45-day window. Large family-oriented draw, but secondary-radius and likely more competitive than complementary for TEA."
+  },
+  {
+    "event_name": "Chesterfield Outdoor Fest",
     "start_date": "2026-09-26",
     "end_date": "2026-09-26",
-    "location": "Dorey Park, Henrico, VA",
+    "location": "Pocahontas State Park, Chesterfield, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/mountainfilm-2026/",
-    "notes": "Outdoor film/culture event at Dorey Park from 4-9 p.m.; near Varina/east Henrico and group/date-night oriented."
+    "source_url": "https://www.chesterfield.gov/Calendar.aspx?EID=6167",
+    "notes": "County calendar and Outdoor Fest page list the 2026 Outdoor Fest on Sept. 26 at Pocahontas State Park. Local family/outdoor festival near TEA; likely daytime traffic and possible spillover group activity."
   },
   {
-    "event_name": "Health & Fitness Expo 2026",
-    "start_date": "2026-10-01",
-    "end_date": "2026-10-01",
-    "location": "Eastern Henrico Recreation Center, Henrico, VA",
-    "distance_context": "primary_draw",
+    "event_name": "Live Thoroughbred Racing at Colonial Downs",
+    "start_date": "2026-08-27",
+    "end_date": "2026-08-27",
+    "location": "Colonial Downs Racetrack, New Kent, VA",
+    "distance_context": "secondary_50mi",
     "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/health-fitness-expo-2026/",
-    "notes": "Community wellness expo with vendors and fitness demos; included because it falls on the look-ahead boundary, but direct TEA booking effect should be small."
+    "confidence": "medium",
+    "source_url": "https://www.visitrichmondva.com/event/live-thoroughbred-racing/50843/",
+    "notes": "Richmond Region Tourism event listing surfaced live racing on Aug. 27. Potential date-night/group entertainment signal, but site extraction did not confirm the full race-meet date range during this run, so only the visible date is included."
   }
 ]
