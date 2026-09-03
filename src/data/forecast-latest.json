@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_date": "2026-09-02",
+    "generated_date": "2026-09-03",
     "source_workbook_id": "1gRYDguwAucC8-FI2EsXiz_g9zvSsg4yPlnmmDcLuA1o",
     "source_tabs": [
       "Sales 2023",
@@ -8,7 +8,7 @@
       "Sales 2025",
       "Sales 2026"
     ],
-    "loaded_rows": 2722,
+    "loaded_rows": 2723,
     "model_version": "1.3-manual-day-and-test-filter",
     "privacy_note": "All data is PII-free and aggregate. No customer identifiers are included.",
     "external_events": 16,
@@ -37,9 +37,9 @@
         "Sales 2023": 787,
         "Sales 2024": 644,
         "Sales 2025": 831,
-        "Sales 2026": 694
+        "Sales 2026": 695
       },
-      "loaded_room_bookings": 2722,
+      "loaded_room_bookings": 2723,
       "skipped_counts": {
         "Sales 2023:blank_booking_id": 33,
         "Sales 2024:blank_booking_id": 38,
@@ -47,7 +47,7 @@
         "Sales 2026:blank_booking_id": 118
       },
       "room_counts": {
-        "Blackbeard's Revenge": 1400,
+        "Blackbeard's Revenge": 1401,
         "Lab Rats": 830,
         "Clockwork Odyssey": 492
       },
@@ -55,60 +55,15 @@
         "2023": 736,
         "2024": 621,
         "2025": 760,
-        "2026": 605
+        "2026": 606
       }
     }
   },
   "forecast": [
     {
-      "date": "2026-09-02",
-      "weekday": "Wednesday",
-      "days_until": 0,
-      "samples": 12,
-      "on_books_bookings": 0.0,
-      "on_books_guests": 0.0,
-      "baseline_bookings": 0.5,
-      "baseline_guests": 1.8,
-      "forecast_bookings_low": 0.0,
-      "forecast_bookings_base": 0.5,
-      "forecast_bookings_high": 1.0,
-      "forecast_guests_low": 1.8,
-      "forecast_guests_base": 1.8,
-      "forecast_guests_high": 1.8,
-      "forecast_gross_base": 54.67,
-      "staffing": "5-11 PM appointment-only: 1 staff planned",
-      "external_events": "Chesterfield County Fair",
-      "expected_rooms": 0.5,
-      "concurrent_staff_needed": 1,
-      "staff_availability": 1,
-      "blocking_risk": 0.0,
-      "blocked_gross_potential": 0.0,
-      "windows": [
-        {
-          "key": "appt_5_close",
-          "label": "5-11 PM appointment-only",
-          "planned_staff": 1,
-          "staffing_note": "Last booking 10 PM; at least 2 hours notice.",
-          "samples": 12,
-          "on_books_room_starts": 0.0,
-          "on_books_guests": 0.0,
-          "on_books_rooms": {},
-          "baseline_room_starts": 0.5,
-          "forecast_room_starts_low": 0.0,
-          "forecast_room_starts_base": 0.5,
-          "forecast_room_starts_high": 1.0,
-          "forecast_guests_base": 1.8,
-          "staff_needed_estimate": 1,
-          "coverage_gap": 0,
-          "blocking_risk": 0.0,
-          "blocked_gross_potential": 0.0
-        }
-      ]
-    },
-    {
       "date": "2026-09-03",
       "weekday": "Thursday",
-      "days_until": 1,
+      "days_until": 0,
       "samples": 12,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -153,7 +108,7 @@
     {
       "date": "2026-09-04",
       "weekday": "Friday",
-      "days_until": 2,
+      "days_until": 1,
       "samples": 26,
       "on_books_bookings": 1.0,
       "on_books_guests": 4.0,
@@ -219,7 +174,7 @@
     {
       "date": "2026-09-05",
       "weekday": "Saturday",
-      "days_until": 3,
+      "days_until": 2,
       "samples": 26,
       "on_books_bookings": 1.0,
       "on_books_guests": 10.0,
@@ -285,7 +240,7 @@
     {
       "date": "2026-09-06",
       "weekday": "Sunday",
-      "days_until": 4,
+      "days_until": 3,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -349,7 +304,7 @@
     {
       "date": "2026-09-07",
       "weekday": "Monday",
-      "days_until": 5,
+      "days_until": 4,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -394,7 +349,7 @@
     {
       "date": "2026-09-08",
       "weekday": "Tuesday",
-      "days_until": 6,
+      "days_until": 5,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -439,8 +394,8 @@
     {
       "date": "2026-09-09",
       "weekday": "Wednesday",
-      "days_until": 7,
-      "samples": 12,
+      "days_until": 6,
+      "samples": 13,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
       "baseline_bookings": 0.5,
@@ -451,7 +406,7 @@
       "forecast_guests_low": 1.8,
       "forecast_guests_base": 1.8,
       "forecast_guests_high": 1.8,
-      "forecast_gross_base": 54.67,
+      "forecast_gross_base": 55.85,
       "staffing": "5-11 PM appointment-only: 1 staff planned",
       "external_events": "",
       "expected_rooms": 0.5,
@@ -465,7 +420,7 @@
           "label": "5-11 PM appointment-only",
           "planned_staff": 1,
           "staffing_note": "Last booking 10 PM; at least 2 hours notice.",
-          "samples": 12,
+          "samples": 13,
           "on_books_room_starts": 0.0,
           "on_books_guests": 0.0,
           "on_books_rooms": {},
@@ -484,7 +439,7 @@
     {
       "date": "2026-09-10",
       "weekday": "Thursday",
-      "days_until": 8,
+      "days_until": 7,
       "samples": 12,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -529,7 +484,7 @@
     {
       "date": "2026-09-11",
       "weekday": "Friday",
-      "days_until": 9,
+      "days_until": 8,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -593,7 +548,7 @@
     {
       "date": "2026-09-12",
       "weekday": "Saturday",
-      "days_until": 10,
+      "days_until": 9,
       "samples": 26,
       "on_books_bookings": 1.0,
       "on_books_guests": 6.0,
@@ -659,7 +614,7 @@
     {
       "date": "2026-09-13",
       "weekday": "Sunday",
-      "days_until": 11,
+      "days_until": 10,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -723,7 +678,7 @@
     {
       "date": "2026-09-14",
       "weekday": "Monday",
-      "days_until": 12,
+      "days_until": 11,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -768,7 +723,7 @@
     {
       "date": "2026-09-15",
       "weekday": "Tuesday",
-      "days_until": 13,
+      "days_until": 12,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -813,8 +768,8 @@
     {
       "date": "2026-09-16",
       "weekday": "Wednesday",
-      "days_until": 14,
-      "samples": 12,
+      "days_until": 13,
+      "samples": 13,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
       "baseline_bookings": 0.5,
@@ -825,7 +780,7 @@
       "forecast_guests_low": 1.8,
       "forecast_guests_base": 1.8,
       "forecast_guests_high": 1.8,
-      "forecast_gross_base": 54.67,
+      "forecast_gross_base": 55.85,
       "staffing": "5-11 PM appointment-only: 1 staff planned",
       "external_events": "",
       "expected_rooms": 0.5,
@@ -839,7 +794,7 @@
           "label": "5-11 PM appointment-only",
           "planned_staff": 1,
           "staffing_note": "Last booking 10 PM; at least 2 hours notice.",
-          "samples": 12,
+          "samples": 13,
           "on_books_room_starts": 0.0,
           "on_books_guests": 0.0,
           "on_books_rooms": {},
@@ -858,7 +813,7 @@
     {
       "date": "2026-09-17",
       "weekday": "Thursday",
-      "days_until": 15,
+      "days_until": 14,
       "samples": 12,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -903,7 +858,7 @@
     {
       "date": "2026-09-18",
       "weekday": "Friday",
-      "days_until": 16,
+      "days_until": 15,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -967,7 +922,7 @@
     {
       "date": "2026-09-19",
       "weekday": "Saturday",
-      "days_until": 17,
+      "days_until": 16,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1031,7 +986,7 @@
     {
       "date": "2026-09-20",
       "weekday": "Sunday",
-      "days_until": 18,
+      "days_until": 17,
       "samples": 26,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1095,7 +1050,7 @@
     {
       "date": "2026-09-21",
       "weekday": "Monday",
-      "days_until": 19,
+      "days_until": 18,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1140,7 +1095,7 @@
     {
       "date": "2026-09-22",
       "weekday": "Tuesday",
-      "days_until": 20,
+      "days_until": 19,
       "samples": 14,
       "on_books_bookings": 0.0,
       "on_books_guests": 0.0,
@@ -1175,6 +1130,51 @@
           "forecast_room_starts_base": 0.3,
           "forecast_room_starts_high": 0.3,
           "forecast_guests_base": 1.0,
+          "staff_needed_estimate": 1,
+          "coverage_gap": 0,
+          "blocking_risk": 0.0,
+          "blocked_gross_potential": 0.0
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "weekday": "Wednesday",
+      "days_until": 20,
+      "samples": 13,
+      "on_books_bookings": 0.0,
+      "on_books_guests": 0.0,
+      "baseline_bookings": 0.5,
+      "baseline_guests": 1.8,
+      "forecast_bookings_low": 0.0,
+      "forecast_bookings_base": 0.5,
+      "forecast_bookings_high": 1.0,
+      "forecast_guests_low": 1.8,
+      "forecast_guests_base": 1.8,
+      "forecast_guests_high": 1.8,
+      "forecast_gross_base": 55.85,
+      "staffing": "5-11 PM appointment-only: 1 staff planned",
+      "external_events": "",
+      "expected_rooms": 0.5,
+      "concurrent_staff_needed": 1,
+      "staff_availability": 1,
+      "blocking_risk": 0.0,
+      "blocked_gross_potential": 0.0,
+      "windows": [
+        {
+          "key": "appt_5_close",
+          "label": "5-11 PM appointment-only",
+          "planned_staff": 1,
+          "staffing_note": "Last booking 10 PM; at least 2 hours notice.",
+          "samples": 13,
+          "on_books_room_starts": 0.0,
+          "on_books_guests": 0.0,
+          "on_books_rooms": {},
+          "baseline_room_starts": 0.5,
+          "forecast_room_starts_low": 0.0,
+          "forecast_room_starts_base": 0.5,
+          "forecast_room_starts_high": 1.0,
+          "forecast_guests_base": 1.8,
           "staff_needed_estimate": 1,
           "coverage_gap": 0,
           "blocking_risk": 0.0,
