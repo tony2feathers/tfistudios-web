@@ -1,36 +1,14 @@
 [
   {
-    "event_name": "Chesterfield County Fair",
-    "start_date": "2026-08-28",
-    "end_date": "2026-09-05",
-    "location": "Chesterfield County Fairgrounds, 10300 Courthouse Road, Chesterfield, VA 23832",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
-    "confidence": "high",
-    "source_url": "https://chesterfieldcountyfair.org/",
-    "notes": "Major family fair within the primary Chesterfield draw area; official site confirms 2026 fair content, fairgrounds location, rides/entertainment/competitions, and Sept. 4 fair hours; public ticket listing observed Aug. 28-Sept. 5. Likely positive family/group demand and local traffic pressure. PII-free."
-  },
-  {
-    "event_name": "Labor Day holiday / local government closures",
+    "event_name": "Labor Day - local schools/offices closed",
     "start_date": "2026-09-07",
     "end_date": "2026-09-07",
-    "location": "Chesterfield County and Henrico County public calendars",
+    "location": "Chesterfield County / Henrico County / regional public schools and government offices",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/Calendar.aspx?month=9&year=2026",
-    "notes": "County calendars list Labor Day closures. Expect elevated long-weekend leisure demand, family availability, and possible staffing constraints."
-  },
-  {
-    "event_name": "Jazz in the Park 2026",
-    "start_date": "2026-09-06",
-    "end_date": "2026-09-06",
-    "location": "Henrico County, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/",
-    "notes": "Henrico County events calendar lists Jazz in the Park 2026, 4-6 p.m. Local family/date-night draw but not large enough alone for major staffing changes."
+    "source_url": "https://www.oneccps.org/page/calendars",
+    "notes": "CCPS student calendar lists holiday with schools/offices closed; Henrico County calendar also lists Labor Day closures. Day-of holiday can shift family availability and staffing assumptions."
   },
   {
     "event_name": "Movie Night with Chesterfield Animal Services",
@@ -40,19 +18,30 @@
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/Calendar.aspx?month=9&year=2026",
-    "notes": "County calendar lists a Friday evening movie night, 6-9:30 p.m. Family-oriented; may mildly compete with or complement evening bookings."
+    "source_url": "https://anc.apm.activecommunities.com/chesterfieldparksrec/activity/search/detail/26776?onlineSiteId=0",
+    "notes": "County Parks & Recreation evening family/community event, 6:00-9:30 PM. Local draw; modest impact, mostly competing for Friday family attention."
+  },
+  {
+    "event_name": "Run for the Fallen",
+    "start_date": "2026-09-12",
+    "end_date": "2026-09-12",
+    "location": "Fort Gregg-Adams / Fort Lee MWR area, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "medium",
+    "source_url": "https://lee.armymwr.com/calendar?date=09%2F07%2F2026",
+    "notes": "MWR public calendar lists Run for the Fallen at 7 AM on Sept. 12. Military/community participation signal; limited direct booking effect but relevant to Fort Gregg-Adams draw area."
   },
   {
     "event_name": "Falling Creek Ironworks History Day",
     "start_date": "2026-09-12",
     "end_date": "2026-09-12",
-    "location": "Falling Creek Ironworks Park, Chesterfield, VA",
+    "location": "Falling Creek Ironworks Park, 6407 Route One, North Chesterfield, VA 23234",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/Calendar.aspx?month=9&year=2026",
-    "notes": "Chesterfield County Parks and Recreation calendar lists this Saturday history/community event, 10 a.m.-4 p.m. Nearby family/community draw; low-to-medium daytime traffic relevance."
+    "source_url": "https://anc.apm.activecommunities.com/chesterfieldparksrec/activity/search/detail/26659?onlineSiteId=0",
+    "notes": "Chesterfield Parks & Recreation history/community event, 10 AM-4 PM. Family/local education draw; likely modest demand diversion or local traffic only."
   },
   {
     "event_name": "HenBIKEo 2026",
@@ -61,86 +50,108 @@
     "location": "Henrico County, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/",
-    "notes": "Henrico County calendar lists HenBIKEo 2026, 10 a.m.-3 p.m. Outdoor community recreation event; modest family/group relevance."
+    "confidence": "medium",
+    "source_url": "https://henrico.gov/calendar/henbikeo/",
+    "notes": "Henrico County calendar lists a public biking event. Outdoor/group activity; low booking impact but a local recreation signal for the Richmond/Henrico draw area."
   },
   {
-    "event_name": "Petersburg Book Fest",
-    "start_date": "2026-09-12",
-    "end_date": "2026-09-12",
-    "location": "Petersburg / Virginia State University area, Petersburg, VA",
+    "event_name": "Honey Day",
+    "start_date": "2026-09-13",
+    "end_date": "2026-09-13",
+    "location": "Henrico County, VA",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
+    "expected_demand_effect": "low",
     "confidence": "medium",
-    "source_url": "https://www.petersburgbookfest.com/",
-    "notes": "Official book fest site describes a regional literacy/community festival with 1,500-2,000 expected attendees; Eventbrite local listing observed Sat., Sept. 12, 2026. Potential family/community and group traffic south of Richmond."
+    "source_url": "https://henrico.gov/calendar/honey-day/",
+    "notes": "Henrico County family/nature calendar item. Local family outing; likely only low incremental impact."
+  },
+  {
+    "event_name": "Kinship Families Resource Fair",
+    "start_date": "2026-09-18",
+    "end_date": "2026-09-18",
+    "location": "Beulah Recreation Center, 6901 Hopkins Road, North Chesterfield, VA 23234",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "high",
+    "source_url": "https://www.chesterfield.gov/Calendar.aspx?EID=6260&month=9&year=2026&day=7&calType=0",
+    "notes": "Family-resource event from Chesterfield County calendar, 11 AM-1 PM. Useful family/community signal; not expected to drive large TEA bookings directly."
   },
   {
     "event_name": "Glen Allen Day 2026",
     "start_date": "2026-09-19",
     "end_date": "2026-09-19",
-    "location": "Glen Allen / Henrico County, VA",
+    "location": "Glen Allen, Henrico County, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/",
-    "notes": "Henrico County calendar lists Glen Allen Day 2026, 9:30 a.m.-3 p.m. Established community festival/parade-style local draw; may affect Saturday family demand in the Richmond/Henrico market."
+    "source_url": "https://henrico.gov/calendar/glen-allen-day-2026/",
+    "notes": "Henrico County calendar lists Glen Allen Day, historically a parade/festival-style community event. Family/group-oriented; possible Richmond northside/Henrico attention diversion."
   },
   {
-    "event_name": "2026 Festival of Grapes and Hops",
-    "start_date": "2026-09-19",
-    "end_date": "2026-09-19",
-    "location": "The Old Towne Harbor Festival Park, Petersburg, VA",
+    "event_name": "CCPS holiday - schools and offices closed",
+    "start_date": "2026-09-21",
+    "end_date": "2026-09-21",
+    "location": "Chesterfield County Public Schools districtwide",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
-    "confidence": "medium",
-    "source_url": "https://www.eventbrite.com/d/va--petersburg/events/",
-    "notes": "Eventbrite Petersburg listing shows 2026 Festival of Grapes and Hops on Sat., Sept. 19, 11 a.m. Adult/date-night and group-outing relevance in Petersburg. Direct city calendar was inaccessible during this run."
+    "confidence": "high",
+    "source_url": "https://www.oneccps.org/page/calendars",
+    "notes": "CCPS public iCal feed lists Sept. 21 as a holiday with schools and offices closed. Monday no-school day can create daytime family availability and staffing implications."
   },
   {
-    "event_name": "ChesterFest Fall Festival",
-    "start_date": "2026-09-26",
-    "end_date": "2026-09-26",
-    "location": "Chester, VA",
+    "event_name": "State Fair Games 2026",
+    "start_date": "2026-09-21",
+    "end_date": "2026-09-21",
+    "location": "Henrico County, VA",
     "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "medium",
+    "source_url": "https://henrico.gov/calendar/state-fair-games-2026/",
+    "notes": "Henrico County calendar lists State Fair Games. Likely more participant/community oriented than spectator-heavy; low-to-medium group activity signal."
+  },
+  {
+    "event_name": "State Fair of Virginia",
+    "start_date": "2026-09-25",
+    "end_date": "2026-10-04",
+    "location": "The Meadow Event Park, 13191 Dawn Blvd, Doswell, VA 23047",
+    "distance_context": "secondary_50mi",
     "expected_demand_effect": "high",
     "confidence": "medium",
-    "source_url": "https://www.chesterfestvirginia.com/",
-    "notes": "Official site describes ChesterFest as a family-friendly festival held on the last Saturday of September; in 2026 that falls on Sept. 26. Very close to TEA's Chester location and likely relevant for traffic/family demand."
+    "source_url": "https://www.statefairva.org/",
+    "notes": "Major regional family fair at Doswell; official site verified active 2026 fair/ticketing, address, hours, and advance ticket window. Exact fair run dates were not visible in the accessible page text during this run, so dates are carried forward with medium confidence. Large enough to affect family entertainment demand regionwide."
   },
   {
-    "event_name": "Virginia State University Homecoming 2026",
-    "start_date": "2026-10-03",
-    "end_date": "2026-10-10",
-    "location": "Virginia State University, Petersburg, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.vsu.edu/homecoming.php",
-    "notes": "VSU official homecoming page lists Homecoming 2026 from Saturday, Oct. 3 through Saturday, Oct. 10. Strong alumni/student/family traffic in Petersburg/Ettrick; likely restaurant/hotel/event spillover and group social demand."
-  },
-  {
-    "event_name": "2nd Street Festival",
-    "start_date": "2026-10-03",
-    "end_date": "2026-10-04",
-    "location": "Historic Jackson Ward, Downtown Richmond, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://venturerichmond.com/our-events/2nd-street-festival/",
-    "notes": "Venture Richmond lists the free 38th annual 2nd Street Festival on Oct. 3-4, 2026, with live music, Kidz Zone, food vendors, marketplace, and Artists Row. Major downtown draw; moderate spillover for Richmond-area date/family outings."
-  },
-  {
-    "event_name": "Richmond Kickers home match / RVA Craft Beer Festival",
-    "start_date": "2026-10-03",
-    "end_date": "2026-10-03",
-    "location": "City Stadium, Richmond, VA",
+    "event_name": "Civil War Day at Historic Point of Rocks",
+    "start_date": "2026-09-26",
+    "end_date": "2026-09-26",
+    "location": "R. Garland Dodd Park at Point of Rocks, 201 Enon Church Road, Chester, VA 23836",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://www.richmondkickers.com/schedule/",
-    "notes": "Kickers schedule lists an Oct. 3 home match with RVA Craft Beer Festival promotion and concourse samples. Date-night/group relevance, but north/west of Chester and likely localized around City Stadium."
+    "source_url": "https://anc.apm.activecommunities.com/chesterfieldparksrec/activity/search/detail/26209?onlineSiteId=0",
+    "notes": "Chester/Enon-area parks event, 10 AM-5 PM, close to TEA. Local traffic/family-attention relevance; not expected to materially increase escape room demand alone."
+  },
+  {
+    "event_name": "Outdoor Fest 2026",
+    "start_date": "2026-09-26",
+    "end_date": "2026-09-26",
+    "location": "Pocahontas State Park, 10301 State Park Road, Chesterfield, VA 23832",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.chesterfield.gov/OutdoorFest",
+    "notes": "Chesterfield County calendar lists Outdoor Fest at Pocahontas State Park, noon-5 PM. Family/outdoor festival close to Chester; likely affects local traffic and competes with Saturday afternoon leisure demand."
+  },
+  {
+    "event_name": "Fort Gregg-Adams Oktoberfest",
+    "start_date": "2026-10-03",
+    "end_date": "2026-10-03",
+    "location": "Fort Gregg-Adams / Fort Lee MWR area, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://lee.armymwr.com/calendar?date=09%2F28%2F2026",
+    "notes": "MWR calendar lists Oktoberfest on Oct. 3, 5-9 PM, with German food, beer, and music. Relevant evening social/community draw for military and nearby households."
   },
   {
     "event_name": "Soulful Sunday 2026",
@@ -148,21 +159,10 @@
     "end_date": "2026-10-04",
     "location": "Henrico County, VA",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
+    "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/",
-    "notes": "Henrico County calendar lists Soulful Sunday 2026, 4-7 p.m. Community/cultural event; modest leisure-demand relevance."
-  },
-  {
-    "event_name": "Bug Bizarre 2026",
-    "start_date": "2026-10-10",
-    "end_date": "2026-10-10",
-    "location": "Henrico County, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/",
-    "notes": "Henrico County calendar lists Bug Bizarre 2026, 1-4 p.m. Family/nature-program relevance, but likely small-to-moderate attendance."
+    "source_url": "https://henrico.gov/calendar/soulful-sunday-2026/",
+    "notes": "Henrico County calendar lists Soulful Sunday; recurring county cultural/community event. Family/group-oriented regional outing; medium attention-diversion signal."
   },
   {
     "event_name": "Richmond Folk Festival",
@@ -173,6 +173,39 @@
     "expected_demand_effect": "high",
     "confidence": "high",
     "source_url": "https://www.richmondfolkfestival.org/",
-    "notes": "Official site lists Oct. 9-11, 2026 and describes the Richmond Folk Festival as one of Virginia's largest events, free, three days, six stages, drawing visitors from across the country. High regional demand/traffic relevance."
+    "notes": "Official site lists Oct. 9-11, 2026 and describes it as one of Virginia's largest events, a free three-day festival drawing visitors from around the country with six stages and a family area. Strong regional traffic and entertainment-demand impact."
+  },
+  {
+    "event_name": "Bug Bizarre 2026",
+    "start_date": "2026-10-10",
+    "end_date": "2026-10-10",
+    "location": "Henrico County, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "high",
+    "source_url": "https://henrico.gov/calendar/bug-bizarre-2026/",
+    "notes": "Henrico County calendar lists Bug Bizarre. Family/nature education event; lower direct TEA effect but overlaps Richmond Folk Festival weekend."
+  },
+  {
+    "event_name": "Dinwiddie County Fair",
+    "start_date": "2026-10-16",
+    "end_date": "2026-10-18",
+    "location": "Dinwiddie County, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://bestpartva.org/events/dinwiddie-county-fair/",
+    "notes": "Best PART of Virginia tourism listing says Oct. 16-18, 2026, 6-11 PM, with weekend family fair activities. Secondary-radius event likely to draw Petersburg/Dinwiddie/southside families."
+  },
+  {
+    "event_name": "Awesome Autumn Afternoon",
+    "start_date": "2026-10-18",
+    "end_date": "2026-10-18",
+    "location": "Henrico County, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://henrico.gov/calendar/awesome-autumn-afternoon-2026/",
+    "notes": "Henrico County calendar lists a fall family/community event. Seasonal Sunday outing; medium competitor/attention-diversion signal for families."
   }
 ]
