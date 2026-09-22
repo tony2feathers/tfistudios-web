@@ -6,85 +6,129 @@
     "location": "The Meadow Event Park, Doswell, VA",
     "distance_context": "secondary_50mi",
     "expected_demand_effect": "high",
-    "confidence": "high",
+    "confidence": "medium",
     "source_url": "https://www.statefairva.org/",
-    "notes": "Large regional family fair with concerts, midway, rides, food and livestock/competition programming. Homepage confirmed 2026 concert/fair run spanning Sept. 25-Oct. 4 and daily hours/directions; likely to pull families from the Richmond metro and north/south I-95 corridor."
+    "notes": "Large regional family fair at Doswell, inside the broader 50-mile draw. State Fair site was accessible and showed 2026 ticketing; exact run dates treated as medium-confidence because date text was not cleanly exposed in the scraped page body. Likely competes for family entertainment while also increasing regional family travel."
   },
   {
-    "event_name": "Chesterfield Outdoor Fest",
-    "start_date": "2026-09-26",
-    "end_date": "2026-09-26",
-    "location": "Pocahontas State Park, Chesterfield, VA",
+    "event_name": "Chesterfield County Community Cup",
+    "start_date": "2026-10-03",
+    "end_date": "2026-10-03",
+    "location": "River City Sportsplex, 13030 Genito Road, Midlothian/Chesterfield, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/OutdoorFest",
-    "notes": "Free family-friendly outdoor event with live music, beer garden, food trucks, demonstrations and immersive activities. Very close to TEA's Chester draw area and likely to increase family traffic in the county that Saturday."
-  },
-  {
-    "event_name": "Glen Allen Day 2026",
-    "start_date": "2026-09-19",
-    "end_date": "2026-09-19",
-    "location": "Meadow Farm Museum at Crump Park, Glen Allen, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://henrico.gov/calendar/glen-allen-day-2026/",
-    "notes": "Henrico community parade and festival with 100+ vendors, food stands, stage entertainment and children's activities. Family-oriented but north of Richmond, so expected direct impact on Chester bookings is moderate."
+    "source_url": "https://www.chesterfield.gov/CommunityCup",
+    "notes": "County calendar lists Community Cup at River City Sportsplex, 10:00 AM-4:00 PM. Local sports/community draw; potential team/family traffic and same-day group activity spillover."
   },
   {
     "event_name": "2nd Street Festival",
     "start_date": "2026-10-03",
     "end_date": "2026-10-04",
-    "location": "Jackson Ward, Downtown Richmond, VA",
-    "distance_context": "primary_draw",
+    "location": "Historic Jackson Ward, Downtown Richmond, VA",
+    "distance_context": "secondary_50mi",
     "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://venturerichmond.com/our-events/2nd-street-festival/",
-    "notes": "Free two-day downtown Richmond festival with multiple music stages, Kidz Zone, food vendors, marketplace and Artists Row. Large weekend event may compete for discretionary outings while also increasing group/date-night traffic in the region."
+    "notes": "Venture Richmond lists the free two-day festival for Oct. 3-4, 2026 with multiple music stages and Kidz Zone. Strong downtown Richmond traffic/dining impact; secondary to Chester but relevant for regional entertainment demand."
   },
   {
-    "event_name": "Fort Gregg-Adams Oktoberfest",
+    "event_name": "Fort Gregg-Adams MWR Oktoberfest",
     "start_date": "2026-10-03",
     "end_date": "2026-10-03",
-    "location": "Gregg-Adams Club, Fort Gregg-Adams / Fort Lee, VA",
+    "location": "Fort Gregg-Adams / Fort Lee MWR, Prince George County, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://lee.armymwr.com/calendar/event/oktoberfest/7438946/113851",
-    "notes": "Public MWR autumn event with German food, beer, music, games and Best Dressed contest. Installation access/Real ID requirements reduce spillover, but it is close to TEA and can affect local evening traffic and group plans."
+    "confidence": "medium",
+    "source_url": "https://lee.armymwr.com/calendar?date=10/01/2026",
+    "notes": "MWR calendar shows Oktoberfest on Oct. 3. Audience may be more base/community-specific; include as a low-demand local group/date-night signal near Chester/Hopewell/Petersburg."
   },
   {
     "event_name": "Richmond Folk Festival",
     "start_date": "2026-10-09",
     "end_date": "2026-10-11",
     "location": "Downtown Richmond riverfront, Richmond, VA",
-    "distance_context": "primary_draw",
+    "distance_context": "secondary_50mi",
     "expected_demand_effect": "high",
     "confidence": "high",
     "source_url": "https://www.richmondfolkfestival.org/",
-    "notes": "One of Virginia's largest free events, drawing visitors from around the country to Richmond's riverfront for a three-day festival across six stages. High regional demand/traffic signal; could both compete with entertainment spend and increase visitor/group volume."
+    "notes": "Official festival site lists Oct. 9-11, 2026 and describes it as one of Virginia's largest events drawing visitors from across the country. Major regional traffic/hotel/family entertainment signal."
   },
   {
     "event_name": "Hopewell Harvest Fest 2026",
     "start_date": "2026-10-17",
     "end_date": "2026-10-17",
-    "location": "400 Westhill Road, Hopewell, VA",
+    "location": "Patrick Copeland Elementary School, 400 Westhill Road, Hopewell, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
-    "confidence": "medium",
-    "source_url": "https://www.hopewellva.gov/Calendar.aspx?EID=1526",
-    "notes": "Featured City of Hopewell community event on the public calendar. Details page confirmed date and location; event content was mostly flyer-based, so demand estimate assumes a family/community fall festival draw."
+    "confidence": "high",
+    "source_url": "https://www.hopewellva.gov/Calendar.aspx?EID=1526&month=9&year=2026&day=21&calType=0",
+    "notes": "Hopewell calendar lists 6:00-9:00 PM with games, activities, petting zoo, inflatables, haunted experience, glow dance party and free food while supplies last. Family-heavy local demand signal."
   },
   {
-    "event_name": "American Cornhole League Play Chesterfield Major",
+    "event_name": "Airport Open House Movie Night - The Rocketeer",
+    "start_date": "2026-10-17",
+    "end_date": "2026-10-17",
+    "location": "Richmond Executive-Chesterfield County Airport, 7511 Airfield Drive, Chesterfield, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "high",
+    "source_url": "https://www.chesterfield.gov/Calendar.aspx?EID=6251&month=9&year=2026&day=21&calType=0",
+    "notes": "Chesterfield County calendar lists the airport open house/movie night 5:30-9:30 PM. Local family/date-night activity; likely small-to-moderate effect but relevant because it is close to Chester."
+  },
+  {
+    "event_name": "Kings Dominion Halloween Haunt",
+    "start_date": "2026-09-18",
+    "end_date": "2026-11-01",
+    "location": "Kings Dominion, Doswell, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.sixflags.com/kingsdominion/events",
+    "notes": "Kings Dominion events page lists Halloween Haunt Sept. 18-Nov. 1 on select dates. Large seasonal night attraction within the broader regional radius; may divert or amplify date-night/group entertainment demand on operating nights."
+  },
+  {
+    "event_name": "Kings Dominion Tricks and Treats",
+    "start_date": "2026-09-19",
+    "end_date": "2026-11-01",
+    "location": "Kings Dominion, Doswell, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.sixflags.com/kingsdominion/events",
+    "notes": "Kings Dominion events page lists Tricks and Treats Sept. 19-Nov. 1 on select dates. Family-oriented seasonal attraction inside the 50-mile secondary radius."
+  },
+  {
+    "event_name": "ACL Play Chesterfield Major",
     "start_date": "2026-10-23",
     "end_date": "2026-10-24",
     "location": "Stonebridge Recreation Center, Chesterfield, VA",
     "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://playchesterfield.com/highlights/play-chesterfield-2026-sports-events/",
+    "notes": "Play Chesterfield 2026 sports events article lists the American Cornhole League Play Chesterfield Major for Oct. 23-24 at Stonebridge Recreation Center. Regional/national sports visitors and teams/fans may support bookings."
+  },
+  {
+    "event_name": "ECNL East Coast Gold Cup",
+    "start_date": "2026-10-31",
+    "end_date": "2026-11-01",
+    "location": "River City Sportsplex, 13030 Genito Road, Midlothian/Chesterfield, VA",
+    "distance_context": "primary_draw",
     "expected_demand_effect": "high",
     "confidence": "high",
     "source_url": "https://playchesterfield.com/highlights/play-chesterfield-2026-sports-events/",
-    "notes": "Play Chesterfield lists this as a premier national cornhole event featuring top players. Close to TEA and likely to bring competitors/fans into Chesterfield hotels/restaurants; strong group-outing potential around tournament sessions."
+    "notes": "Play Chesterfield article lists ECNL East Coast Gold Cup Oct. 31-Nov. 1 at River City Sportsplex, described as a premier national girls soccer recruiting event. Strong youth-team/family visitation signal for Halloween weekend."
+  },
+  {
+    "event_name": "Election Day local closure signal",
+    "start_date": "2026-11-03",
+    "end_date": "2026-11-03",
+    "location": "Chesterfield County / Richmond region, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "medium",
+    "source_url": "https://www.chesterfield.gov/Calendar.aspx?EID=5873&month=9&year=2026&day=21&calType=0",
+    "notes": "Chesterfield County calendar lists Election Day court closures. Treat as a low-demand calendar/closure signal; verify school closures separately before using as a strong staffing adjustment."
   }
 ]
