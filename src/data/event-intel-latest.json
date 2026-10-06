@@ -1,24 +1,35 @@
 [
   {
-    "event_name": "American Cornhole League (ACL) Play Chesterfield Major",
-    "start_date": "2026-10-23",
-    "end_date": "2026-10-24",
-    "location": "Stonebridge Recreation Center, Chesterfield County, VA",
+    "event_name": "Allianz Richmond Marathon weekend (marathon, half marathon, 8K)",
+    "start_date": "2026-11-14",
+    "end_date": "2026-11-14",
+    "location": "Downtown Richmond, VA",
+    "distance_context": "secondary_50mi",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.richmondmarathon.org/",
+    "notes": "Official event site lists race date as November 14, 2026 and reports the marathon, half marathon, and 8K sold out. Large regional attendance; downtown course/traffic impacts may affect Richmond travel, with indirect effects on Chester bookings."
+  },
+  {
+    "event_name": "Halloween",
+    "start_date": "2026-10-31",
+    "end_date": "2026-10-31",
+    "location": "Regional / community observances",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://playchesterfield.com/highlights/play-chesterfield-2026-sports-events/",
-    "notes": "Published 2026 Chesterfield sports calendar identifies this as a premier national event. Athlete and spectator attendance may increase local group/family activity and traffic; venue is in the primary draw area."
+    "source_url": "https://www.timeanddate.com/holidays/us/halloween",
+    "notes": "Widely observed family holiday on Saturday; could shift evening leisure demand and staffing availability. No single local event listing identified; this is a date-based seasonal signal."
   },
   {
-    "event_name": "ECNL East Coast Gold Cup",
-    "start_date": "2026-10-31",
-    "end_date": "2026-11-01",
-    "location": "River City Sportsplex, Chesterfield County, VA",
+    "event_name": "Veterans Day",
+    "start_date": "2026-11-11",
+    "end_date": "2026-11-11",
+    "location": "United States; Fort Gregg-Adams / regional communities",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "high",
+    "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://playchesterfield.com/highlights/play-chesterfield-2026-sports-events/",
-    "notes": "Published as a premier national girls soccer event with elite clubs and college recruiting attendance. Youth teams, families and spectators create plausible elevated weekend group demand; dates fall within the 45-day lookahead."
+    "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+    "notes": "Federal holiday may alter government/military work and school schedules around Fort Gregg-Adams; local school closures and installation-specific public programming were not verified."
   }
 ]
