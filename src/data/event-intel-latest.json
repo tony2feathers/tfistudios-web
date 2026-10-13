@@ -1,35 +1,46 @@
 [
   {
-    "event_name": "Allianz Richmond Marathon weekend (marathon, half marathon, 8K)",
-    "start_date": "2026-11-14",
-    "end_date": "2026-11-14",
-    "location": "Downtown Richmond, VA",
-    "distance_context": "secondary_50mi",
+    "event_name": "Hopewell Harvest Fest 2026",
+    "start_date": "2026-10-17",
+    "end_date": "2026-10-17",
+    "location": "400 Westhill Rd., Hopewell, VA",
+    "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.richmondmarathon.org/",
-    "notes": "Official event site lists race date as November 14, 2026 and reports the marathon, half marathon, and 8K sold out. Large regional attendance; downtown course/traffic impacts may affect Richmond travel, with indirect effects on Chester bookings."
+    "source_url": "https://www.hopewellva.gov/calendar.aspx",
+    "notes": "Featured on Hopewell's official city calendar. Family/community festival may draw local groups and increase competing activities or nearby traffic; published listing specifies October 17."
   },
   {
     "event_name": "Halloween",
     "start_date": "2026-10-31",
     "end_date": "2026-10-31",
-    "location": "Regional / community observances",
+    "location": "Regional observance; Chester/Richmond area",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://www.timeanddate.com/holidays/us/halloween",
-    "notes": "Widely observed family holiday on Saturday; could shift evening leisure demand and staffing availability. No single local event listing identified; this is a date-based seasonal signal."
+    "notes": "Widespread family holiday; trick-or-treating and community activities may shift evening booking patterns. No individual local celebration included because no official local listing was verified."
   },
   {
     "event_name": "Veterans Day",
     "start_date": "2026-11-11",
     "end_date": "2026-11-11",
-    "location": "United States; Fort Gregg-Adams / regional communities",
+    "location": "Regional observance; Chester/Richmond area",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
     "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
-    "notes": "Federal holiday may alter government/military work and school schedules around Fort Gregg-Adams; local school closures and installation-specific public programming were not verified."
+    "notes": "Federal holiday falls on a Wednesday; possible modest effects on school/federal workforce schedules and group availability. No major local event verified."
+  },
+  {
+    "event_name": "Thanksgiving Day",
+    "start_date": "2026-11-26",
+    "end_date": "2026-11-26",
+    "location": "Regional observance; Chester/Richmond area",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+    "notes": "Holiday likely affects operating schedules, family travel, and availability; adjacent school breaks may influence the week but were not independently verified in the checked calendars."
   }
 ]
