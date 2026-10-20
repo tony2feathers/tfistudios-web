@@ -1,46 +1,35 @@
 [
   {
-    "event_name": "Hopewell Harvest Fest 2026",
-    "start_date": "2026-10-17",
-    "end_date": "2026-10-17",
-    "location": "400 Westhill Rd., Hopewell, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "high",
-    "source_url": "https://www.hopewellva.gov/calendar.aspx",
-    "notes": "Featured on Hopewell's official city calendar. Family/community festival may draw local groups and increase competing activities or nearby traffic; published listing specifies October 17."
-  },
-  {
     "event_name": "Halloween",
     "start_date": "2026-10-31",
     "end_date": "2026-10-31",
-    "location": "Regional observance; Chester/Richmond area",
+    "location": "United States; local observance in Chester / Richmond region",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
     "source_url": "https://www.timeanddate.com/holidays/us/halloween",
-    "notes": "Widespread family holiday; trick-or-treating and community activities may shift evening booking patterns. No individual local celebration included because no official local listing was verified."
+    "notes": "Widely observed family and group holiday; evening plans may compete with bookings, while daytime family activity demand may rise. No specific local event included."
   },
   {
     "event_name": "Veterans Day",
     "start_date": "2026-11-11",
     "end_date": "2026-11-11",
-    "location": "Regional observance; Chester/Richmond area",
+    "location": "United States; local observance in Chester / Richmond region",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
-    "notes": "Federal holiday falls on a Wednesday; possible modest effects on school/federal workforce schedules and group availability. No major local event verified."
+    "source_url": "https://www.timeanddate.com/holidays/us/veterans-day",
+    "notes": "Federal holiday may affect school and government schedules; local school closure details were not confirmed in the sources checked."
   },
   {
     "event_name": "Thanksgiving Day",
     "start_date": "2026-11-26",
     "end_date": "2026-11-26",
-    "location": "Regional observance; Chester/Richmond area",
+    "location": "United States; local observance in Chester / Richmond region",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
-    "notes": "Holiday likely affects operating schedules, family travel, and availability; adjacent school breaks may influence the week but were not independently verified in the checked calendars."
+    "source_url": "https://www.timeanddate.com/holidays/us/thanksgiving-day",
+    "notes": "Major family travel and gathering holiday; expect atypical booking patterns and possible school-break effects around the date."
   }
 ]
