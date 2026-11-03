@@ -1,0 +1,88 @@
+---
+import '../../styles/blackbeards-treasure-archer/game.css';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101a1c" />
+  <meta name="description" content="A self-contained pirate cabin escape game. Follow the chart, unlock the captain's protections, and flee with the treasure." />
+  <title>Steal Blackbeard's Treasure | TFI Studios</title>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <a class="home" href="/">← TFI Studios</a>
+      <span class="eyebrow">An original interactive prequel · a fictional tale</span>
+      <button id="restart" class="quiet" type="button">Start over</button>
+    </header>
+    <main>
+      <div class="intro">
+        <div><p class="eyebrow">The captain is ashore. The tide is turning.</p><h1>Steal Blackbeard’s <em>Treasure</em></h1></div>
+        <p>Sneak into the candlelit cabin. Read what he left behind. Break his three protections, take the prize, and leave before he returns.</p>
+      </div>
+      <div class="playfield">
+        <section class="stage" aria-label="Illustrated captain's cabin with interactive objects">
+          <div class="scene">
+            <svg class="art" viewBox="0 0 1200 690" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A candlelit ship cabin: a moonlit porthole, pinned sea chart, brass astrolabe and locked treasure chest. The labeled buttons over the illustration are interactive." xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="walls" x2="0" y2="1"><stop stop-color="#243338"/><stop offset=".52" stop-color="#19292c"/><stop offset="1" stop-color="#0b171b"/></linearGradient>
+                <radialGradient id="glow"><stop stop-color="#f1ac52" stop-opacity=".42"/><stop offset="1" stop-color="#e98d38" stop-opacity="0"/></radialGradient>
+                <radialGradient id="sea"><stop stop-color="#526e79"/><stop offset="1" stop-color="#142c3a"/></radialGradient>
+                <linearGradient id="paper" x2=".8" y2="1"><stop stop-color="#e1c896"/><stop offset="1" stop-color="#907452"/></linearGradient>
+                <linearGradient id="chest" x2="0" y2="1"><stop stop-color="#785337"/><stop offset=".54" stop-color="#382721"/><stop offset="1" stop-color="#19191b"/></linearGradient>
+                <pattern id="grain" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 9h7 M8 1h3" stroke="#d5ba88" opacity=".055"/></pattern>
+              </defs>
+              <!-- hull and beams -->
+              <path fill="url(#walls)" d="M0 0h1200v690H0z"/><path fill="url(#grain)" d="M0 0h1200v690H0z"/>
+              <path d="M0 98 Q600 65 1200 98 M0 404 Q600 375 1200 403 M0 600 Q600 562 1200 605" fill="none" stroke="#654932" stroke-width="17" opacity=".85"/>
+              <path d="M100 0 135 690 M1070 0 1030 690" stroke="#5a3b2c" stroke-width="40" opacity=".7"/>
+              <path d="M0 505 1200 505v185H0z" fill="#1a1b1b"/><path d="M0 535 1200 535 M0 618 1200 618 M350 535 300 690 M850 535 900 690" stroke="#735038" stroke-width="7" opacity=".55"/>
+              <!-- porthole / moonlit sea -->
+              <circle cx="950" cy="195" r="166" fill="#141a1b" stroke="#876b48" stroke-width="25"/><circle cx="950" cy="195" r="147" fill="url(#sea)" stroke="#be9a61" stroke-width="5"/>
+              <circle cx="990" cy="113" r="35" fill="#e9dfb9"/><path d="M808 228q70-30 139 0t149 0v106H808z" fill="#172d39"/><path d="M805 256q80-20 148 6t148-4 M810 294q70-26 137-3t145-2" fill="none" stroke="#71909b" stroke-width="4" opacity=".7"/>
+              <path d="M942 51v291 M802 195h296" stroke="#a48456" stroke-width="12"/><g fill="#d2b782"><circle cx="950" cy="33" r="6"/><circle cx="1111" cy="195" r="6"/><circle cx="950" cy="354" r="6"/><circle cx="789" cy="195" r="6"/></g>
+              <!-- chart pinned to wall -->
+              <path d="M182 115 510 102 531 378 179 393z" fill="#100f0d" opacity=".7" transform="translate(9 12)"/><path d="M182 115 510 102 531 378 179 393z" fill="url(#paper)" stroke="#e3cc9f" stroke-width="5"/>
+              <path d="M214 146q65-28 105 9t105-14 M202 295q68-10 119 19t161-17 M245 183q-17 38 7 71t-30 65 M419 177q-26 51 4 81" fill="none" stroke="#6f725d" stroke-width="4" opacity=".7"/>
+              <path d="M239 246 Q305 202 352 245 T467 214" fill="none" stroke="#704332" stroke-width="3" stroke-dasharray="7 8"/>
+              <g fill="#5e4230" font-family="Georgia,serif"><text x="247" y="169" font-size="22" letter-spacing="4">THE NIGHT CHART</text><text x="250" y="225" font-size="26">☾</text><text x="345" y="271" font-size="24">▲</text><text x="452" y="220" font-size="24">✦</text><text x="228" y="357" font-size="15" letter-spacing="2">FIND THE COURSE</text></g>
+              <circle cx="189" cy="124" r="8" fill="#3b2a24" stroke="#d0a977" stroke-width="3"/><circle cx="503" cy="116" r="8" fill="#3b2a24" stroke="#d0a977" stroke-width="3"/>
+              <!-- astrolabe -->
+              <ellipse cx="644" cy="314" rx="120" ry="132" fill="#e4a75b" opacity=".08"/><circle cx="654" cy="279" r="105" fill="#1a2021" stroke="#896742" stroke-width="14"/><circle cx="654" cy="279" r="84" fill="none" stroke="#d0aa6b" stroke-width="4"/><circle cx="654" cy="279" r="62" fill="#344145" stroke="#9d7b4c" stroke-width="12"/><path d="M654 193v172 M566 279h176 M610 235l88 88 M610 323l88-88" stroke="#c2a06b" stroke-width="4"/><circle cx="654" cy="279" r="15" fill="#e6bd78"/><path d="M654 220l-12 56 12 13 12-13z" fill="#efdba9"/><path d="M654 337l-12-56 12-13 12 13z" fill="#a35b47"/><text x="640" y="160" fill="#e9c58a" font-family="Georgia" font-size="20">N</text>
+              <!-- desk with log and candle -->
+              <path d="M80 452 Q600 422 1120 452l38 46Q600 483 42 500z" fill="#533927" stroke="#a37849" stroke-width="10"/><path d="M64 503h1085v45H64z" fill="#32261f" stroke="#9a6c41" stroke-width="5"/>
+              <path d="M180 447 315 418 393 463 258 488z" fill="#ba9c70" stroke="#e5c99b" stroke-width="4"/><path d="m217 452 94-17 M225 462l117-19 M255 473l92-15" stroke="#75563c" stroke-width="3"/>
+              <ellipse cx="499" cy="431" rx="45" ry="13" fill="#b28b52"/><path d="M478 425v-80h40v80z" fill="#e4d1a0"/><path d="M498 344q-29-32 1-64 25 38-1 64z" fill="#f6cc76" class="flame"/><circle cx="499" cy="343" r="170" fill="url(#glow)" pointer-events="none"/>
+              <path d="M508 365q-9 7-1 15 M487 387q10 9-1 20" fill="none" stroke="#af865c" stroke-width="3"/>
+              <!-- treasure chest -->
+              <g id="chest-art"><ellipse cx="864" cy="608" rx="236" ry="31" fill="#03090a" opacity=".72"/><path d="M678 485q0-99 184-101 190 0 191 102v49H678z" fill="url(#chest)" stroke="#b48349" stroke-width="9"/><path d="M700 493q6-72 163-76 159 2 167 75 M737 415v78 M982 416v78" fill="none" stroke="#b9975c" stroke-width="9"/><path d="M668 501h389v108q-189 34-389 0z" fill="url(#chest)" stroke="#b89158" stroke-width="10"/><path d="M700 503v106 M1020 503v106 M670 535h387 M670 589h387" stroke="#8f663d" stroke-width="8"/><path d="M827 489h74v91h-74z" fill="#b38c4e" stroke="#e1c28a" stroke-width="4"/><circle cx="864" cy="533" r="18" fill="#332923" stroke="#e7c688" stroke-width="5"/><path d="M864 533v14" stroke="#e7c688" stroke-width="5"/><g fill="#d5ad68"><circle cx="693" cy="520" r="5"/><circle cx="1032" cy="520" r="5"/><circle cx="693" cy="588" r="5"/><circle cx="1032" cy="588" r="5"/></g></g>
+              <path d="M0 0h1200v690H0z" fill="none" stroke="#060e10" stroke-width="38" opacity=".48"/>
+            </svg>
+            <button class="hotspot chart" data-open="chart" type="button"><span>01</span> Sea chart</button>
+            <button class="hotspot log" data-open="log" type="button"><span>✧</span> Captain’s log</button>
+            <button class="hotspot astrolabe" data-open="astrolabe" type="button"><span>02</span> Astrolabe</button>
+            <button class="hotspot chest" data-open="chest" type="button"><span>03</span> Treasure chest</button>
+            <div class="win-shimmer" aria-hidden="true"></div>
+          </div>
+          <p class="scene-caption">Select an object to inspect it. No clock is running; take your time.</p>
+        </section>
+        <aside class="sidebar" aria-label="Journey and inventory">
+          <div class="side-heading"><span class="eyebrow">Ship’s journal</span><span id="progress">0 / 3 protections</span></div>
+          <ol class="milestones"><li id="step-chart">Trace the sea chart</li><li id="step-instrument">Align the astrolabe</li><li id="step-chest">Open the chest</li></ol>
+          <div class="divider"></div>
+          <h2>What you carry</h2><ul id="inventory" class="inventory"><li>A steady hand and a little nerve.</li></ul>
+          <div class="divider"></div>
+          <h2>Field notes</h2><p id="notes">The captain’s log rests on the desk. It may tell you where to begin.</p>
+          <p id="status" class="status" role="status" aria-live="polite">You are alone in the cabin. For now.</p>
+        </aside>
+      </div>
+    </main>
+    <footer>Made for curious minds by TFI Studios · This fictional prequel is not a guide to the real room.</footer>
+  </div>
+  <dialog id="inspection" aria-labelledby="dialog-title"><div class="dialog-inner"><div class="dialog-top"><span class="eyebrow">Captain’s cabin · inspect</span><button id="close" class="icon-button" type="button" aria-label="Close inspection">×</button></div><h2 id="dialog-title"></h2><div id="dialog-body"></div><div class="hint-box"><button id="hint" class="quiet" type="button">Need a hint? (1 / 3)</button><p id="hint-text" aria-live="polite"></p></div></div></dialog>
+  <dialog id="confirm" aria-labelledby="confirm-title"><div class="dialog-inner"><h2 id="confirm-title">Leave this voyage behind?</h2><p>Start over from the cabin entrance. Your progress on this device will be cleared.</p><div class="actions"><button id="cancel-restart" type="button">Keep playing</button><button id="do-restart" type="button">Start over</button></div></div></dialog>
+  <script>import '../../scripts/blackbeards-treasure-archer/app.mjs';</script>
+</body>
+</html>
