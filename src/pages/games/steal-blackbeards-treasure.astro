@@ -1,0 +1,714 @@
+---
+import '../../styles/blackbeards-treasure/game.css';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steal Blackbeard's Treasure — TFI Studios</title>
+    <meta name="description" content="An original illustrated escape-room prequel: sneak aboard the Queen Anne's Revenge, solve the captain's protections, steal the treasure, and escape before Blackbeard returns." />
+  </head>
+  <body>
+    <main class="bb-page">
+    <header class="bb-header">
+      <div>
+        <p class="bb-kicker">A TFI Studios original escape-room prequel</p>
+        <h1 class="bb-title">Steal Blackbeard's Treasure</h1>
+        <p class="bb-intro">Sneak aboard the Queen Anne's Revenge, solve the captain's four protections, take the chest, and leave before Blackbeard returns. The story ends with Blackbeard's Revenge waiting on the far side of the water.</p>
+        <p class="bb-note">The illustrated cabin is the play surface. Brass hotspots open clues; the journal tracks what you have solved and what you carry.</p>
+      </div>
+    </header>
+
+    <div class="bb-shell">
+      <section class="bb-scene-panel" aria-label="Candlelit pirate cabin play scene">
+        <div class="bb-scene">
+          <svg viewBox="0 0 1200 760" role="img" aria-label="Illustrated candlelit pirate cabin with a porthole, desk, chart, ropes, gangway, and treasure chest">
+            <defs>
+              <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1c2b34" />
+                <stop offset="0.55" stop-color="#2b1d14" />
+                <stop offset="1" stop-color="#130d09" />
+              </linearGradient>
+              <linearGradient id="deskGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#6e4528" />
+                <stop offset="0.6" stop-color="#3f2616" />
+                <stop offset="1" stop-color="#24160d" />
+              </linearGradient>
+              <linearGradient id="brassGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f5d58b" />
+                <stop offset="0.35" stop-color="#c58b3f" />
+                <stop offset="0.75" stop-color="#8c5a27" />
+                <stop offset="1" stop-color="#e6b65f" />
+              </linearGradient>
+              <linearGradient id="chestGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#8e5a2d" />
+                <stop offset="0.55" stop-color="#4a2c16" />
+                <stop offset="1" stop-color="#24140a" />
+              </linearGradient>
+              <radialGradient id="candleGlow" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0" stop-color="#ffd98a" stop-opacity="0.75" />
+                <stop offset="0.45" stop-color="#f4b45d" stop-opacity="0.22" />
+                <stop offset="1" stop-color="#f4b45d" stop-opacity="0" />
+              </radialGradient>
+              <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0" stop-color="#fff6d6" stop-opacity="0.95" />
+                <stop offset="0.5" stop-color="#f6e6b8" stop-opacity="0.3" />
+                <stop offset="1" stop-color="#f6e6b8" stop-opacity="0" />
+              </radialGradient>
+              <pattern id="parchmentPattern" width="16" height="16" patternUnits="userSpaceOnUse">
+                <rect width="16" height="16" fill="#d6c099" />
+                <path d="M0 4 H16 M0 12 H16" stroke="#b79b6e" stroke-width="1" opacity="0.35" />
+              </pattern>
+              <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="9" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+              <filter id="shadowBlur" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="12" />
+              </filter>
+              <clipPath id="portholeClip">
+                <circle cx="250" cy="210" r="88" />
+              </clipPath>
+            </defs>
+
+            <rect x="0" y="0" width="1200" height="760" fill="url(#wallGrad)" />
+
+            <g stroke="#0d0805" stroke-width="3" opacity="0.5">
+              <path d="M70 0 V760 M155 0 V760 M240 0 V760 M325 0 V760 M410 0 V760 M495 0 V760 M580 0 V760 M665 0 V760 M750 0 V760 M835 0 V760 M920 0 V760 M1005 0 V760 M1090 0 V760 M1175 0 V760" />
+            </g>
+            <g stroke="#5a3b23" stroke-width="2" opacity="0.35">
+              <path d="M80 0 V760 M165 0 V760 M250 0 V760 M335 0 V760 M420 0 V760 M505 0 V760 M590 0 V760 M675 0 V760 M760 0 V760 M845 0 V760 M930 0 V760 M1015 0 V760 M1100 0 V760" />
+            </g>
+
+            <rect x="0" y="0" width="1200" height="26" fill="#2b1b10" />
+            <rect x="0" y="26" width="1200" height="10" fill="#6a4225" />
+            <rect x="0" y="36" width="1200" height="6" fill="#24160d" />
+
+            <g opacity="0.85">
+              <rect x="112" y="70" width="34" height="560" rx="6" fill="#3b2415" />
+              <rect x="1040" y="60" width="42" height="580" rx="7" fill="#3b2415" />
+              <rect x="112" y="70" width="10" height="560" fill="#6a4225" opacity="0.35" />
+              <rect x="1040" y="60" width="10" height="580" fill="#6a4225" opacity="0.35" />
+            </g>
+
+            <!-- porthole and night sea -->
+            <circle cx="250" cy="210" r="112" fill="#080c10" />
+            <circle cx="250" cy="210" r="112" fill="none" stroke="url(#brassGrad)" stroke-width="14" />
+            <circle cx="250" cy="210" r="88" fill="#0b1a27" />
+            <g clip-path="url(#portholeClip)">
+              <rect x="160" y="150" width="180" height="140" fill="#0d2536" />
+              <path d="M160 250 Q210 230 250 252 Q300 274 340 248 V300 H160 Z" fill="#1b4b5f" opacity="0.85" />
+              <path d="M160 270 Q215 254 260 274 Q305 294 340 268 V300 H160 Z" fill="#2f7185" opacity="0.55" />
+              <path d="M170 232 Q220 220 270 236 Q310 252 330 230" fill="none" stroke="#7cc7d1" stroke-width="3" opacity="0.5" />
+              <path d="M180 286 Q230 274 280 288 Q310 298 330 282" fill="none" stroke="#9bd8df" stroke-width="2" opacity="0.35" />
+              <circle cx="290" cy="158" r="26" fill="url(#moonGlow)" />
+              <circle cx="290" cy="158" r="15" fill="#fff6d6" />
+              <circle cx="204" cy="140" r="2.2" fill="#e8f0f5" />
+              <circle cx="222" cy="168" r="1.6" fill="#e8f0f5" opacity="0.7" />
+              <circle cx="180" cy="196" r="1.4" fill="#e8f0f5" opacity="0.6" />
+              <circle cx="318" cy="184" r="1.8" fill="#e8f0f5" opacity="0.6" />
+            </g>
+            <circle cx="250" cy="210" r="88" fill="none" stroke="#e7c37e" stroke-width="2" opacity="0.4" />
+            <path d="M250 122 V98 M250 298 V322 M162 210 H138 M338 210 H362" stroke="url(#brassGrad)" stroke-width="5" stroke-linecap="round" />
+
+            <!-- candle and glow -->
+            <circle cx="500" cy="360" r="180" fill="url(#candleGlow)" />
+            <rect x="468" y="386" width="64" height="18" rx="5" fill="#3b2415" />
+            <rect x="476" y="404" width="48" height="86" rx="8" fill="#d8c39a" />
+            <rect x="476" y="404" width="48" height="86" rx="8" fill="none" stroke="#b79b6e" stroke-width="2" />
+            <path d="M500 404 V490" stroke="#b79b6e" stroke-width="1" opacity="0.5" />
+            <rect x="484" y="396" width="32" height="10" rx="4" fill="#f1c56b" />
+            <g class="flame" filter="url(#softGlow)">
+              <path d="M500 392 C486 370 492 350 500 334 C508 350 514 370 500 392 Z" fill="#ffd27a" />
+              <path d="M500 386 C494 372 498 358 500 348 C502 358 506 372 500 386 Z" fill="#fff3c2" />
+            </g>
+
+            <!-- desk and chart -->
+            <ellipse cx="610" cy="575" rx="330" ry="36" fill="#000" opacity="0.35" filter="url(#shadowBlur)" />
+            <rect x="300" y="430" width="470" height="150" rx="14" fill="url(#deskGrad)" />
+            <rect x="300" y="430" width="470" height="20" rx="8" fill="#8b5a31" />
+            <rect x="300" y="560" width="470" height="20" rx="8" fill="#24160d" />
+            <path d="M320 450 H750 M320 470 H750 M320 490 H750" stroke="#2d1d12" stroke-width="2" opacity="0.35" />
+
+            <!-- logbook -->
+            <g transform="rotate(-4 400 455)">
+              <rect x="350" y="430" width="110" height="62" rx="6" fill="#3a2415" />
+              <rect x="356" y="436" width="98" height="50" rx="4" fill="#e2d2b1" />
+              <path d="M366 446 H444 M366 456 H444 M366 466 H444 M366 476 H420" stroke="#8f7956" stroke-width="2" opacity="0.7" />
+              <path d="M366 446 H420" stroke="#8f2f2f" stroke-width="3" opacity="0.6" />
+            </g>
+
+            <!-- chart with bearings -->
+            <g transform="rotate(5 600 445)">
+              <rect x="540" y="420" width="150" height="100" rx="7" fill="url(#parchmentPattern)" />
+              <rect x="540" y="420" width="150" height="100" rx="7" fill="none" stroke="#b79b6e" stroke-width="3" />
+              <path d="M560 448 Q610 430 675 458" fill="none" stroke="#8f2f2f" stroke-width="2" opacity="0.7" />
+              <path d="M560 472 Q620 490 675 468" fill="none" stroke="#4f6c4b" stroke-width="2" opacity="0.7" />
+              <path d="M560 492 Q610 480 675 494" fill="none" stroke="#4f6c4b" stroke-width="2" opacity="0.55" />
+              <circle cx="610" cy="468" r="22" fill="none" stroke="#8f6a3d" stroke-width="2" />
+              <path d="M610 446 L610 490 M588 468 L632 468" stroke="#8f6a3d" stroke-width="2" />
+              <path d="M610 468 L620 456 L626 468 L616 480 Z" fill="#8f2f2f" />
+              <text x="556" y="438" fill="#5b4328" font-family="Georgia, serif" font-size="11" letter-spacing="1">REEF 075°</text>
+              <text x="556" y="512" fill="#5b4328" font-family="Georgia, serif" font-size="11" letter-spacing="1">COVE 210°</text>
+              <text x="650" y="438" fill="#5b4328" font-family="Georgia, serif" font-size="11" letter-spacing="1">CHEST 330°</text>
+            </g>
+
+            <!-- compass instrument -->
+            <g transform="translate(704 486)">
+              <circle r="34" fill="#3b2415" stroke="url(#brassGrad)" stroke-width="6" />
+              <circle r="24" fill="#d8c39a" />
+              <g class="compass-needle">
+                <path d="M0 -20 L6 0 L0 20 L-6 0 Z" fill="#8f2f2f" />
+                <circle r="4" fill="#f1c56b" />
+              </g>
+              <path d="M0 -24 V-18 M0 24 V18 M-24 0 H-18 M24 0 H18" stroke="#5b4328" stroke-width="2" />
+            </g>
+
+            <!-- tide table on side table -->
+            <rect x="820" y="500" width="130" height="78" rx="8" fill="#3a2415" />
+            <rect x="828" y="506" width="114" height="66" rx="5" fill="#e2d2b1" />
+            <path d="M838 520 H932 M838 532 H932 M838 544 H932 M838 556 H932" stroke="#8f7956" stroke-width="2" opacity="0.7" />
+            <text x="842" y="516" fill="#5b4328" font-family="Georgia, serif" font-size="10">HIGH TIDE 8 FT</text>
+            <text x="842" y="558" fill="#5b4328" font-family="Georgia, serif" font-size="10">LOW TIDE 3 FT</text>
+
+            <!-- rigging ropes -->
+            <g stroke="#b79b6e" stroke-width="4" fill="none" opacity="0.9">
+              <path d="M900 180 C930 260 920 330 900 420" />
+              <path d="M940 180 C970 260 960 330 940 420" />
+              <path d="M980 180 C1010 260 1000 330 980 420" />
+              <path d="M1020 180 C1050 260 1040 330 1020 420" />
+            </g>
+            <g fill="#f1c56b">
+              <circle cx="900" cy="260" r="4" /><circle cx="900" cy="290" r="4" /><circle cx="900" cy="320" r="4" /><circle cx="900" cy="350" r="4" />
+              <circle cx="940" cy="250" r="4" /><circle cx="940" cy="280" r="4" /><circle cx="940" cy="310" r="4" /><circle cx="940" cy="340" r="4" /><circle cx="940" cy="370" r="4" /><circle cx="940" cy="400" r="4" /><circle cx="940" cy="430" r="4" />
+              <circle cx="980" cy="240" r="4" /><circle cx="980" cy="270" r="4" /><circle cx="980" cy="300" r="4" /><circle cx="980" cy="330" r="4" /><circle cx="980" cy="360" r="4" /><circle cx="980" cy="390" r="4" /><circle cx="980" cy="420" r="4" /><circle cx="980" cy="450" r="4" />
+              <circle cx="1020" cy="260" r="4" /><circle cx="1020" cy="290" r="4" /><circle cx="1020" cy="320" r="4" /><circle cx="1020" cy="350" r="4" /><circle cx="1020" cy="380" r="4" />
+            </g>
+            <text x="884" y="452" fill="#d8c39a" font-family="Georgia, serif" font-size="13" letter-spacing="1">A · B · C · D</text>
+
+            <!-- bell schedule -->
+            <g transform="translate(1010 372)">
+              <rect x="-48" y="-28" width="96" height="56" rx="8" fill="#3a2415" stroke="url(#brassGrad)" stroke-width="3" />
+              <rect x="-38" y="-18" width="76" height="36" rx="4" fill="#e2d2b1" />
+              <text x="-26" y="-4" fill="#5b4328" font-family="Georgia, serif" font-size="9">CURRENT 3</text>
+              <text x="-26" y="8" fill="#5b4328" font-family="Georgia, serif" font-size="9">RETURN 8</text>
+              <text x="-26" y="20" fill="#5b4328" font-family="Georgia, serif" font-size="9">GAP = ?</text>
+            </g>
+
+            <!-- gangway door -->
+            <rect x="1035" y="470" width="130" height="210" rx="10" fill="#24160d" stroke="#6a4225" stroke-width="6" />
+            <rect x="1045" y="480" width="110" height="190" rx="6" fill="#3b2415" />
+            <path d="M1055 492 H1145 M1055 516 H1145 M1055 540 H1145" stroke="#5a3b23" stroke-width="3" opacity="0.6" />
+            <circle cx="1120" cy="570" r="6" fill="url(#brassGrad)" />
+            <path d="M1040 690 H1165" stroke="#6a4225" stroke-width="8" />
+
+            <!-- ornate treasure chest -->
+            <g id="treasure-chest" class="treasure-chest">
+              <ellipse cx="790" cy="700" rx="135" ry="24" fill="#000" opacity="0.45" filter="url(#shadowBlur)" />
+              <rect x="690" y="610" width="200" height="100" rx="14" fill="url(#chestGrad)" stroke="#e6b65f" stroke-width="4" />
+              <path d="M690 610 Q790 570 890 610 L890 640 Q790 600 690 640 Z" fill="#6a3b20" stroke="#f1c56b" stroke-width="4" />
+              <rect x="690" y="640" width="200" height="12" fill="#b87c33" />
+              <rect x="760" y="640" width="60" height="54" rx="8" fill="#2a1a0d" stroke="#f1c56b" stroke-width="4" />
+              <circle cx="790" cy="666" r="10" fill="#f1c56b" />
+              <path d="M790 656 V676" stroke="#2a1a0d" stroke-width="3" />
+              <g fill="#f1c56b">
+                <circle cx="720" cy="650" r="5" /><circle cx="860" cy="650" r="5" /><circle cx="740" cy="690" r="4" /><circle cx="840" cy="690" r="4" />
+              </g>
+              <path d="M700 610 Q790 585 880 610" fill="none" stroke="#f1c56b" stroke-width="2" opacity="0.7" />
+              <g class="chest-lid">
+                <path d="M690 610 Q790 570 890 610 L890 640 Q790 600 690 640 Z" fill="#6a3b20" stroke="#f1c56b" stroke-width="4" />
+              </g>
+              <g class="chest-open-lid">
+                <path d="M690 610 Q790 545 890 610 L880 600 Q790 525 700 600 Z" fill="#7a4424" stroke="#f1c56b" stroke-width="4" />
+              </g>
+              <g class="chest-treasure">
+                <circle cx="790" cy="598" r="10" fill="#f1c56b" />
+                <circle cx="760" cy="602" r="8" fill="#c94f4f" />
+                <circle cx="820" cy="602" r="8" fill="#d9e2e8" />
+                <path d="M790 590 L798 602 L790 614 L782 602 Z" fill="#fff6d6" />
+              </g>
+            </g>
+
+            <!-- ambient dust motes -->
+            <g class="dust" fill="#f1c56b" opacity="0.35">
+              <circle cx="420" cy="240" r="2.2" />
+              <circle cx="470" cy="300" r="1.6" />
+              <circle cx="560" cy="220" r="1.8" />
+              <circle cx="700" cy="290" r="1.4" />
+              <circle cx="860" cy="250" r="2" />
+              <circle cx="930" cy="330" r="1.5" />
+              <circle cx="610" cy="340" r="1.2" />
+            </g>
+
+            <!-- sea shimmer inside porthole -->
+            <g class="sea-shimmer" clip-path="url(#portholeClip)" opacity="0.5">
+              <path d="M180 246 Q230 236 280 248 Q320 258 330 246" fill="none" stroke="#a6e1e8" stroke-width="2" />
+              <path d="M190 280 Q240 270 290 282 Q320 290 330 280" fill="none" stroke="#a6e1e8" stroke-width="1.5" />
+            </g>
+          </svg>
+
+          <button class="hotspot" style="--x:0.30; --y:0.592" data-clue="wardroom-lock" aria-label="Inspect the captain's night-watch logbook">+</button>
+          <button class="hotspot" style="--x:0.483; --y:0.572" data-clue="reef-bearing" aria-label="Inspect the reef chart and bearings">+</button>
+          <button class="hotspot" style="--x:0.708; --y:0.664" data-clue="crowbar-rope" aria-label="Inspect the tide table beside the rigging ropes">+</button>
+          <button class="hotspot" style="--x:0.833; --y:0.487" data-clue="escape-gangway" aria-label="Inspect the bell schedule by the gangway">+</button>
+          <button class="hotspot" style="--x:0.650; --y:0.816" data-clue="treasure" aria-label="Inspect the ornate treasure chest">+</button>
+          <button class="hotspot" style="--x:0.875; --y:0.697" data-clue="escape-gangway" aria-label="Inspect the gangway door">+</button>
+        </div>
+        <p class="bb-scene-caption">Cabin of the Queen Anne's Revenge — inspect the brass markers</p>
+      </section>
+
+      <section class="bb-journal" aria-labelledby="journal-title">
+        <div class="bb-journal-head">
+          <h2 id="journal-title">Ship's journal</h2>
+          <div class="bb-progress" id="progress" aria-label="Progress summary"></div>
+        </div>
+
+        <div class="bb-inventory" id="inventory">
+          <span>Inventory</span>
+          <ul id="inventory-list"></ul>
+        </div>
+
+        <div class="bb-puzzle" id="puzzle-panel" aria-labelledby="puzzle-title">
+          <div class="bb-puzzle-head">
+            <p class="bb-puzzle-kicker">Current protection</p>
+            <h3 class="bb-puzzle-title" id="puzzle-title">The Wardroom Lock</h3>
+          </div>
+          <p class="bb-puzzle-prompt" id="puzzle-prompt"></p>
+          <p class="bb-gate" id="gate">Inspect the matching brass hotspot to unlock the controls.</p>
+          <div class="bb-controls" id="controls" aria-label="Puzzle controls"></div>
+          <div class="bb-hint-row">
+            <button class="bb-hint" id="hint-button" type="button" aria-describedby="hint-level">Hint</button>
+            <span class="bb-hint-level" id="hint-level">Level 0</span>
+            <p class="bb-hint-text" id="hint-text"></p>
+          </div>
+          <div class="bb-status" id="status" role="status" aria-live="polite"></div>
+          <button class="bb-restart" id="restart" type="button">Restart</button>
+        </div>
+
+        <div class="bb-win" id="win-panel" hidden>
+          <h3>Treasure secured</h3>
+          <p id="win-text"></p>
+          <p>With the treasure in your satchel and the gangway behind you, Blackbeard's Revenge waits on the far side of the water. The run is done; restart to try again.</p>
+        </div>
+      </section>
+    </div>
+
+    <dialog class="clue-dialog" id="clue-dialog" aria-labelledby="clue-title">
+      <h2 id="clue-title">Clue</h2>
+      <p id="clue-text"></p>
+      <button class="close" id="clue-close" type="button">Close clue</button>
+    </dialog>
+
+    <script>
+      import {
+        createGame,
+        PUZZLES,
+        TREASURE,
+        INITIAL_INVENTORY,
+        GAME_VERSION,
+        WIN_TEXT,
+        currentPuzzle,
+        submit,
+        hint,
+        useCrowbar,
+        escape,
+        restart,
+        progress,
+        validateStateShape
+      } from '../../scripts/blackbeards-treasure/game-core.mjs';
+
+      const STORAGE_KEY = `blackbeards-treasure-v${GAME_VERSION}`;
+      const state = createGame();
+      let inspected = false;
+
+      const hotspots = Array.from(document.querySelectorAll('.hotspot'));
+      const puzzlePanel = document.getElementById('puzzle-panel');
+      const puzzleTitle = document.getElementById('puzzle-title');
+      const puzzlePrompt = document.getElementById('puzzle-prompt');
+      const gate = document.getElementById('gate');
+      const controls = document.getElementById('controls');
+      const hintButton = document.getElementById('hint-button');
+      const hintLevel = document.getElementById('hint-level');
+      const hintText = document.getElementById('hint-text');
+      const status = document.getElementById('status');
+      const restartButton = document.getElementById('restart');
+      const winPanel = document.getElementById('win-panel');
+      const winText = document.getElementById('win-text');
+      const inventoryList = document.getElementById('inventory-list');
+      const progressBox = document.getElementById('progress');
+      const clueDialog = document.getElementById('clue-dialog');
+      const clueTitle = document.getElementById('clue-title');
+      const clueText = document.getElementById('clue-text');
+      const clueClose = document.getElementById('clue-close');
+
+      const STATIC_CLUES = {
+        treasure: 'The ornate chest is the final gate. Its brass lock opens only after the four protections are solved and you have a way out.',
+      };
+
+      function setStatus(message, kind) {
+        status.textContent = message;
+        status.classList.toggle('error', kind === 'error');
+        status.classList.toggle('good', kind === 'good');
+      }
+
+      function saveState() {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        } catch {
+          // Blocked storage is non-fatal; the run still works in memory.
+        }
+      }
+
+      function loadSavedState() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return;
+          const parsed = JSON.parse(raw);
+          if (!validateStateShape(parsed)) return;
+          // Trust only the validated, consistent flags. Never force phase 4 to won.
+          Object.assign(state, parsed);
+        } catch {
+          // Malformed or unavailable storage is ignored.
+        }
+      }
+
+      function updateProgress() {
+        const summary = progress(state);
+        progressBox.innerHTML = '';
+        const solvedSpan = document.createElement('span');
+        solvedSpan.textContent = `Solved ${summary.solvedCount}/${summary.total}`;
+        progressBox.appendChild(solvedSpan);
+        const inventorySpan = document.createElement('span');
+        inventorySpan.textContent = `Inventory ${summary.inventory.length}`;
+        progressBox.appendChild(inventorySpan);
+      }
+
+      function updateInventory() {
+        inventoryList.innerHTML = '';
+        progress(state).inventory.forEach((item) => {
+          const li = document.createElement('li');
+          li.textContent = item;
+          inventoryList.appendChild(li);
+        });
+      }
+
+      function markCurrentHotspot() {
+        const current = currentPuzzle(state);
+        hotspots.forEach((hotspot) => {
+          hotspot.classList.toggle('current', Boolean(current) && hotspot.dataset.clue === current.id);
+        });
+      }
+
+      function openClue(clueId) {
+        const puzzle = PUZZLES.find((entry) => entry.id === clueId);
+        clueTitle.textContent = puzzle ? `${puzzle.title} clue` : 'Treasure chest clue';
+        clueText.textContent = puzzle ? puzzle.clue : (STATIC_CLUES[clueId] || 'No clue recorded for this marker.');
+        if (!clueDialog.open) {
+          clueDialog.showModal();
+        }
+        clueClose.focus();
+      }
+
+      clueClose.addEventListener('click', () => clueDialog.close());
+      clueDialog.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') clueDialog.close();
+      });
+
+      function makeButton(label, className) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = className;
+        button.textContent = label;
+        return button;
+      }
+
+      function addSubmitListener(button, rawGuess) {
+        button.addEventListener('click', () => attempt(rawGuess));
+      }
+
+      function renderControls(puzzle, enabled) {
+        controls.innerHTML = '';
+
+        if (puzzle.id === 'wardroom-lock') {
+          const row = document.createElement('div');
+          row.className = 'dial-row';
+          ['First watch', 'Second watch', 'Third watch'].forEach((labelText) => {
+            const label = document.createElement('label');
+            label.className = 'bb-dial-label';
+            label.textContent = labelText;
+            const dial = document.createElement('input');
+            dial.type = 'number';
+            dial.className = 'bb-dial';
+            dial.min = '0';
+            dial.max = '9';
+            dial.inputMode = 'numeric';
+            dial.setAttribute('aria-label', `${labelText} dial`);
+            dial.disabled = !enabled;
+            label.appendChild(dial);
+            row.appendChild(label);
+          });
+          controls.appendChild(row);
+
+          const tryLock = makeButton('Try lock', 'bb-btn primary');
+          tryLock.disabled = !enabled;
+          tryLock.addEventListener('click', () => {
+            const dials = Array.from(controls.querySelectorAll('.bb-dial'));
+            const values = dials.map((dial) => Number(dial.value));
+            const valid = dials.every((dial) => dial.value !== '' && Number.isInteger(Number(dial.value)) && Number(dial.value) >= 0 && Number(dial.value) <= 9);
+            if (!valid) {
+              setStatus('Each dial must be a single digit 0–9.', 'error');
+              return;
+            }
+            attempt(values.join(''));
+          });
+          controls.appendChild(tryLock);
+        } else if (puzzle.id === 'reef-bearing') {
+          const label = document.createElement('label');
+          label.className = 'bb-dial-label';
+          label.textContent = 'Return bearing (°)';
+          const bearing = document.createElement('input');
+          bearing.type = 'number';
+          bearing.className = 'bb-dial';
+          bearing.min = '0';
+          bearing.max = '359';
+          bearing.inputMode = 'numeric';
+          bearing.setAttribute('aria-label', 'Return bearing in degrees');
+          bearing.disabled = !enabled;
+          label.appendChild(bearing);
+          controls.appendChild(label);
+
+          const setBearing = makeButton('Set bearing', 'bb-btn primary');
+          setBearing.disabled = !enabled;
+          setBearing.addEventListener('click', () => {
+            const value = Number(bearing.value);
+            if (bearing.value === '' || !Number.isInteger(value) || value < 0 || value > 359) {
+              setStatus('Enter a whole-number bearing from 0 to 359.', 'error');
+              return;
+            }
+            attempt(`${value}°`);
+          });
+          controls.appendChild(setBearing);
+        } else if (puzzle.id === 'crowbar-rope') {
+          ['A', 'B', 'C', 'D'].forEach((letter) => {
+            const button = makeButton(`Rope ${letter}`, 'bb-btn');
+            button.disabled = !enabled;
+            addSubmitListener(button, letter);
+            controls.appendChild(button);
+          });
+        } else if (puzzle.id === 'escape-gangway') {
+          ['Fore', 'Aft', 'Boarding plank'].forEach((labelText) => {
+            const button = makeButton(labelText, 'bb-btn');
+            button.disabled = !enabled;
+            addSubmitListener(button, labelText);
+            controls.appendChild(button);
+          });
+        }
+      }
+
+      function attempt(rawGuess) {
+        const puzzle = currentPuzzle(state);
+        if (!puzzle) {
+          setStatus('All four protections are solved. Open the chest with the crowbar, then escape.', 'good');
+          renderFinalActions();
+          return;
+        }
+        if (!inspected) {
+          setStatus('Inspect the matching clue first; the controls are gated.', 'error');
+          return;
+        }
+
+        const result = submit(state, rawGuess);
+        if (result.ok) {
+          setStatus(result.message, 'good');
+          saveState();
+          updateProgress();
+          updateInventory();
+          const next = currentPuzzle(state);
+          if (next) {
+            inspected = false;
+            renderPuzzle(next, false);
+          } else {
+            renderFinalActions();
+          }
+          markCurrentHotspot();
+        } else {
+          setStatus(result.message, 'error');
+          saveState();
+          updateProgress();
+        }
+      }
+
+      function renderFinalActions() {
+        puzzleTitle.textContent = 'Final actions';
+        puzzlePrompt.textContent = state.chestOpen
+          ? 'The chest is open and the treasure is aboard. Take the gangway to escape before Blackbeard returns.'
+          : 'All four protections are solved. Use the crowbar to open the chest, then escape with the treasure.';
+        gate.classList.toggle('open', state.chestOpen);
+        gate.textContent = state.chestOpen
+          ? 'Chest opened. The treasure is in your satchel.'
+          : 'Chest still closed. The crowbar is in your inventory.';
+        controls.innerHTML = '';
+        controls.classList.add('bb-final-actions');
+
+        const crowbarButton = makeButton('Use crowbar / open chest', 'bb-btn primary bb-action');
+        crowbarButton.disabled = state.chestOpen || state.crowbarUsed || state.won;
+        crowbarButton.addEventListener('click', () => {
+          const result = useCrowbar(state);
+          setStatus(result.message, result.ok ? 'good' : 'error');
+          if (result.ok) {
+            saveState();
+            updateProgress();
+            updateInventory();
+            syncChestVisual();
+            renderFinalActions();
+            markCurrentHotspot();
+          }
+        });
+        controls.appendChild(crowbarButton);
+
+        const escapeButton = makeButton('Escape with treasure', 'bb-btn primary bb-action');
+        escapeButton.disabled = !state.chestOpen || state.won || state.escaped;
+        escapeButton.addEventListener('click', () => {
+          const result = escape(state);
+          setStatus(result.message, result.ok ? 'good' : 'error');
+          if (result.ok) {
+            saveState();
+            updateProgress();
+            updateInventory();
+            renderFinalActions();
+            renderWin();
+            markCurrentHotspot();
+          }
+        });
+        controls.appendChild(escapeButton);
+
+        hintButton.disabled = true;
+        hintLevel.textContent = state.won ? 'No hint needed' : 'Level 0';
+        hintText.textContent = '';
+      }
+
+      function renderPuzzle(puzzle, enabled) {
+        puzzleTitle.textContent = puzzle.title;
+        puzzlePrompt.textContent = puzzle.prompt;
+        gate.classList.toggle('open', enabled);
+        gate.textContent = enabled
+          ? 'Clue inspected. Controls unlocked.'
+          : 'Inspect the matching brass hotspot to unlock the controls.';
+        renderControls(puzzle, enabled);
+        hintButton.disabled = !enabled;
+        hintLevel.textContent = 'Level 0';
+        hintText.textContent = '';
+        hintRequest = 0;
+      }
+
+      let hintRequest = 0;
+
+      function renderHint() {
+        const puzzle = currentPuzzle(state);
+        if (!puzzle || !inspected) {
+          setStatus('Inspect the current clue before asking for a hint.', 'error');
+          return;
+        }
+        const bounded = Math.max(0, Math.min(2, Math.trunc(hintRequest)));
+        const result = hint(state, bounded);
+        hintLevel.textContent = `Level ${result.level}`;
+        hintText.textContent = result.text;
+        setStatus(`Hint level ${result.level}.`, 'good');
+        hintRequest = Math.min(2, hintRequest + 1);
+      }
+
+      function syncChestVisual() {
+        const chestHotspot = hotspots.find((hotspot) => hotspot.dataset.clue === 'treasure');
+        const chestGroup = document.querySelector('#treasure-chest');
+        if (chestHotspot) {
+          chestHotspot.classList.toggle('open-chest', state.chestOpen);
+          chestHotspot.classList.toggle('current', !state.won && state.chestOpen);
+        }
+        if (chestGroup) {
+          chestGroup.classList.toggle('open', state.chestOpen);
+        }
+        const scene = document.querySelector('.bb-scene');
+        if (scene) scene.classList.toggle('chest-open', state.chestOpen);
+      }
+
+      function renderWin() {
+        winPanel.hidden = false;
+        winText.textContent = WIN_TEXT;
+      }
+
+      function restartRun() {
+        restart(state);
+        inspected = false;
+        try {
+          localStorage.removeItem(STORAGE_KEY);
+        } catch {
+          // Blocked storage is ignored.
+        }
+        renderPuzzle(currentPuzzle(state), false);
+        winPanel.hidden = true;
+        winText.textContent = '';
+        syncChestVisual();
+        updateProgress();
+        updateInventory();
+        markCurrentHotspot();
+        setStatus('Run reset. Inspect the highlighted clue to begin again.', 'good');
+      }
+
+      // Restore a valid saved run if storage is available.
+      loadSavedState();
+
+      // Wire persistent controls once.
+      hotspots.forEach((hotspot) => {
+        hotspot.addEventListener('click', () => {
+          openClue(hotspot.dataset.clue);
+          const current = currentPuzzle(state);
+          if (!current) {
+            if (state.chestOpen) {
+              setStatus('The chest is open. Use the escape action to win.', 'good');
+            } else {
+              setStatus('All four protections are solved. Use the crowbar to open the chest.', 'good');
+            }
+            renderFinalActions();
+            markCurrentHotspot();
+            syncChestVisual();
+            return;
+          }
+          if (hotspot.dataset.clue === current.id) {
+            inspected = true;
+            renderPuzzle(current, true);
+            setStatus('Clue inspected. Controls unlocked.', 'good');
+          } else {
+            renderPuzzle(current, inspected);
+            setStatus('That clue belongs to another protection. The highlighted marker is the current clue.', 'error');
+          }
+          markCurrentHotspot();
+        });
+      });
+
+      hintButton.addEventListener('click', () => renderHint(0));
+      restartButton.addEventListener('click', restartRun);
+
+      // Initial state: render the puzzle or final actions; never force won flags.
+      if (currentPuzzle(state)) {
+        renderPuzzle(currentPuzzle(state), false);
+      } else {
+        renderFinalActions();
+      }
+      if (state.won) {
+        renderWin();
+      } else {
+        winPanel.hidden = true;
+      }
+      syncChestVisual();
+      updateProgress();
+      updateInventory();
+      markCurrentHotspot();
+      setStatus(state.lastMessage || "Aboard the Queen Anne's Revenge. Four protections stand between you and the treasure.", 'good');
+    </script>
+  </main>
+  </body>
+</html>
