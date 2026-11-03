@@ -1,0 +1,616 @@
+/* Steal Blackbeard's Treasure — original, self-contained game styling.
+   No external fonts, images, or paid assets. */
+
+:root {
+  --bb-ink: #120d09;
+  --bb-navy: #0b1520;
+  --bb-navy-deep: #060d14;
+  --bb-wood: #3b2415;
+  --bb-wood-light: #6a4225;
+  --bb-gold: #d8a64a;
+  --bb-gold-bright: #f1c56b;
+  --bb-parchment: #d8c39a;
+  --bb-parchment-dark: #b79b6e;
+  --bb-cream: #f3e6c6;
+  --bb-red: #8f2f2f;
+  --bb-focus: #ffd27a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bb-navy-deep);
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--bb-cream);
+}
+
+.bb-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 30% 18%, #26384a 0%, #0c1824 42%, #060d14 100%);
+  color: var(--bb-cream);
+  overflow-x: hidden;
+}
+
+.bb-header {
+  width: min(100%, 1320px);
+  margin: 0 auto;
+  padding: clamp(18px, 3vw, 34px);
+  border-bottom: 1px solid rgba(216, 164, 74, 0.28);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 18px;
+  justify-content: space-between;
+}
+
+.bb-kicker {
+  margin: 0;
+  color: var(--bb-gold);
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.bb-title {
+  margin: 0.25rem 0 0.35rem;
+  color: #fff1cc;
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 18px rgba(241, 197, 108, 0.25);
+}
+
+.bb-intro {
+  margin: 0;
+  max-width: 58ch;
+  color: #d7c6a2;
+  line-height: 1.5;
+}
+
+.bb-note {
+  margin: 0;
+  max-width: 48ch;
+  color: #b8a98a;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.bb-shell {
+  width: min(100%, 1320px);
+  margin: 0 auto;
+  padding: clamp(16px, 2.5vw, 26px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: clamp(16px, 2vw, 26px);
+  align-items: start;
+}
+
+.bb-scene-panel {
+  min-width: 0;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(21, 33, 42, 0.9), rgba(8, 14, 20, 0.94));
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(216, 164, 74, 0.18);
+  padding: clamp(10px, 1.6vw, 18px);
+}
+
+.bb-scene {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1200 / 760;
+  overflow: hidden;
+}
+
+.bb-scene svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.bb-scene-caption {
+  margin: 0.7rem 0.2rem 0;
+  color: #c4b28e;
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Hotspots are HTML buttons over the SVG so keyboard focus is reliable. */
+.hotspot {
+  position: absolute;
+  left: calc(var(--x) * 100%);
+  top: calc(var(--y) * 100%);
+  width: 48px;
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  border-radius: 50%;
+  border: 2px solid rgba(241, 197, 108, 0.8);
+  background: radial-gradient(circle at 35% 30%, #f4d28a 0%, #b87c33 55%, #4a2b14 100%);
+  color: #2a190b;
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  touch-action: manipulation;
+  box-shadow: 0 0 0 6px rgba(241, 197, 108, 0.08), 0 0 18px rgba(241, 197, 108, 0.18);
+  transition: transform 120ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.hotspot:hover,
+.hotspot:focus-visible {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 8px rgba(241, 197, 108, 0.18), 0 0 24px rgba(241, 197, 108, 0.34);
+}
+
+.hotspot:focus-visible {
+  outline: 3px solid var(--bb-focus);
+  outline-offset: 4px;
+}
+
+.hotspot.current {
+  animation: hotspot-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes hotspot-pulse {
+  0%, 100% { box-shadow: 0 0 0 6px rgba(241, 197, 108, 0.12), 0 0 18px rgba(241, 197, 108, 0.2); }
+  50% { box-shadow: 0 0 0 10px rgba(241, 197, 108, 0.24), 0 0 30px rgba(241, 197, 108, 0.42); }
+}
+
+.bb-journal {
+  min-width: 0;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(28, 20, 14, 0.94), rgba(12, 9, 7, 0.96));
+  border: 1px solid rgba(216, 164, 74, 0.28);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+  padding: clamp(14px, 2vw, 22px);
+}
+
+.bb-journal-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(216, 164, 74, 0.18);
+  padding-bottom: 0.7rem;
+}
+
+.bb-journal-head h2 {
+  margin: 0;
+  color: var(--bb-gold-bright);
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+}
+
+.bb-progress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.78rem;
+  color: #d9c8a7;
+}
+
+.bb-progress span {
+  border: 1px solid rgba(216, 164, 74, 0.25);
+  border-radius: 999px;
+  padding: 0.35rem 0.55rem;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.bb-inventory {
+  margin: 0.85rem 0 0;
+  padding: 0.75rem 0.85rem;
+  border-radius: 12px;
+  background: rgba(8, 5, 3, 0.55);
+  border: 1px solid rgba(216, 164, 74, 0.18);
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.86rem;
+  color: #d8c39a;
+}
+
+.bb-inventory ul {
+  margin: 0.45rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.bb-puzzle {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border-radius: 16px;
+  background: rgba(18, 12, 8, 0.78);
+  border: 1px solid rgba(216, 164, 74, 0.22);
+}
+
+.bb-puzzle-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.bb-puzzle-kicker {
+  margin: 0;
+  color: var(--bb-gold);
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.bb-puzzle-title {
+  margin: 0.1rem 0 0;
+  color: #fff0ca;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  letter-spacing: 0.02em;
+}
+
+.bb-puzzle-prompt {
+  margin: 0.3rem 0 0;
+  color: #d7c6a2;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.bb-gate {
+  margin: 0.6rem 0 0;
+  padding: 0.55rem 0.7rem;
+  border-radius: 10px;
+  background: rgba(241, 197, 108, 0.08);
+  border: 1px dashed rgba(241, 197, 108, 0.35);
+  color: #e9d3a7;
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.bb-gate.open {
+  background: rgba(90, 130, 90, 0.15);
+  border-color: rgba(160, 200, 130, 0.4);
+}
+
+.bb-controls {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.bb-controls .dial-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.bb-dial {
+  width: 70px;
+  min-height: 44px;
+  border-radius: 10px;
+  background: #24170e;
+  border: 1px solid rgba(216, 164, 74, 0.45);
+  color: var(--bb-gold-bright);
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 1rem;
+  padding: 0.45rem;
+  text-align: center;
+  outline: none;
+}
+
+.bb-dial:focus {
+  border-color: var(--bb-focus);
+  box-shadow: 0 0 0 4px rgba(241, 197, 108, 0.25);
+}
+
+.bb-dial-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #c6b28d;
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.bb-btn {
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(216, 164, 74, 0.55);
+  background: linear-gradient(180deg, #3c2a19, #21150d);
+  color: #f1d7a4;
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.55rem 0.8rem;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, transform 120ms ease;
+}
+
+.bb-btn:hover,
+.bb-btn:focus-visible {
+  background: linear-gradient(180deg, #6a4a27, #352113);
+  border-color: var(--bb-focus);
+}
+
+.bb-btn:focus-visible {
+  outline: 3px solid var(--bb-focus);
+  outline-offset: 3px;
+}
+
+.bb-btn.primary {
+  background: linear-gradient(180deg, #d8a64a, #a06e2e);
+  color: #1d1208;
+  border-color: #f1c56b;
+}
+
+.bb-btn.primary:hover,
+.bb-btn.primary:focus-visible {
+  background: linear-gradient(180deg, #f1c56b, #c28a3d);
+}
+
+.bb-btn:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
+
+.bb-hint-row {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.bb-hint-row .bb-hint {
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px dashed rgba(241, 197, 108, 0.5);
+  background: rgba(241, 197, 108, 0.06);
+  color: #e9d3a7;
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.86rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.bb-hint-text {
+  margin: 0;
+  color: #e7d7b8;
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.bb-status {
+  margin-top: 0.85rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.36);
+  color: #d9c8a7;
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.86rem;
+  line-height: 1.4;
+  min-height: 2.5rem;
+}
+
+.bb-status.error {
+  background: rgba(143, 47, 47, 0.22);
+  color: #ffd4c8;
+}
+
+.bb-status.good {
+  background: rgba(90, 130, 90, 0.18);
+  color: #d9f0c8;
+}
+
+.bb-restart {
+  margin-top: 1rem;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(216, 164, 74, 0.4);
+  background: transparent;
+  color: var(--bb-gold-bright);
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.bb-restart:hover,
+.bb-restart:focus-visible {
+  background: rgba(241, 197, 108, 0.12);
+  border-color: var(--bb-focus);
+}
+
+.bb-restart:focus-visible {
+  outline: 3px solid var(--bb-focus);
+  outline-offset: 3px;
+}
+
+.bb-win {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(70, 50, 22, 0.65), rgba(24, 15, 8, 0.8));
+  border: 1px solid rgba(241, 197, 108, 0.5);
+  box-shadow: 0 0 30px rgba(241, 197, 108, 0.18);
+  color: #fff0ca;
+}
+
+.bb-win h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--bb-gold-bright);
+}
+
+.bb-win p {
+  margin: 0.45rem 0 0;
+  color: #e9d8b7;
+  line-height: 1.45;
+}
+
+/* Native dialog for clue inspection. */
+.clue-dialog {
+  width: min(520px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  background: #1b130d;
+  color: #f0e2c6;
+  border: 1px solid rgba(241, 197, 108, 0.55);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.45;
+}
+
+.clue-dialog::backdrop {
+  background: rgba(4, 8, 12, 0.7);
+}
+
+.clue-dialog h2 {
+  margin: 0 0 0.6rem;
+  color: var(--bb-gold-bright);
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+.clue-dialog p {
+  margin: 0;
+  color: #e9d8b7;
+}
+
+.clue-dialog .close {
+  margin-top: 0.8rem;
+  min-height: 44px;
+  border-radius: 8px;
+  border: 1px solid rgba(241, 197, 108, 0.45);
+  background: rgba(241, 197, 108, 0.1);
+  color: #f1d7a4;
+  font-family: 'Trebuchet MS', system-ui, sans-serif;
+  padding: 0.45rem 0.7rem;
+  cursor: pointer;
+}
+
+.clue-dialog .close:focus-visible {
+  outline: 3px solid var(--bb-focus);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .bb-shell {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .bb-scene-panel {
+    padding: 8px;
+  }
+
+  .bb-journal {
+    padding: 14px;
+  }
+
+  .hotspot {
+    width: 44px;
+    height: 44px;
+    margin-left: -22px;
+    margin-top: -22px;
+  }
+}
+
+/* Chest state mirrors state.chestOpen on the SVG and hotspot. */
+.bb-scene .treasure-chest .chest-open-lid,
+.bb-scene .treasure-chest .chest-treasure {
+  display: none;
+}
+
+.bb-scene.chest-open .treasure-chest .chest-open-lid,
+.bb-scene.chest-open .treasure-chest .chest-treasure {
+  display: inline;
+}
+
+.bb-scene.chest-open .treasure-chest {
+  filter: url(#softGlow);
+}
+
+.hotspot.open-chest {
+  background: radial-gradient(circle at 35% 30%, #fff3c2 0%, #f1c56b 55%, #a06e2e 100%);
+  box-shadow: 0 0 0 10px rgba(241, 197, 108, 0.3), 0 0 34px rgba(241, 197, 108, 0.65);
+  border-color: #fff3c2;
+  animation: hotspot-pulse 2.4s ease-in-out infinite;
+}
+
+/* Final actions panel and stacked journal labels. */
+.bb-final-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.bb-action {
+  min-height: 48px;
+}
+
+.bb-journal-head,
+.bb-puzzle-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.bb-inventory > span,
+.bb-puzzle-head > .bb-puzzle-kicker {
+  margin: 0 0 0.2rem;
+  display: block;
+  width: 100%;
+}
+
+.bb-progress {
+  align-self: start;
+}
+
+@media (max-width: 520px) {
+  .bb-journal-head,
+  .bb-puzzle-head {
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .bb-final-actions {
+    gap: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hotspot.current,
+  .flame,
+  .sea-shimmer,
+  .dust,
+  .compass-needle,
+  .hotspot.open-chest {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
