@@ -1,90 +1,24 @@
 [
   {
-    "event_name": "Movie in the Park: Hamilton",
-    "start_date": "2026-11-06",
-    "end_date": "2026-11-06",
-    "location": "Henrico County, VA (park venue; confirm event detail page)",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://henrico.gov/calendar/2026-11/",
-    "notes": "County calendar lists a public outdoor movie. Likely modest family attendance; could modestly compete for evening leisure visits."
-  },
-  {
-    "event_name": "1776: Signing Day",
-    "start_date": "2026-11-07",
-    "end_date": "2026-11-07",
-    "location": "Henrico County, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
-    "confidence": "low",
-    "source_url": "https://henrico.gov/calendar/2026-11/",
-    "notes": "Listed on the Henrico County event calendar; venue and expected audience scale are not clear from the calendar listing."
-  },
-  {
-    "event_name": "Thanksgiving holiday period",
-    "start_date": "2026-11-26",
-    "end_date": "2026-11-29",
-    "location": "Regional; public holiday and school-break period",
+    "event_name": "Veterans Day 2026 – Chesterfield County and court holiday closings",
+    "start_date": "2026-11-11",
+    "end_date": "2026-11-11",
+    "location": "Chesterfield County",
     "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "medium",
-    "source_url": "https://www.chesterfield.gov/Calendar.aspx",
-    "notes": "Thanksgiving falls Thursday, Nov. 26; likely changes family/group availability, travel, and staffing patterns through the weekend. Exact school calendars and local operating hours should be verified."
+    "expected_demand_effect": "low",
+    "confidence": "high",
+    "source_url": "https://www.chesterfield.gov/",
+    "notes": "County homepage flags Veterans Day holiday closings. Possible change to family schedules and public-service availability; no major public celebration indicated."
   },
   {
     "event_name": "2026 Light Up the Night",
     "start_date": "2026-12-06",
     "end_date": "2026-12-06",
-    "location": "Hopewell, VA",
+    "location": "Hopewell, Virginia",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "medium",
-    "source_url": "https://www.hopewellva.gov/calendar.aspx",
-    "notes": "Featured on the City of Hopewell calendar. Holiday-themed community event may draw families locally and shift evening traffic/booking patterns."
-  },
-  {
-    "event_name": "Henrico Holiday Express 26: Three Chopt & Tuckahoe",
-    "start_date": "2026-12-08",
-    "end_date": "2026-12-08",
-    "location": "Three Chopt & Tuckahoe, Henrico County, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://henrico.gov/calendar/2026-12/",
-    "notes": "County holiday community program, listed 5–8 p.m.; geographically distant from Chester but family-oriented."
-  },
-  {
-    "event_name": "Henrico Holiday Express 26: Varina",
-    "start_date": "2026-12-09",
-    "end_date": "2026-12-09",
-    "location": "Varina, Henrico County, VA",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://henrico.gov/calendar/2026-12/",
-    "notes": "County holiday community program, listed 5–8 p.m.; Varina is within the stated primary draw area and could modestly affect local family leisure plans."
-  },
-  {
-    "event_name": "Henrico Holiday Express 26: Brookland & Fairfield",
-    "start_date": "2026-12-10",
-    "end_date": "2026-12-10",
-    "location": "Brookland & Fairfield, Henrico County, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://henrico.gov/calendar/2026-12/",
-    "notes": "County holiday community program, listed 5–8 p.m.; limited likely impact on Chester bookings."
-  },
-  {
-    "event_name": "Santa Paws 2026",
-    "start_date": "2026-12-12",
-    "end_date": "2026-12-12",
-    "location": "Henrico County, VA",
-    "distance_context": "secondary_50mi",
-    "expected_demand_effect": "low",
-    "confidence": "medium",
-    "source_url": "https://henrico.gov/calendar/2026-12/",
-    "notes": "County calendar lists a public seasonal event from 10 a.m.–1 p.m. Family/pet audience; limited expected effect due to distance and daytime timing."
+    "source_url": "https://www.hopewellva.gov/Calendar.aspx",
+    "notes": "Listed as a featured community event by the City of Hopewell. Likely family-oriented seasonal attendance; attendance/traffic scale not specified on calendar overview."
   }
 ]
