@@ -1,24 +1,24 @@
 [
   {
-    "event_name": "Veterans Day 2026 – Chesterfield County and court holiday closings",
-    "start_date": "2026-11-11",
-    "end_date": "2026-11-11",
-    "location": "Chesterfield County",
+    "event_name": "Thanksgiving holiday weekend",
+    "start_date": "2026-11-26",
+    "end_date": "2026-11-29",
+    "location": "United States; local impact in Chester/Richmond region",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "high",
+    "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+    "notes": "Thanksgiving Day is a federal holiday. Family gatherings and school/work closures may alter local leisure demand and staffing; direction of effect may vary."
+  },
+  {
+    "event_name": "Christmas Day",
+    "start_date": "2026-12-25",
+    "end_date": "2026-12-25",
+    "location": "United States; local impact in Chester/Richmond region",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
     "confidence": "high",
-    "source_url": "https://www.chesterfield.gov/",
-    "notes": "County homepage flags Veterans Day holiday closings. Possible change to family schedules and public-service availability; no major public celebration indicated."
-  },
-  {
-    "event_name": "2026 Light Up the Night",
-    "start_date": "2026-12-06",
-    "end_date": "2026-12-06",
-    "location": "Hopewell, Virginia",
-    "distance_context": "primary_draw",
-    "expected_demand_effect": "medium",
-    "confidence": "medium",
-    "source_url": "https://www.hopewellva.gov/Calendar.aspx",
-    "notes": "Listed as a featured community event by the City of Hopewell. Likely family-oriented seasonal attendance; attendance/traffic scale not specified on calendar overview."
+    "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+    "notes": "Federal holiday; likely reduced operating availability and atypical family schedules. Event-specific local demand not established."
   }
 ]
