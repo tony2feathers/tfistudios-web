@@ -1,24 +1,57 @@
 [
   {
-    "event_name": "Thanksgiving holiday weekend",
+    "event_name": "Thanksgiving holiday travel and family gathering period",
     "start_date": "2026-11-26",
     "end_date": "2026-11-29",
-    "location": "United States; local impact in Chester/Richmond region",
+    "location": "Chesterfield County / Richmond region",
     "distance_context": "primary_draw",
     "expected_demand_effect": "medium",
     "confidence": "high",
-    "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
-    "notes": "Thanksgiving Day is a federal holiday. Family gatherings and school/work closures may alter local leisure demand and staffing; direction of effect may vary."
+    "source_url": "https://www.chesterfield.gov/calendar.aspx",
+    "notes": "Thanksgiving falls Nov 26; Chesterfield County calendar banner confirms 2026 holiday closing. Family travel may soften local bookings while gatherings and visitors can create group demand. Traffic may rise around travel windows."
   },
   {
-    "event_name": "Christmas Day",
-    "start_date": "2026-12-25",
-    "end_date": "2026-12-25",
-    "location": "United States; local impact in Chester/Richmond region",
+    "event_name": "Thanksgiving Eve (Bucket Night) at SkyBox RVA",
+    "start_date": "2026-11-25",
+    "end_date": "2026-11-25",
+    "location": "Skybox, Richmond, VA",
     "distance_context": "primary_draw",
     "expected_demand_effect": "low",
-    "confidence": "high",
-    "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
-    "notes": "Federal holiday; likely reduced operating availability and atypical family schedules. Event-specific local demand not established."
+    "confidence": "medium",
+    "source_url": "https://www.eventbrite.com/d/va--richmond/events/",
+    "notes": "Eventbrite Richmond listing showed this ticketed Thanksgiving Eve event at 8:00 PM. Nightlife-focused; possible modest date-night/group demand and downtown traffic, but listing is not a dedicated event detail URL."
+  },
+  {
+    "event_name": "Krampus Ball 2026",
+    "start_date": "2026-12-05",
+    "end_date": "2026-12-05",
+    "location": "Fallout, Richmond, VA",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "low",
+    "confidence": "medium",
+    "source_url": "https://www.eventbrite.com/d/va--richmond/events/",
+    "notes": "Eventbrite Richmond listing advertised the event for Dec 5 at 8:00 PM. Adult/nightlife-oriented and likely niche; potential limited date-night demand."
+  },
+  {
+    "event_name": "Christmas holiday / school break period",
+    "start_date": "2026-12-24",
+    "end_date": "2027-01-03",
+    "location": "Chesterfield County / Richmond region",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "high",
+    "confidence": "medium",
+    "source_url": "https://www.chesterfield.gov/calendar.aspx",
+    "notes": "Holiday period likely brings a mix of visiting families and increased daytime availability, offset by travel and closures. Exact school calendars and individual venue schedules were not verified; dates frame the major holiday window rather than asserting district break dates."
+  },
+  {
+    "event_name": "New Year's Eve / New Year's Day holiday period",
+    "start_date": "2026-12-31",
+    "end_date": "2027-01-01",
+    "location": "Chesterfield County / Richmond region",
+    "distance_context": "primary_draw",
+    "expected_demand_effect": "medium",
+    "confidence": "medium",
+    "source_url": "https://www.visitrichmondva.com/events/",
+    "notes": "Major annual celebration window can support date-night/group outings but also changes hours and travel patterns. Visit Richmond events page was blocked during this run; this is a holiday signal, not a claim about a specific listed event."
   }
 ]
